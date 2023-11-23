@@ -79,6 +79,21 @@ footer {
     height: max-content;
     padding: 1rem; }
 
+.tag {
+  display: flex;
+  padding: 0.3125rem 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  width: max-content; }
+  .tag--red {
+    background: #BE1242; }
+    .tag--red:hover {
+      background: #BE12424B; }
+  .tag a {
+    color: #FFFCF8 !important;
+    font-weight: bold; }
+
 @media (min-width: 992px) {
   .homepage {
     position: relative;
