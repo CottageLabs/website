@@ -1,3 +1,7 @@
 CL website, using Pelican
 
-To do.
+Run the server
+`python -m pelican.server`
+
+generate content
+`pelican content`

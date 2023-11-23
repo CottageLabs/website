@@ -21,16 +21,19 @@ DEFAULT_DATE = 'fs'
 THEME = 'themes/simple'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
-ARTICLE_URL = '{title}.html'
-ARTICLE_SAVE_AS = '{title}.html'
-
+RELATIVE_URLS = True
 CSS_FILE = "main.css"
 
-PLUGINS = [
-    # ...
-    'pelican_fontawesome',
-    # ...
-]
+PAGE_PATHS = ['pages']
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_TEMPLATE = 'page'
 
+ARTICLE_PATHS = ['articles']
+ARTICLE_URL = '{slug}/'
+ARTICLE_SAVE_AS = '{slug}/index.html'
+ARTICLE_TEMPLATE = 'article'
+
+PLUGINS = [
+    'pelican_fontawesome'
+]

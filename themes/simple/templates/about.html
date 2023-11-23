@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row justify-content-between">
+        <div class="about--content col-lg-4">
+            {{ page.content }}
+        </div>
+        <div class="col-lg-7">
+            <div class="partners">
+                {% include "partners.html" %}
+            </div>
+            <div class="registration">
+                {% include "registration.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
