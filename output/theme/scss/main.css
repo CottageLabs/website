@@ -41,6 +41,9 @@ h2 {
   letter-spacing: 0.225rem;
   text-transform: capitalize; }
 
+strong {
+  font-weight: 700; }
+
 nav {
   background: linear-gradient(180deg, rgba(190, 18, 66, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
   margin-bottom: 3rem;
@@ -85,11 +88,20 @@ footer {
   align-items: flex-start;
   gap: 0.625rem;
   border-radius: 0.625rem;
-  width: max-content; }
+  width: max-content;
+  color: #FFFCF8; }
   .tag--red {
     background: #BE1242; }
     .tag--red:hover {
-      background: #BE12424B; }
+      background: #BE1242E6; }
+  .tag--green {
+    background: #5D5E3E; }
+    .tag--green:hover {
+      background: #5D5E3EE6; }
+  .tag--brown {
+    background: #603E1F; }
+    .tag--brown:hover {
+      background: #603E1FE6; }
   .tag a {
     color: #FFFCF8 !important;
     font-weight: bold; }
@@ -142,21 +154,21 @@ footer {
     .homepage .links-container .section-link:hover > span.section-link--text {
       color: #BE1242; }
 .homepage #oa-logo {
-  background-image: url("../images/icon-OA.svg"); }
+  background-image: url("../images/icons/icon-OA.svg"); }
 .homepage a.section-link:hover > div#oa-logo {
-  background-image: url("../images/icon-OA-hover.svg"); }
+  background-image: url("../images/icons/icon-OA-hover.svg"); }
 .homepage #bd-logo {
-  background-image: url("../images/icon-BD.svg"); }
+  background-image: url("../images/icons/icon-BD.svg"); }
 .homepage a.section-link:hover > div#bd-logo {
-  background-image: url("../images/icon-BD-hover.svg"); }
+  background-image: url("../images/icons/icon-BD-hover.svg"); }
 .homepage #dr-logo {
-  background-image: url("../images/icon-DR.svg"); }
+  background-image: url("../images/icons/icon-DR.svg"); }
 .homepage a.section-link:hover > div#dr-logo {
-  background-image: url("../images/icon-DR-hover.svg"); }
+  background-image: url("../images/icons/icon-DR-hover.svg"); }
 .homepage #dv-logo {
-  background-image: url("../images/icon-DV.svg"); }
+  background-image: url("../images/icons/icon-DV.svg"); }
 .homepage a.section-link:hover > div#dv-logo {
-  background-image: url("../images/icon-DV-hover.svg"); }
+  background-image: url("../images/icons/icon-DV-hover.svg"); }
 @media (min-width: 992px) {
   .homepage #section-clients {
     position: absolute;
@@ -243,5 +255,29 @@ footer {
       margin-bottom: 0 !important; }
 .about .registration {
   text-align: right; }
+
+.lifecycle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+  .lifecycle .text-content {
+    max-width: 40vw;
+    margin-right: 3rem; }
+    .lifecycle .text-content .list-section {
+      position: relative;
+      margin-left: 2rem; }
+    .lifecycle .text-content .list-section::before {
+      content: '';
+      /* Required for pseudo-elements */
+      position: absolute;
+      top: -1rem;
+      left: -4rem;
+      bottom: -1rem;
+      width: 30px;
+      /* Adjust the width of the shadow as needed */
+      box-shadow: 10px 0 10px -10px #BE1242;
+      /* Adjust the shadow properties as needed */ }
+    .lifecycle .text-content .tag {
+      float: right; }
 
 /*# sourceMappingURL=main.css.map */

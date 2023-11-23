@@ -3,7 +3,6 @@ SITENAME = 'Cottage Labs'
 SITEURL = ''
 
 PATH = 'content'
-
 TIMEZONE = 'GB'
 
 DEFAULT_LANG = 'en'
@@ -19,6 +18,10 @@ DEFAULT_PAGINATION = False
 DEFAULT_DATE = 'fs'
 
 THEME = 'themes/simple'
+
+STATIC_DIR = 'content/images'
+
+INDEX_SAVE_AS = 'index.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

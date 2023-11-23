@@ -5,11 +5,26 @@
     gap: 0.625rem;
     border-radius: 0.625rem;
     width: max-content;
+    color: $baby-powder;
 
     &--red {
         background: $red;
         &:hover {
-            background: $red-transp75;
+            background: $red-transp;
+        }
+    }
+
+    &--green {
+        background: $green;
+        &:hover {
+            background: $green-transp;
+        }
+    }
+
+    &--brown {
+        background: $brown;
+        &:hover {
+            background: $brown-transp;
         }
     }
 
