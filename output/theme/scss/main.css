@@ -109,17 +109,14 @@ footer {
 @media (min-width: 992px) {
   .homepage {
     position: relative;
-    top: 30%;
-    height: 74vh; }
+    min-height: 74vh;
+    top: 30%; }
     .homepage .section-links {
-      position: absolute;
-      height: 102vh;
-      top: -12rem;
-      left: 1rem;
       background-color: #ffffff;
       width: 35vw;
       box-shadow: 0 0 20px -10px #BE1242;
-      padding-top: 15rem; } }
+      padding-top: 15rem;
+      margin-top: -12rem; } }
 @media (max-width: 991px) {
   .homepage {
     display: block; }
@@ -171,12 +168,8 @@ footer {
   background-image: url("../images/icons/icon-DV-hover.svg"); }
 @media (min-width: 992px) {
   .homepage #section-clients {
-    position: absolute;
-    height: 102vh;
-    top: -12rem;
-    left: calc(35vw + 3rem);
     max-width: 25vw;
-    padding-top: 15rem; }
+    padding: 3rem 3rem 1rem 3rem; }
     .homepage #section-clients .content {
       width: 25rem;
       margin: auto; } }

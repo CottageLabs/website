@@ -1,17 +1,14 @@
 .homepage {
     @media (min-width: 992px) {
         position: relative;
+        min-height: 74vh;
         top: 30%;
-        height: 74vh;
         .section-links {
-            position: absolute;
-            height: 102vh;
-            top: -12rem;
-            left: 1rem;
             background-color: $white;
             width: 35vw;
             box-shadow: 0 0 20px -10px $red;
             padding-top: 15rem;
+            margin-top: -12rem;
         }
     }
     @media (max-width: 991px) {
@@ -94,12 +91,8 @@
 
     @media (min-width: 992px) {
         #section-clients {
-            position: absolute;
-            height: 102vh;
-            top: -12rem;
-            left: calc(35vw + 3rem);
             max-width: 25vw;
-            padding-top: 15rem;
+            padding: 3rem 3rem 1rem 3rem;
             .content {
                 width: 25rem;
                 margin: auto;
