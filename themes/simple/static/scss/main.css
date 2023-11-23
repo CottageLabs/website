@@ -45,30 +45,25 @@ nav {
   background: linear-gradient(180deg, rgba(190, 18, 66, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
   margin-bottom: 3rem;
   z-index: 1000; }
-
-nav > .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.nav-links {
-  display: flex;
-  width: 50%;
-  justify-content: flex-end; }
-
-.nav-link {
-  z-index: 1;
-  text-decoration: none;
-  color: #000;
-  text-align: right; }
-
-.nav-link:focus, .nav-link:hover {
-  font-weight: bold;
-  color: #BE1242; }
-
-#logo {
-  z-index: 1000;
-  padding: 1rem .5rem; }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  nav .nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end; }
+  nav .nav-link {
+    z-index: 1;
+    text-decoration: none;
+    color: #000;
+    text-align: right; }
+    nav .nav-link:focus, nav .nav-link:hover {
+      font-weight: bold;
+      color: #BE1242; }
+  nav #logo {
+    z-index: 1000;
+    padding: 1rem .5rem; }
 
 footer {
   position: sticky;
@@ -84,57 +79,70 @@ footer {
     height: max-content;
     padding: 1rem; }
 
-.homepage {
-  position: relative;
-  top: 30%;
-  height: 74vh; }
-  .homepage .section-links {
-    position: absolute;
-    height: 102vh;
-    top: -12rem;
-    left: 1rem;
-    background-color: #ffffff;
-    width: 35vw;
-    box-shadow: 0 0 20px -10px #BE1242;
-    padding-top: 15rem; }
-    .homepage .section-links .links-container {
-      display: flex;
-      flex-direction: column; }
-      .homepage .section-links .links-container .section-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 1rem 0; }
-        .homepage .section-links .links-container .section-link--text {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          padding-left: 1rem; }
-        .homepage .section-links .links-container .section-link--icon {
-          min-width: 4.75rem;
-          height: 3.75rem;
-          background-repeat: no-repeat;
-          background-position: center; }
-        .homepage .section-links .links-container .section-link:hover > span.section-link--text {
-          color: #BE1242;
-          font-weight: 600;
-          line-height: normal;
-          letter-spacing: 0.225rem; }
-  .homepage #oa-logo {
-    background-image: url("../images/icon-OA.svg"); }
-  .homepage a.section-link:hover > div#oa-logo {
-    background-image: url("../images/icon-OA-hover.svg"); }
-  .homepage #bd-logo {
-    background-image: url("../images/icon-BD.svg"); }
-  .homepage a.section-link:hover > div#bd-logo {
-    background-image: url("../images/icon-BD-hover.svg"); }
-  .homepage #dr-logo {
-    background-image: url("../images/icon-DR.svg"); }
-  .homepage a.section-link:hover > div#dr-logo {
-    background-image: url("../images/icon-DR-hover.svg"); }
-  .homepage #dv-logo {
-    background-image: url("../images/icon-DV.svg"); }
-  .homepage a.section-link:hover > div#dv-logo {
-    background-image: url("../images/icon-DV-hover.svg"); }
+@media (min-width: 992px) {
+  .homepage {
+    position: relative;
+    top: 30%;
+    height: 74vh; }
+    .homepage .section-links {
+      position: absolute;
+      height: 102vh;
+      top: -12rem;
+      left: 1rem;
+      background-color: #ffffff;
+      width: 35vw;
+      box-shadow: 0 0 20px -10px #BE1242;
+      padding-top: 15rem; } }
+@media (max-width: 991px) {
+  .homepage {
+    display: block; }
+    .homepage .section-links {
+      position: relative;
+      background-color: #ffffff;
+      padding: 2rem; } }
+.homepage .links-container {
+  display: flex;
+  flex-direction: column; }
+  .homepage .links-container .section-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0; }
+    .homepage .links-container .section-link--text {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      line-height: normal;
+      font-weight: 300;
+      letter-spacing: 0.225rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 1rem;
+      text-transform: uppercase; }
+    .homepage .links-container .section-link--icon {
+      min-width: 4.75rem;
+      height: 3.75rem;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .homepage .links-container .section-link:hover > span.section-link--text {
+      color: #BE1242; }
+.homepage #oa-logo {
+  background-image: url("../images/icon-OA.svg"); }
+.homepage a.section-link:hover > div#oa-logo {
+  background-image: url("../images/icon-OA-hover.svg"); }
+.homepage #bd-logo {
+  background-image: url("../images/icon-BD.svg"); }
+.homepage a.section-link:hover > div#bd-logo {
+  background-image: url("../images/icon-BD-hover.svg"); }
+.homepage #dr-logo {
+  background-image: url("../images/icon-DR.svg"); }
+.homepage a.section-link:hover > div#dr-logo {
+  background-image: url("../images/icon-DR-hover.svg"); }
+.homepage #dv-logo {
+  background-image: url("../images/icon-DV.svg"); }
+.homepage a.section-link:hover > div#dv-logo {
+  background-image: url("../images/icon-DV-hover.svg"); }
+@media (min-width: 992px) {
   .homepage #section-clients {
     position: absolute;
     height: 102vh;
@@ -142,26 +150,33 @@ footer {
     left: calc(35vw + 3rem);
     width: 55vw;
     padding-top: 15rem; }
-  .homepage #section-clients .content {
-    width: 25rem;
-    margin: auto; }
-  .homepage .clients-logos {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    width: 30vw; }
-  .homepage .clients-logo {
-    display: flex;
-    width: 7.5rem;
-    height: 7.5rem;
-    padding: 1.25rem 1.25rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 0.625rem;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25); }
+    .homepage #section-clients .content {
+      width: 25rem;
+      margin: auto; } }
+@media (max-width: 991px) {
+  .homepage #section-clients {
+    position: relative;
+    padding: 2rem; }
+    .homepage #section-clients .content {
+      width: 100vw;
+      margin: auto; } }
+.homepage .clients-logos {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: auto; }
+.homepage .clients-logo {
+  display: flex;
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 1.25rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25); }
 
 /*# sourceMappingURL=main.css.map */

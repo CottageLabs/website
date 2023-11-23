@@ -1,16 +1,25 @@
 footer {
   position: sticky;
   bottom: 0;
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    z-index: 100;
-    background: #FFFCF8;
-    position: absolute;
-    bottom: 0;
-    height: max-content;
-    margin-bottom: 0;
+  @media (min-width: 992px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      justify-content: space-between;
+      background: #FFFCF8;
+      position: absolute;
+      height: max-content;
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .container {
+      display: block;
+      background: #FFFCF8;
+      position: absolute;
+      height: max-content;
+      margin-bottom: 0;
+    }
   }
 }
