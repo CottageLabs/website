@@ -1,87 +1,4 @@
-body {
-    background-color: #FFFCF8;
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: #2C2B2A;
-}
 
-p, div {
-    margin-bottom: 3rem;
-}
-
-nav {
-    background: linear-gradient(180deg, rgba(190, 18, 66, 0.20) 0%, rgba(190, 18, 66, 0.00) 64.94%);
-}
-
-nav > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-links {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-
-}
-
-.nav-link {
-    z-index: 1;
-    text-decoration: none;
-    color: #000;
-    text-align: right;
-}
-
-.nav-link:focus, .nav-link:hover {
-    font-weight: bold;
-    color: #BE1242;
-}
-
-#logo {
-    z-index: 1000;
-    padding: 1rem .5rem;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-    background: #FFFCF8;
-    position: sticky;
-    bottom: 0;
-    height: 6rem
-}
-
-footer.left_section {
-    display: block;
-}
-
-h1 {
-    margin-bottom: 2rem;
-    color: #2C2B2A;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem; /* 85.714% */
-    text-transform: uppercase;
-}
-
-h2 {
-    margin-bottom: 2rem;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.225rem;
-    text-transform: capitalize;
-}
 
 #section-links {
     background: rgba(255, 255, 255, 0.50);
@@ -91,11 +8,6 @@ h2 {
     margin-top: -10rem;
 }
 
-.content {
-    position: relative;
-    top: 30%;
-    margin: 0 3.5rem;
-}
 
 #section-links .links-container {
     display: flex;
@@ -223,6 +135,10 @@ a.section-link:hover > div#dv-logo {
     box-shadow: 10px 0 10px -10px #BE1242; /* Adjust the shadow properties as needed */
 }
 
+.partners {
+    margin-bottom: 3rem;
+}
+
 .partners-profiles {
     display: flex;
     justify-content: space-around; /* Adjust the alignment as needed */
@@ -259,8 +175,3 @@ a.section-link:hover > div#dv-logo {
     text-align: right;
 }
 
-.about--content a {
-    text-decoration: none;
-    color: #000000;
-    margin-bottom: 5px;
-}

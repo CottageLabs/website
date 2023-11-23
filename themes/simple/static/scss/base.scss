@@ -1,0 +1,48 @@
+body {
+    background-color: $baby-powder;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+a:hover {
+    font-weight: bold;
+    color: $red;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 85.714% */
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.225rem;
+    text-transform: capitalize;
+}

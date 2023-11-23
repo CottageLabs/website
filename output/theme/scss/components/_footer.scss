@@ -1,0 +1,15 @@
+footer {
+  position: sticky;
+  bottom: 0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    z-index: 100;
+    background: #FFFCF8;
+    bottom: 0;
+    height: max-content;
+    padding: 1rem;
+  }
+}

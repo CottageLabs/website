@@ -7,7 +7,7 @@ Cottage Labs, a consortium of data experts, excels in open access infrastructure
 
 # CONTACT
 
-<span class="tag--red">[<i class="fa fa-envelope"></i> us@cottagelabs.com](emailto: us@cottagelabs.com)</span><br>
+<span class="tag tag--red">[<i class="fa fa-envelope"></i> us@cottagelabs.com](emailto: us@cottagelabs.com)</span><br>
 Follow us: [<i class="fa fa-twitter"></i>](https://twitter.com) [<i class="fa fa-linkedin"></i>](https://linkedin.com) [<i class="fa fa-facebook"></i>](https://facebook.com)<br>
 [Work with us!](/workwithus)<br>
 
