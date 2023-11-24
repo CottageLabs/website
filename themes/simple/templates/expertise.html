@@ -6,12 +6,11 @@
     {% if page.projects %}
         <h2>Featured Projects:</h2>
         <ul>
-            {% for slug in page.projects %}
-                {{ slug }}
-{#                {% set article = articles | selectattr('slug', 'equalto', slug) | first %}#}
-{#                {% if article %}#}
-{#                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>#}
-{#                {% endif %}#}
+            {% for title in page.projects %}
+                {% set article = articles | selectattr('title', 'equalto', title) | first %}
+                {% if article %}
+                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                {% endif %}
             {% endfor %}
         </ul>
     {% endif %}
@@ -20,7 +19,7 @@
         <h2>Related Technologies:</h2>
         <ul>
             {% for slug in page.tags %}
-                <a href="{{ slug }}" class="tag tag--green">{{ slug }}</a>
+                <a href="projects/{{ slug|lower }}" class="tag tag--green">{{ slug }}</a>
             {% endfor %}
         </ul>
     {% endif %}

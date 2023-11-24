@@ -1,6 +1,6 @@
 <h1>Tags for {{ SITENAME }}</h1>
 <ul>
     {% for tag, articles in tags|sort %}
-        <li><a href="{{ SITEURL }}/projects/{{ tag }}">{{ tag }}</a> ({{ articles|count }})</li>
+        <li><a href="{{ SITEURL }}/projects/{{ tag|lower }}">{{ tag }}</a> ({{ articles|count }})</li>
     {% endfor %}
 </ul>

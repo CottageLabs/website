@@ -1,8 +1,10 @@
 ---
 title: DOAJ
-tags: 
+tags:
   - elasticsearch
   - python
+  - Samvera
+  - DSpace
 template: project
 ---
 

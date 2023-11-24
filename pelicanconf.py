@@ -41,16 +41,6 @@ TAGS_SAVE_AS = 'projects/index.html'
 TAG_SAVE_AS = 'projects/{slug}/index.html'
 TAG_URL = 'projects/{slug}'
 
-DEFAULT_METADATA = {
-    'tags': ['ALL'],
-}
-
 PLUGINS = [
     'yaml_metadata'
 ]
-
-MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.meta': {},
-    },
-}
