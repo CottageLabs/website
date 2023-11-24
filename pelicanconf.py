@@ -32,11 +32,25 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_TEMPLATE = 'page'
 
-ARTICLE_PATHS = ['articles']
+ARTICLE_PATHS = ['projects']
 ARTICLE_URL = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
-ARTICLE_TEMPLATE = 'article'
+ARTICLE_TEMPLATE = 'project'
+
+TAGS_SAVE_AS = 'projects/index.html'
+TAG_SAVE_AS = 'projects/{slug}/index.html'
+TAG_URL = 'projects/{slug}'
+
+DEFAULT_METADATA = {
+    'tags': ['ALL'],
+}
 
 PLUGINS = [
-    'pelican_fontawesome'
+    'yaml_metadata'
 ]
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.meta': {},
+    },
+}

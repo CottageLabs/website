@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {{ page.content }}
+
+    {% if page.projects %}
+        <h2>Featured Projects:</h2>
+        <ul>
+            {% for slug in page.projects %}
+                {{ slug }}
+{#                {% set article = articles | selectattr('slug', 'equalto', slug) | first %}#}
+{#                {% if article %}#}
+{#                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>#}
+{#                {% endif %}#}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if page.tags %}
+        <h2>Related Technologies:</h2>
+        <ul>
+            {% for slug in page.tags %}
+                <a href="{{ slug }}" class="tag tag--green">{{ slug }}</a>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% include "explore.html" %}
+{% endblock %}

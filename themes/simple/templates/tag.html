@@ -1,7 +1,12 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
-{% block title %}{{ SITENAME|striptags }} - {{ tag }} tag{% endblock %}
+{% block content %}
+    {% include "browser.html" %}
 
-{% block content_title %}
-<h1>Articles tagged with {{ tag }}</h1>
+    <h2>Projects tagged with "{{ tag }}"</h2>
+    <ul>
+        {% for article in articles if tag in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        {% endfor %}
+    </ul>
 {% endblock %}
