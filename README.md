@@ -3,13 +3,28 @@ Cottage Labs website, powered by Pelican
 # Generating and previewing the website
 
 Run the server from the project root
-`python --listen`
+`pelican --listen`
 
 generate content from the project root
 `pelican content`
 
 generate styles from `/website_pelican/src/themes/simple/static/scss`
 `scss main.scss main.css`
+
+# Generating new page
+
+## To add new project page:
+- Add the content file `.md` to the `/content/projects` folder
+- add required metadata to the header: title, tags (this will allow the project to be found by the project browser), template (`project`)
+
+## To add any other page:
+- Add the content file '.md' to the '/content/pages' folder
+- add required metadata to the header: title (**"That Page" will translate to `/that-page` url**), template
+
+## optional
+- Create `.html` template in `/themes/simple/static/templates`
+- Create link in `nav.html`
+
 
 # Pages:
 
