@@ -1,1 +1,60 @@
-<h1> This is {{ article.title }} page </h1>
+{% extends "base.html" %}
+{% block content %}
+<div class="project-page overflow-hidden">
+    <div class="project-page--intro row">
+        <div class="col-md-3 align-self-center">
+            <img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="{{ article.title }} page">
+        </div>
+        <div class="col-md-9" style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+            {{ article.content }}
+        </div>
+    </div>
+    <div class="project-page--challenge row">
+        <div class="col-md-6 brown align-self-center">
+            <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
+            {{ article.challenge.text }}
+        </div>
+
+        <div class="col-md-6">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.challenge.screenshot }}" />
+        </div>
+    </div>
+
+    <div class="project-page--solution row">
+        <div class="col-md-6">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.solution.screenshot }}" />
+        </div>
+        <div class="col-md-6 green align-self-center">
+            <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
+            {{ article.solution.text }}
+        </div>
+    </div>
+
+    <div class="project-page--success row gy-md-5">
+        <div class="col-md-6 red align-self-center">
+            <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
+            {{ article.success.text }}
+        </div>
+
+        <div class="col-md-6">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.success.screenshot }}" />
+        </div>
+    </div>
+
+</div>
+{% if article.tags %}
+
+<h2>Related Technologies:</h2>
+<div class="related_technologies">
+    {% set colors = ["red", "green", "brown"] %}
+    {% set vars = {"idx": -1} %}
+    {% for slug in article.tags %}
+    {% if vars.update({"idx": (vars.idx + 1) % 3}) %}{% endif %}
+    <a href="projects/{{ slug|lower }}" class="tag tag--{{ colors[vars.idx] }}">{{ slug }}</a>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+
+{% endblock %}

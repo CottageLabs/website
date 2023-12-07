@@ -34,7 +34,7 @@ h1 {
 h2 {
   margin-bottom: 2rem;
   font-family: 'Manrope', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -312,5 +312,30 @@ footer {
   overflow: hidden; }
   .explore-more--section a {
     margin-top: 1rem; }
+
+.project-page--intro, .project-page--challenge, .project-page--solution, .project-page--success {
+  margin-bottom: 3rem; }
+  .project-page--intro .project-logo, .project-page--challenge .project-logo, .project-page--solution .project-logo, .project-page--success .project-logo {
+    width: 90%;
+    height: auto; }
+  .project-page--intro .icon, .project-page--challenge .icon, .project-page--solution .icon, .project-page--success .icon {
+    padding-right: 1rem; }
+  .project-page--intro .red, .project-page--challenge .red, .project-page--solution .red, .project-page--success .red {
+    border-left: 5px solid #BE1242; }
+    .project-page--intro .red h2, .project-page--challenge .red h2, .project-page--solution .red h2, .project-page--success .red h2 {
+      color: #BE1242; }
+  .project-page--intro .green, .project-page--challenge .green, .project-page--solution .green, .project-page--success .green {
+    border-left: 5px solid #5D5E3E; }
+    .project-page--intro .green h2, .project-page--challenge .green h2, .project-page--solution .green h2, .project-page--success .green h2 {
+      color: #5D5E3E; }
+  .project-page--intro .brown, .project-page--challenge .brown, .project-page--solution .brown, .project-page--success .brown {
+    border-left: 5px solid #603E1F; }
+    .project-page--intro .brown h2, .project-page--challenge .brown h2, .project-page--solution .brown h2, .project-page--success .brown h2 {
+      color: #603E1F; }
+  .project-page--intro .screenshot, .project-page--challenge .screenshot, .project-page--solution .screenshot, .project-page--success .screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25); }
 
 /*# sourceMappingURL=main.css.map */
