@@ -10,7 +10,6 @@ Projects:
   - DOAJ
 ---
 
-# Data Repositories
 
 Cottage Labs is your partner in constructing advanced and bespoke repository platforms. Our services, tailored to your organization's unique needs, cover a broad spectrum:  
 

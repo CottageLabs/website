@@ -69,3 +69,11 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ### content:
 - projectlifecycle.html
+
+## Data Repositories `/data-repositories`
+
+### templates:
+- expertise.html
+
+### content:
+- datarepositories.html

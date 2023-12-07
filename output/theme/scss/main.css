@@ -41,6 +41,14 @@ h2 {
   letter-spacing: 0.225rem;
   text-transform: capitalize; }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase; }
+
 strong {
   font-weight: 700; }
 
