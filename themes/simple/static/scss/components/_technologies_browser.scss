@@ -1,0 +1,32 @@
+.technologies-browser {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 3rem;
+  .technology {
+    display: flex;
+    height: 2.875rem;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    &.active {
+      border-left: 4px solid $red;
+      background: linear-gradient(90deg, rgba(190, 18, 66, 0.20) 1.9%, rgba(190, 18, 66, 0.00) 100%);
+      a {
+        font-weight: 700;
+      }
+    }
+    a {
+      color: $brown;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+}

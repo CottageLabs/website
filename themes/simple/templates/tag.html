@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% include "browser.html" %}
+    {% with active_tag=tag %}
+        {% include "browser.html" %}
+    {% endwith %}
 
-    <h2>Projects tagged with "{{ tag }}"</h2>
-    <ul>
+    <ul class="featured_projects">
         {% for article in articles if tag in article.tags %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+            <li>{% include "partials/_project-thumbnail.html" %}</li>
         {% endfor %}
     </ul>
 {% endblock %}

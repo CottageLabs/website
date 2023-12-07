@@ -1,0 +1,27 @@
+.project-thumbnail {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25);
+  text-align: center;
+  line-height: 150%;
+  overflow: hidden;
+  .background {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  .project-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+  }
+  &:focus, &:hover {
+    box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.5);
+  }
+
+}

@@ -3,9 +3,12 @@
 @import "components/nav";
 @import "components/footer";
 @import "components/tag";
-@import "partials/featured_projects";
+@import "components/project_thumbnails";
+@import "components/featured_projects";
 @import "partials/homepage";
 @import "partials/about";
-@import "partials/related_technologies";
+@import "components/related_technologies";
+@import "components/technologies_browser";
 @import "partials/explore_more";
 @import "partials/project";
+@import "partials/browser";

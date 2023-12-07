@@ -1,19 +1,10 @@
 .featured_projects {
     padding-left: 0;
+    margin-bottom: 3rem;
     list-style: none;
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
     gap: 1.25rem;
     flex-wrap: wrap;
-
-    .project-link {
-        width: 7.5rem;
-        height: 7.5rem;
-        line-height: 7.5rem;
-        text-align: center;
-        border-radius: 0.625rem;
-        background: rgba(255, 255, 255, 0.50);
-        box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25);
-    }
 }
