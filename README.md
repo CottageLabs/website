@@ -100,4 +100,4 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 - project.html
 
 ### content:
-- proects/{project-name}.md
+- projects/{project-name}.md
