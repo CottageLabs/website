@@ -32,6 +32,10 @@
         }
     }
 
+    &--read-more {
+        float: right;
+    }
+
     a {
         color: $baby-powder !important;
         font-weight: bold;

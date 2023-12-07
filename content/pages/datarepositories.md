@@ -11,7 +11,7 @@ Projects:
 ---
 
 
-Cottage Labs is your partner in constructing advanced and bespoke repository platforms. Our services, tailored to your organization's unique needs, cover a broad spectrum:  
+Cottage Labs is your partner in constructing advanced and bespoke repository platforms. Our services, tailored to your organization's unique needs, cover a broad spectrum:
 
 **Strategic Platform Implementation: **From initial scoping and requirements to the deployment of platforms like Samvera, Invenio, and DSpace, we guide you in making informed platform choices.  
 

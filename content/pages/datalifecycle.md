@@ -23,5 +23,3 @@ Unleash the power of your data with analytical prowess and seamless sharing thro
 </div>
 
 Discover the expertise that propels your data through its entire lifecycle with Cottage Labs.
-
-<span class="tag tag--green">See how we do it in our projects.</span>
