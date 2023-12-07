@@ -42,6 +42,8 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 ### content:
 - _to do: how to add content in md file to index page?_
 
+
+
 ## About Us `/about`
 
 ### templates:
@@ -54,26 +56,48 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 - partners.md
 - registration.md
 
-## Data Lifecycle `/data-lifecycle`
+
+
+## Lifecycle Pages:
+
+### urls:
+- `/data-lifecycle`
+- `/project-lifecycle`
 
 ### templates:
 - lifecycles.html
 
 ### content:
-- datalifecycle.html
+- datalifecycle.md
+- projectlifecycle.md
 
-## Project Lifecycle `/project-lifecycle`
 
-### templates:
-- lifecycles.html
 
-### content:
-- projectlifecycle.html
+## Expertiese Pages:
 
-## Data Repositories `/data-repositories`
+### urls:
+- `/data-visualisation`
+- `/data-repositories`
+- `/bespoke-development`
+- `/open-access-infrastructure`
 
 ### templates:
 - expertise.html
 
 ### content:
-- datarepositories.html
+- datavisualisation.md
+- datarepositories.md
+- bespokedevelopment.md
+- oainfrastructure.md
+
+
+## Projects' Pages
+
+## urls:
+- `/{project-name}`
+
+### template:
+- project.html
+
+### content:
+- proects/{project-name}.md
