@@ -2,24 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  .text-content {
-    max-width: 40vw;
-    margin-right: 3rem;
-    .list-section {
-      position: relative;
-      margin-left: 2rem;
-    }
-    .list-section::before {
-      content: ''; /* Required for pseudo-elements */
-      position: absolute;
-      top: -1rem;
-      left: -4rem;
-      bottom: -1rem;
-      width: 30px; /* Adjust the width of the shadow as needed */
-      box-shadow: 10px 0 10px -10px #BE1242; /* Adjust the shadow properties as needed */
-    }
-    .tag {
-      float: right;
-    }
+  .tag {
+    float: right;
   }
 }

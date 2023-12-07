@@ -1,7 +1,7 @@
 ---
 Title: Data Lifecycle
 Template: lifecycle
-Image: DataLifecycle.svg
+Image: datalifecycle.svg
 ---
 
 

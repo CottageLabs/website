@@ -7,6 +7,10 @@
     width: max-content;
     color: $baby-powder;
 
+    &:hover {
+        color: $baby-powder;
+    }
+
     &--red {
         background: $red;
         &:hover {

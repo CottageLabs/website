@@ -1,7 +1,6 @@
 Title: Project Lifecycle
 Template: lifecycle
-
-<div class="text-content" markdown="1">
+Image: ProjectLifecycle.svg
 
 # PROJECT LIFECYCLE
 
@@ -22,7 +21,3 @@ Beyond project completion, we offer reliable hosting solutions, ensuring your pr
 Partner with Cottage Labs for a dynamic and flexible approach to project success, where every step is guided by our commitment to excellence.
 
 <span class="tag tag--green">See how we do it in our projects.</span>
-
-</div>
-
-![Project Lifecycle]({static}/images/ProjectLifecycle.svg)
