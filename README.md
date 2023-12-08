@@ -93,7 +93,7 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ## Projects' Pages
 
-## urls:
+### urls:
 - `/{project-name}`
 
 ### template:
@@ -101,3 +101,8 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ### content:
 - projects/{project-name}.md
+
+
+## Projects Browser
+
+###
