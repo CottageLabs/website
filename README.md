@@ -97,12 +97,19 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 - `/{project-name}`
 
 ### template:
-- project.html
+- `project.html`
 
 ### content:
-- projects/{project-name}.md
+- `projects/{project-name}.md`
 
 
 ## Projects Browser
 
-###
+### urls:
+- `/projects`
+- `/projects/{technology}`
+
+### templates:
+- `tags.html`
+- `tag.html`
+- `browser.html`
