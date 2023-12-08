@@ -25,7 +25,9 @@ nav {
         }
     }
     #logo {
+        position: relative;
+        max-height: 7rem;
         z-index: 1000;
-        padding: 1rem .5rem;
+
     }
 }

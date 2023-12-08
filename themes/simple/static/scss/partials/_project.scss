@@ -1,6 +1,9 @@
 .project-page {
-  &--intro, &--challenge, &--solution, &--success {
-    margin-bottom: 3rem;
+  &--section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
     .project-logo {
       width: 90%;
       height: auto;
@@ -8,32 +11,37 @@
     .icon {
       padding-right: 1rem;
     }
-    .red {
-      border-left: 5px solid $red;
-      h2 {
-        color: $red;
+    &--text{
+      flex-basis: 50%;
+      padding: 2rem 1rem;
+      &.red {
+        border-left: 5px solid $red;
+        h2 {
+          color: $red;
+        }
+      }
+      &.green {
+        border-left: 5px solid $green;
+        h2 {
+          color: $green;
+        }
+      }
+      &.brown {
+        border-left: 5px solid $brown;
+        h2 {
+          color: $brown;
+        }
       }
     }
-
-    .green {
-      border-left: 5px solid $green;
-      h2 {
-        color: $green;
+    &--screenshot {
+      flex-grow: 1;
+      .screenshot {
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
       }
     }
-
-    .brown {
-      border-left: 5px solid $brown;
-      h2 {
-        color: $brown;
-      }
-
-    }
-    .screenshot {
-      width: 100%;
-      height: auto;
-      border-radius: 0.625rem;
-      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
-    }
+  }
+  &--intro {
+    margin-bottom: 3rem;
   }
 }

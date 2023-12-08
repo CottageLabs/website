@@ -1,42 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="project-page overflow-hidden">
-    <div class="project-page--intro row">
-        <div class="col-md-3 align-self-center">
-            <img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="{{ article.title }} page">
-        </div>
-        <div class="col-md-9" style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+<div class="project-page">
+    <div class="project-page--section project-page--intro">
+        <img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="{{ article.title }} page">
+        <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
             {{ article.content }}
         </div>
     </div>
-    <div class="project-page--challenge row">
-        <div class="col-md-6 brown align-self-center">
+    <div class="project-page--section project-page--challenge">
+        <div class="project-page--section--text brown">
             <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
             {{ article.challenge.text }}
         </div>
-
-        <div class="col-md-6">
+        <div class="project-page--section--screenshot">
             <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.challenge.screenshot }}" />
         </div>
     </div>
 
-    <div class="project-page--solution row">
-        <div class="col-md-6">
+    <div class=" project-page--section project-page--solution">
+        <div class="project-page--section--screenshot">
             <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.solution.screenshot }}" />
         </div>
-        <div class="col-md-6 green align-self-center">
+        <div class="project-page--section--text green">
             <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
             {{ article.solution.text }}
         </div>
     </div>
 
-    <div class="project-page--success row gy-md-5">
-        <div class="col-md-6 red align-self-center">
+    <div class="project-page--section project-page--success">
+        <div class="project-page--section--text red">
             <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
             {{ article.success.text }}
         </div>
 
-        <div class="col-md-6">
+        <div class="project-page--section--screenshot">
             <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.success.screenshot }}" />
         </div>
     </div>
