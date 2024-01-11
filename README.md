@@ -2,7 +2,7 @@ Cottage Labs website, powered by Pelican
 
 # Generating and previewing the website
 
-Create a virtualenv if you like.
+Create a virtualenv, if you like.
 
 Install `pelican` with
 ```
@@ -48,7 +48,6 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ### content:
 - _to do: how to add content in md file to index page?_
-
 
 
 ## About Us `/about`
@@ -124,7 +123,7 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 # Deployment on next.cottagelabs.com
 
 This is managed using git hooks. You'll need the server in your ```.ssh/config``` file,
-and the remote:
+and run the following from your local checked-out repo to add the remote:
 
     git remote add production cloo@sauron:next.cottagelabs.com.git
 
@@ -133,7 +132,7 @@ You can only deploy the master branch. To do so, run the following command:
     git push production master
 
 i.e. you are pushing master to the production remote. This will run the hooks, and
-restart ```nginx``` for you.
+restart ```nginx``` for you to pick up the changes.
 
 ## Server configuration
 
@@ -161,3 +160,5 @@ Afterwards, replace the copied hook with a symlink to the checked out hook (so y
 ## SSL Certificates
 
 The nginx config expects an SSL certificate - this should be created via LetsEncrypt / certbot.
+
+To use the nginx config, symlink it within `/etc/nginx/sites-available` and add a symlink to that one inside `/etc/nginx/sites-enabled`.
