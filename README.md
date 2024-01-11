@@ -2,6 +2,13 @@ Cottage Labs website, powered by Pelican
 
 # Generating and previewing the website
 
+Create a virtualenv, if you like.
+
+Install `pelican` with
+```
+pip install pelican pelican-yaml-metadata
+```
+
 Run the server from the project root
 `pelican --listen`
 
@@ -41,7 +48,6 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ### content:
 - _to do: how to add content in md file to index page?_
-
 
 
 ## About Us `/about`
@@ -113,3 +119,46 @@ generate styles from `/website_pelican/src/themes/simple/static/scss`
 - `tags.html`
 - `tag.html`
 - `browser.html`
+
+# Deployment on next.cottagelabs.com
+
+This is managed using git hooks. You'll need the server in your ```.ssh/config``` file,
+and run the following from your local checked-out repo to add the remote:
+
+    git remote add production cloo@sauron:next.cottagelabs.com.git
+
+You can only deploy the master branch. To do so, run the following command:
+
+    git push production master
+
+i.e. you are pushing master to the production remote. This will run the hooks, and
+restart ```nginx``` for you to pick up the changes.
+
+## Server configuration
+
+Requires a bare git repo on the host, called ```next.cottagelabs.com.git```. This is created
+with ```git init --bare next.cottagelabs.com.git``` in the home directory.
+
+Create the working tree directory where nginx will serve the files from and fix the
+permissions:
+
+    sudo mkdir /var/www/next.cottagelabs.com
+    sudo chown www-data:www-data /var/www/next.cottagelabs.com
+    sudo chmod -R 775 /var/www
+    sudo usermod -a -G www-data cloo
+
+The post receive hook then needs to be created on the host, by copying
+```deploy/hooks/post-receive``` to ```~/next.cottagelabs.com.git/hooks/post-receive``` and
+```chmod +x hooks/post-receive``` on the host. This will allow the script to run on
+deploy and copy the code to the correct work tree.
+
+Afterwards, replace the copied hook with a symlink to the checked out hook (so you can update the hooks):
+
+    ln -sf /var/www/next.cottagelabs.com/deploy/hooks/post-receive hooks/post-receive
+    chmod +x hooks/post-receive
+
+## SSL Certificates
+
+The nginx config expects an SSL certificate - this should be created via LetsEncrypt / certbot.
+
+To use the nginx config, symlink it within `/etc/nginx/sites-available` and add a symlink to that one inside `/etc/nginx/sites-enabled`.
