@@ -12,10 +12,10 @@ pip install pelican pelican-yaml-metadata
 Run the server from the project root
 `pelican --listen`
 
-generate content from the project root
+Generate content from the project root
 `pelican content`
 
-generate styles from `/website_pelican/src/themes/simple/static/scss`
+Generate styles from `/website_pelican/src/themes/simple/static/scss`
 `scss main.scss main.css`
 
 # Generating new page
