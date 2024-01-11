@@ -2,6 +2,13 @@ Cottage Labs website, powered by Pelican
 
 # Generating and previewing the website
 
+Create a virtualenv if you like.
+
+Install `pelican` with
+```
+pip install pelican pelican-yaml-metadata
+```
+
 Run the server from the project root
 `pelican --listen`
 
