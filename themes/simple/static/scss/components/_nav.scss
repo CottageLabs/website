@@ -20,7 +20,6 @@ nav {
         color: #000;
         text-align: right;
         &:focus, &:hover {
-            font-weight: bold;
             color: $red;
         }
     }

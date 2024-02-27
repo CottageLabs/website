@@ -1,3 +1,5 @@
+import datetime
+
 AUTHOR = 'Aga'
 SITENAME = 'Cottage Labs'
 SITEURL = ''
@@ -44,3 +46,7 @@ TAG_URL = 'projects/{slug}'
 PLUGINS = [
     'yaml_metadata'
 ]
+
+JINJA_CONTEXTS = {
+    'now': datetime.datetime.utcnow(),
+}

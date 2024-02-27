@@ -1,5 +1,5 @@
 {% for p in pages|selectattr("title", "eq", "Partners") %}
-    <h1>{{ p.title }}</h1>
+    <h1>{{ p.header }}</h1>
     <div class="partners-profiles">
         {{ p.content }}
     </div>
