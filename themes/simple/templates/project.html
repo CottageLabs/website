@@ -13,13 +13,13 @@
             {{ article.challenge.text }}
         </div>
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.challenge.screenshot }}" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.challenge.screenshot }}" />
         </div>
     </div>
 
     <div class=" project-page--section project-page--solution">
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.solution.screenshot }}" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.solution.screenshot }}" />
         </div>
         <div class="project-page--section--text green">
             <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ article.success.screenshot }}" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from {{ article.title }} project" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.success.screenshot }}" />
         </div>
     </div>
 

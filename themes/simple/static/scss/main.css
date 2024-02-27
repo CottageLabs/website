@@ -388,7 +388,9 @@ footer {
     flex-grow: 1; }
     .project-page--section--screenshot .screenshot {
       border-radius: 0.625rem;
-      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25); }
+      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
+      width: 600px;
+      height: 300px; }
 .project-page--intro {
   margin-bottom: 3rem; }
 

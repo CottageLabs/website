@@ -1,21 +1,24 @@
 ---
 title: DOAJ
 tags:
-  - elasticsearch
-  - python
-  - Samvera
-  - DSpace
+  - Elasticsearch
+  - Python
+  - OAI-PMH
+  - APIs
+  - Search
+  - Cloud Storage
+  - Open Access Infrastructure
 template: project
 logo: doaj.svg
 challenge:
-    text: Managing a vast repository of open access journals and associated articles presented a formidable challenge. The sheer volume required a robust infrastructure and efficient tools to support end-users and DOAJ administrators. Ensuring accessibility and usability for a diverse user base added complexity to the challenge.
-    screenshot: http://placekeanu.com/600/300
+    text: Since beginning to work with DOAJ in 2013 the platform's requirements have expanded considerably.  The volume of content has grown many times over, the number of active users is extremely high, and it has complex data management and review requirements.  Our challenge has been to scale the platform in all these directions while maintaining service continuity, and adapting to the changing needs of the Open Access landscape.
+    screenshot: "DOAJ1.png"
 solution:
-    text: Cottage Labs crafted a multifaceted solution to address DOAJ's intricate challenges. For end-users, we implemented public search capabilities, OAI-PMH feeds, custom APIs, embeddable widgets, and full data dumps, providing a spectrum of access options. Simultaneously, we supported DOAJ administrators with a multi-tiered user model, multi-stage editorial review workflows, and advanced editorial tools. The introduction of automated data checking streamlined processes, enhancing overall efficiency.
-    screenshot: http://placekeanu.com/600/300
+    text: We have developed a layered and modular application for DOAJ, which allows us to provide appropriate functionality for all user classes.  This includes a web interface for end-users and a variety of API and data download features for external integrators.  For administrators and editors we have provided powerful workflow and data management tools, with a variety of automations to streamline processes.  The architecture of this system allows us to easily scale, and maintain 99.999% uptime under continuous and intense load.
+    screenshot: "DOAJ2.png"
 success:
-    text: The collaboration resulted in a resounding success, elevating DOAJ's functionality and impact. End-users now experience enhanced accessibility through diverse search options, while administrators benefit from a sophisticated user model and streamlined editorial workflows. DOAJ continues to be a vital hub in the Open Access ecosystem, seamlessly connecting users with a wealth of scholarly knowledge.
-    screenshot: http://placekeanu.com/600/300
+    text: DOAJ and Cottage Labs have been in close partnership since 2013, and our collaboration has produced a robust, content-rich piece of Open Access infrastructure.  Data from DOAJ is widely used by individuals and organisations, and is integrated into a huge variety of scholarly information systems.
+    screenshot: "DOAJ3.png"
 thumbnail: http://placekeanu.com/120/120
 ---
 
