@@ -282,9 +282,9 @@ footer {
     .about .partners-profiles ul {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      /* Center the content horizontally within each column */
+      align-items: flex-start;
       list-style: none;
+      gap: .5rem;
       text-align: left;
       /* Align text to the left */ }
     .about .partners-profiles img {
