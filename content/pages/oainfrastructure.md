@@ -7,9 +7,9 @@ Tags:
   - DSpace
   - Elasticsearch
   - Python
-# featured projects - use slugs (lowercase)!
 Projects: 
   - DOAJ
+  - Deep Green
 ---
 
 

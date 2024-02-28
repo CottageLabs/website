@@ -7,7 +7,7 @@ Tags:
   - DSpace
 # featured projects - use slugs (lowercase)!
 Projects: 
-  - DOAJ
+  - EUI Invenio
 ---
 
 

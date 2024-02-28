@@ -16,7 +16,7 @@ a {
   padding: 0 .25rem; }
 
 a:hover {
-  color: #BE1242; }
+  color: #940101; }
 
 .fa {
   margin-right: 10px; }
@@ -69,7 +69,7 @@ strong {
   /* Adjust the shadow properties as needed */ }
 
 nav {
-  background: linear-gradient(180deg, rgba(190, 18, 66, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
+  background: linear-gradient(180deg, rgba(96, 62, 31, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
   margin-bottom: 3rem;
   z-index: 1000; }
   nav .container {
@@ -86,7 +86,7 @@ nav {
     color: #000;
     text-align: right; }
     nav .nav-link:focus, nav .nav-link:hover {
-      color: #BE1242; }
+      color: #940101; }
   nav #logo {
     position: relative;
     max-height: 7rem;
@@ -117,9 +117,9 @@ footer {
   .tag:hover {
     color: #FFFCF8; }
   .tag--red {
-    background: #BE1242; }
+    background: #940101; }
     .tag--red:hover {
-      background: #BE1242E6; }
+      background: #940101E6; }
   .tag--green {
     background: #5D5E3E; }
     .tag--green:hover {
@@ -174,7 +174,7 @@ footer {
     top: 30%; }
     .homepage .section-links {
       background-color: #ffffff;
-      box-shadow: 0 0 20px -10px #BE1242;
+      box-shadow: 0 0 20px -10px #940101;
       padding-top: 15rem;
       margin-top: -12rem; } }
 @media (max-width: 991px) {
@@ -210,7 +210,7 @@ footer {
       background-repeat: no-repeat;
       background-position: center; }
     .homepage .links-container .section-link:hover > span.section-link--text {
-      color: #BE1242; }
+      color: #940101; }
 .homepage #oa-logo {
   background-image: url("../images/icons/icon-OA.svg"); }
 .homepage a.section-link:hover > div#oa-logo {
@@ -325,7 +325,7 @@ footer {
     align-items: center;
     gap: 0.625rem; }
     .technologies-browser .technology.active {
-      border-left: 4px solid #BE1242;
+      border-left: 4px solid #940101;
       background: linear-gradient(90deg, rgba(190, 18, 66, 0.2) 1.9%, rgba(190, 18, 66, 0) 100%); }
       .technologies-browser .technology.active a {
         font-weight: 700; }
@@ -362,9 +362,10 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  align-items: center; }
+  align-items: flex-start; }
   .project-page--section .project-logo {
     width: 90%;
+    max-height: 120px;
     height: auto; }
   .project-page--section .icon {
     padding-right: 1rem; }
@@ -372,9 +373,9 @@ footer {
     flex-basis: 50%;
     padding: 2rem 1rem; }
     .project-page--section--text.red {
-      border-left: 5px solid #BE1242; }
+      border-left: 5px solid #940101; }
       .project-page--section--text.red h2 {
-        color: #BE1242; }
+        color: #940101; }
     .project-page--section--text.green {
       border-left: 5px solid #5D5E3E; }
       .project-page--section--text.green h2 {
