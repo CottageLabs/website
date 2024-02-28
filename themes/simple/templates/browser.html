@@ -1,3 +1,5 @@
+{% from "partials/_tags.html" import tags_titles %}
+
 {% for p in pages|selectattr("title", "eq", "Browser") %}
     {{ p.content }}
 {% endfor %}
@@ -5,7 +7,7 @@
 <ul class="technologies-browser">
     <li class="technology {% if active_tag == 'ALL' %}active{% endif %}"><a href="/projects">ALL ({{ articles|count }})</a></li>
     {% for tag, articles in tags|sort %}
-    <li class="technology {% if active_tag == tag %}active{% endif %}"><a href="{{ SITEURL }}/projects/{{ tag|lower }}">{{ tag }} ({{ articles|count }})</a></li>
+    <li class="technology {% if active_tag == tag %}active{% endif %}"><a href="{{ SITEURL }}/projects/{{ tag|lower }}">{% if tags_titles[tag] %}{{ tags_titles[tag] }}{% else %}{{ tag }}{% endif %} ({{ articles|count }})</a></li>
     {% endfor %}
 </ul>
 <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/browser-background.svg" aria-hidden="true" id="background">

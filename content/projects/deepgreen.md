@@ -1,12 +1,12 @@
 ---
 title: Deep Green
 tags:
-  - Elasticsearch
-  - Python
-  - OAI-PMH
-  - APIs
-  - SWORD
-  - Open Access Infrastructure
+  - es
+  - python
+  - oaipmh
+  - apis
+  - sword
+  - oai
 template: project
 logo: DeepGreen.svg
 challenge:

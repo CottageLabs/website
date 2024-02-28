@@ -1,13 +1,13 @@
 ---
 title: DOAJ
 tags:
-  - Elasticsearch
-  - Python
-  - OAI-PMH
-  - APIs
-  - Search
-  - Cloud Storage
-  - Open Access Infrastructure
+  - es
+  - python
+  - oaipmh
+  - apis
+  - search
+  - cloud
+  - oai
 template: project
 logo: doaj.svg
 challenge:

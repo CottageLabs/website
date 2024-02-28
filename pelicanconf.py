@@ -50,3 +50,6 @@ PLUGINS = [
 JINJA_CONTEXTS = {
     'now': datetime.datetime.utcnow(),
 }
+
+from datetime import datetime
+NOW = datetime.now()

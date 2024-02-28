@@ -12,8 +12,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000000;
-  padding: 0 .25rem; }
+  color: #000000; }
 
 a:hover {
   color: #940101; }
@@ -314,13 +313,15 @@ footer {
 .technologies-browser {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: .5rem;
   padding-left: 0;
   margin-bottom: 3rem; }
   .technologies-browser .technology {
     display: flex;
     height: 2.875rem;
-    padding: 0.625rem 1.25rem;
+    padding: 0.625rem .75rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem; }

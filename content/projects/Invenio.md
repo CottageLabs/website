@@ -1,10 +1,10 @@
 ---
 title: EUI Invenio
 tags:
-  - Elasticsearch
-  - Python
-  - Invenio
-  - Data repositories
+  - es
+  - python
+  - invenio
+  - dr
 template: project
 logo: invenio.svg
 challenge:
