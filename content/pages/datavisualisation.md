@@ -7,7 +7,9 @@ Tags:
   - DSpace
 # featured projects - use slugs (lowercase)!
 Projects: 
-  - DOAJ
+  - World Nuclear Association
+  - NGLP
+  - Materiom Data Commons
 ---
 
 

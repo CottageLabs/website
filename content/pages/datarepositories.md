@@ -7,6 +7,9 @@ Tags:
   - DSpace
 # featured projects - use slugs (lowercase)!
 Projects: 
+  - Ruhr-University Bochum Hyrax
+  - NIMS MDR
+  - Hull City of Culture
   - EUI Invenio
 ---
 

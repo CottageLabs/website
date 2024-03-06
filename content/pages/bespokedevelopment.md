@@ -2,12 +2,7 @@
 Title: Bespoke Development
 Template: expertise
 # related technologies
-Tags:
-  - Samvera
-  - DSpace
-# featured projects - use slugs (lowercase)!
-Projects:
-  - DOAJ
+
 ---
 
 
