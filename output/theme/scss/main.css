@@ -363,11 +363,13 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding-top: 1rem;
   align-items: flex-start; }
   .project-page--section .project-logo {
-    width: 90%;
-    max-height: 120px;
-    height: auto; }
+    max-width: 25%;
+    max-height: 6rem;
+    min-height: 4rem;
+    width: auto; }
   .project-page--section .icon {
     padding-right: 1rem; }
   .project-page--section--text {

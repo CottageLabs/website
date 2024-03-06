@@ -108,6 +108,11 @@ Generate styles from `/website_pelican/src/themes/simple/static/scss`
 ### content:
 - `projects/{project-name}.md`
 
+### logos:
+- `themes/simple/static/images/projects`
+
+### screenshots:
+- `themes/simple/static/screenshots`
 
 ## Projects Browser
 
@@ -119,6 +124,10 @@ Generate styles from `/website_pelican/src/themes/simple/static/scss`
 - `tags.html`
 - `tag.html`
 - `browser.html`
+
+## Related Technologies tags:
+
+### see `src/themes/simple/templates/partials/_tags.html` for slugs and tags' names
 
 # Deployment on next.cottagelabs.com
 
