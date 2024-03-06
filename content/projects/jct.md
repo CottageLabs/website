@@ -1,23 +1,26 @@
 ---
-title: Journal Comparison Tool
+title: Journal Checker Tool
 tags:
   - es
-  - datavisualisation
+  - dv
+  - apis
   - python
   - js
-  - search
+  - oai
 template: project
-logo: materiom.svg
+logo: JCT.svg
 challenge:
-    text: Materiom had a growing dataset of materials from research publications and from user submissions, and they wanted a way for end users to find materials by their properties, and to comparatively graph them against each other.  This would enable scientists to find materials which had suitable properties for their needs, and to select the most appropriate ones by comparison to other matierials and to their non-renewable alternatives.
-    screenshot: "materiom1.jpg"
+  text: cOAlition S's Plan S requires funded authors to publish under certain conditions for their grant funding to be valid.  To enable authors to check that their preferred publishing route is compliant, or to support them in finding alternative routes, the coalition wanted a tool which would survey the known information about journals in multiple sources and deliver advice on the publishing options available.
+  screenshot: "jct1.jpg"
 solution:
-    text: We build a data indexing pipeline to run from Materiom's primary database into a custom built search and visualisation environment.  This allowed us to provide novel searching tools (such as searching by material property), and to combine with a researcher-focused comparison view using contour plots.  Reseachers would select a number of materials from search, and then switch to comparison view, where multiple properties can be plotted against each other.  Behind the scenes this involved a lot of data normalisation to ensure coherent and comparable results.
-    screenshot: "materiom2.jpg"
+  text: We developed several new data sources which we maintain (and especially for Transformative Agreements), and we built a comprehensive data gathering and caching system which pulls information from definitive scholarly information sources such as Crossref, DOAJ, ROR, and OA.Works.  Then in close collaboration with our colleagues at the coalition, we developed a layered query algorithm that allows us to answer compliance questions with nuanced responses, references to additional information, and detailed information about how the result was deteremined.  This system is then kept up-to-date with the current state of the data in those external systems, so the results are as timely and accurate as possible in the changing publishing landscape.
+  screenshot: "jct2.jpg"
 success:
-    text: Materiom successfully launched their MVP with support from Cottage Labs, and are growing their database with input from users and Machine Learning algorithms reviewing the materials science literature.  We are now looking together at future work to make the data even more valuable to researchers.
-    screenshot: "materiom3.jpg"
+  text: The Journal Checker Tool is widely used, and has visitors from all over the globe.  It has served over 1m compliance checks.  It has been customised to deliver funder-specific advice as new funders have joined the coalition, and has even driven publishers to be interested in how well represented their Open Access policies are.
+  screenshot: "jct3.jpg"
 thumbnail: http://placekitten.com/600/400
 ---
 
-Materiom is a materials science company building an open database of sustainable bio-materials, their recipes and their physical properties.  Cottage Labs has helped them build their search and data visualisation enviornment for researchers
+cOAlition S, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and
+encourage more and more publishers to support that route. Cottage Labs provides several services to the consortium,
+including this tool to allow authors to verify the compliance of their preferred publishing routes.
