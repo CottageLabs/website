@@ -5,7 +5,7 @@
 {% endfor %}
 
 <ul class="technologies-browser">
-    <li class="technology {% if active_tag == 'ALL' %}active{% endif %}"><a href="/projects">ALL ({{ articles|count }})</a></li>
+    <li class="technology {% if not tag %}active{% endif %}"><a href="/projects">ALL ({% if not tag %} {{ articles|count }} {% else %} {{ all_articles|count }}{% endif %})</a></li>
     {% for tag, articles in tags|sort %}
     <li class="technology {% if active_tag == tag %}active{% endif %}"><a href="{{ SITEURL }}/projects/{{ tag|lower }}">{% if tags_titles[tag] %}{{ tags_titles[tag] }}{% else %}{{ tag }}{% endif %} ({{ articles|count }})</a></li>
     {% endfor %}
