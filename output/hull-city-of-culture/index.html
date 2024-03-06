@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cottage Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../theme/scss/main.css" />
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container">
+    <a class="navbar-brand" href="/">
+        <img id="logo" src="../theme/images/logo.svg" alt="Cottage Labs Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-links collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <div class="dropdown nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    How can we help?
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/open-access-infrastructure">Open access infrastructure</a>
+                    <a class="dropdown-item" href="/data-visualisation">Data visualisation</a>
+                    <a class="dropdown-item" href="/data-repositories">Data repositories</a>
+                    <a class="dropdown-item" href="/bespoke-development">Bespoke development</a>
+                    <a class="dropdown-item" href="/project-lifecycle">Project lifecycle</a>
+                    <a class="dropdown-item" href="/data-lifecycle">Data lifecycle</a>
+                </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="/projects">Our projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About us</a>
+            </li>
+        </ul>
+    </div>
+</div></nav>
+<main>
+    <div class="container">
+<div class="project-page">
+    <div class="project-page--section project-page--intro">
+        <img class="project-logo" src="../theme/images/projects/Hull.jpeg" alt="Hull City of Culture page">
+        <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+            <p>During 2017 the city of Hull was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.</p>
+        </div>
+    </div>
+    <div class="project-page--section project-page--challenge">
+        <div class="project-page--section--text brown">
+            <h2><img class="icon" src="../theme/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
+            The University of Hull was providing support to the City Council to capture both official and unofficial digital outputs from the year of cultural events.  These materials needed to be captured and archived, and also preserved for the long term.  The content could come in any number of forms, and not necessarily in an organised manner. We were to help them with the back-end management of that data.
+        </div>
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Hull City of Culture project" src="../theme/screenshots/hull1.jpg" />
+        </div>
+    </div>
+
+    <div class=" project-page--section project-page--solution">
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Hull City of Culture project" src="../theme/screenshots/hull2.jpg" />
+        </div>
+        <div class="project-page--section--text green">
+            <h2><img class="icon" src="../theme/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
+            We implemented a custom workflow which knitted together several key pieces of infrastructure. The University's outsourced cloud data storage where materials would be stored, their digital repository (Hyrax), where the materials would be published, and their archiving system (Archivematica) where preservation copies would be created.  This would allow the curators to produce directories of stored files with basic textual metadata in files, and have them flow through into the archiving system and digital repository as structured digital objects
+        </div>
+    </div>
+
+    <div class="project-page--section project-page--success">
+        <div class="project-page--section--text red">
+            <h2><img class="icon" src="../theme/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
+            We developed novel code that combined three major pieces of the university infrastructure, that could be used for the City of Culture outputs.  Additionally, this same infrastructure could provide additional capabilities for the university, such as supporting researchers in easily self-archiving from their cloud storage accounts.
+        </div>
+
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Hull City of Culture project" src="../theme/screenshots/hull3.jpg" />
+        </div>
+    </div>
+
+</div>
+<h2>Related Technologies:</h2>
+
+<div class="related_technologies">
+    <a href="../projects/samvera" class="tag tag--red">Samvera</a>
+    <a href="../projects/archivematica" class="tag tag--green">Archivematica</a>
+    <a href="../projects/cloud" class="tag tag--brown">Cloud Storage</a>
+    <a href="../projects/dr" class="tag tag--red">Data Repositories</a>
+</div>
+
+
+    </div>
+</main>
+<footer role="contentinfo">
+<div class="container">
+    <div class="contact">
+        <a href="mailto:us@cottagelabs.com"><i class="fa fa-envelope"></i>us@cottagelabs.com</a>
+        <p class="social-media" style="margin-bottom: 0">Follow us:
+            <a href="https://www.twitter.com/cottagelabs"><i class="fa fa-twitter"></i></a>
+       </p>
+    </div>
+    <div>
+        <span>&copy; Cottage Labs LLP 2011-2024. All site content CC-BY</span>
+    </div>
+</div></footer>
+</body>
+</html>
