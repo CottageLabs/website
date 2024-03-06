@@ -54,48 +54,58 @@
 </div></nav>
 <main>
     <div class="container">
-<div class="row justify-content-between">
-    <div class="content col-lg-8">
-        <h1>Open Access Infrastructure</h1>
-        <p>As a key player in large-scale and multi-organisational Open Access infrastructure projects, Cottage Labs offers comprehensive services tailored to your needs:</p>
-<p><strong>End-to-End Solutions:</strong> From scoping and requirements to ongoing development, we provide a full spectrum of services for seamless project execution.</p>
-<p><strong>Service Excellence:</strong> Our expertise extends to software development, hosting, maintenance, and service management, ensuring a robust and user-friendly infrastructure.</p>
-<p>Partner with Cottage Labs for a holistic approach to Open Access Infrastructure, encompassing data management, curation, and dedicated helpdesk and user services.</p>
-        <h2>Featured Projects:</h2>
-        <ul class="featured_projects">
-                <li><a href="../doaj/"><div class="project-thumbnail"><img src="http://placekeanu.com/120/120" class="background" alt="project thumbnail"><img class="project-logo" src="../theme/images/projects/doaj.svg" alt="DOAJ"></div></a></li>
-                <li><a href="../deep-green/"><div class="project-thumbnail"><img src="http://placekitten.com/600/400" class="background" alt="project thumbnail"><img class="project-logo" src="../theme/images/projects/DeepGreen.svg" alt="Deep Green"></div></a></li>
-        </ul>
+<div class="project-page">
+    <div class="project-page--section project-page--intro">
+        <img class="project-logo" src="../theme/images/projects/NGLP.svg" alt="NGLP page">
+        <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+            <p>The Next Generation Library Publishing project received significant funding to explore new ways of providing an open publishing environment, using open source tools.  Cottage Labs worked with the team to develop flexible data analytics to allow publishers using the tools to have access to usage data and business intelligence comparable to or better than commercial tooling.</p>
+        </div>
+    </div>
+    <div class="project-page--section project-page--challenge">
+        <div class="project-page--section--text brown">
+            <h2><img class="icon" src="../theme/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
+            The NGLP team wanted to provide a set of open source options for publishing bodies to select from, including repository platforms for content storage, dissemination platforms for publishing, and so on.  To bind it together, an analytics package was required which would take heterogenous usage data from all the different sources, and provide a coherent view.
+        </div>
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from NGLP project" src="../theme/screenshots/nglp1.jpg" />
+        </div>
+    </div>
 
-        <h2>Related Technologies:</h2>
+    <div class=" project-page--section project-page--solution">
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from NGLP project" src="../theme/screenshots/nglp2.jpg" />
+        </div>
+        <div class="project-page--section--text green">
+            <h2><img class="icon" src="../theme/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
+            A significant portion of the project was in requirements analysis and solution specification, as there was a large stakeholder group and an even larger pool of potential use cases.  We analysed all the options through conversations with stakeholders and were able to prioritise two reporting dashboards: one of usage analytics, and one for workflow velocity intelligence.  We then build general connectors which would allow this data to be imported and normalised from a number of external systems including DSpace and OJS.  This data fed into an index optimised for time-based reporting, and we implemented two full dashboard of analytics including geolocated usage data.
+        </div>
+    </div>
+
+    <div class="project-page--section project-page--success">
+        <div class="project-page--section--text red">
+            <h2><img class="icon" src="../theme/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
+            At the end of the project we were able to hand over working open source code, as well as a workable plan for expansion of the analytics package to other requirements.  There was interest from both the main discovery platform developers and some individual organisations in integrating this into their existing systems.
+        </div>
+
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from NGLP project" src="../theme/screenshots/nglp3.jpg" />
+        </div>
+    </div>
+
+</div>
+<h2>Related Technologies:</h2>
 
 <div class="related_technologies">
-    <a href="../projects/samvera" class="tag tag--red">Samvera</a>
+    <a href="../projects/es" class="tag tag--red">Elasticsearch</a>
     <a href="../projects/dspace" class="tag tag--green">DSpace</a>
-    <a href="../projects/elasticsearch" class="tag tag--brown"></a>
+    <a href="../projects/ojs" class="tag tag--brown">OJS</a>
     <a href="../projects/python" class="tag tag--red">Python</a>
-</div>    </div>
-    <div class="col-lg-3">
-<section class="explore-more explore-more--content">
-    <h2>Explore More</h2>
-
-    <p>Discover the intricacies of our projects and how we bring them to life.</p>
-
-    <h3>Project lifecycle</h3>
-    <p class="explore-more--section">
-        Dive into the journey of our projects, from inception to completion.
-        <a href="/project-lifecycle" class="tag tag--read-more tag--green">Read more...</a>
-    </p>
-
-
-    <h3>Data lifecycle</h3>
-    <p class="explore-more--section">
-        Gain a deeper understanding of how we manage data throughout its lifecycle
-        <a href="/data-lifecycle" class="tag tag--read-more tag--green">Read more...</a>
-    </p>
-</section>
-    </div>
+    <a href="../projects/js" class="tag tag--green">JavaScript</a>
+    <a href="../projects/datavisualisation" class="tag tag--brown">Data visualisation</a>
+    <a href="../projects/oai" class="tag tag--red">Open Access Infrastructure</a>
 </div>
+
+
     </div>
 </main>
 <footer role="contentinfo">

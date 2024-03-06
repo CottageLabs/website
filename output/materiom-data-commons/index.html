@@ -54,48 +54,59 @@
 </div></nav>
 <main>
     <div class="container">
-<div class="row justify-content-between">
-    <div class="content col-lg-8">
-        <h1>Open Access Infrastructure</h1>
-        <p>As a key player in large-scale and multi-organisational Open Access infrastructure projects, Cottage Labs offers comprehensive services tailored to your needs:</p>
-<p><strong>End-to-End Solutions:</strong> From scoping and requirements to ongoing development, we provide a full spectrum of services for seamless project execution.</p>
-<p><strong>Service Excellence:</strong> Our expertise extends to software development, hosting, maintenance, and service management, ensuring a robust and user-friendly infrastructure.</p>
-<p>Partner with Cottage Labs for a holistic approach to Open Access Infrastructure, encompassing data management, curation, and dedicated helpdesk and user services.</p>
-        <h2>Featured Projects:</h2>
-        <ul class="featured_projects">
-                <li><a href="../doaj/"><div class="project-thumbnail"><img src="http://placekeanu.com/120/120" class="background" alt="project thumbnail"><img class="project-logo" src="../theme/images/projects/doaj.svg" alt="DOAJ"></div></a></li>
-                <li><a href="../deep-green/"><div class="project-thumbnail"><img src="http://placekitten.com/600/400" class="background" alt="project thumbnail"><img class="project-logo" src="../theme/images/projects/DeepGreen.svg" alt="Deep Green"></div></a></li>
-        </ul>
+<div class="project-page">
+    <div class="project-page--section project-page--intro">
+        <img class="project-logo" src="../theme/images/projects/JCT.svg" alt="Materiom Data Commons page">
+        <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+            <p>cOAlition S, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and
+encourage more and more publishers to support that route. Cottage Labs provides several services to the consortium,
+including this tool to allow authors to verify the compliance of their preferred publishing routes.</p>
+        </div>
+    </div>
+    <div class="project-page--section project-page--challenge">
+        <div class="project-page--section--text brown">
+            <h2><img class="icon" src="../theme/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
+            cOAlition S's Plan S requires funded authors to publish under certain conditions for their grant funding to be valid.  To enable authors to check that their preferred publishing route is compliant, or to support them in finding alternative routes, the coalition wanted a tool which would survey the known information about journals in multiple sources and deliver advice on the publishing options available.
+        </div>
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/jct1.jpg" />
+        </div>
+    </div>
 
-        <h2>Related Technologies:</h2>
+    <div class=" project-page--section project-page--solution">
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/jct2.jpg" />
+        </div>
+        <div class="project-page--section--text green">
+            <h2><img class="icon" src="../theme/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
+            We developed several new data sources which we maintain (and especially for Transformative Agreements), and we built a comprehensive data gathering and caching system which pulls information from definitive scholarly information sources such as Crossref, DOAJ, ROR, and OA.Works.  Then in close collaboration with our colleagues at the coalition, we developed a layered query algorithm that allows us to answer compliance questions with nuanced responses, references to additional information, and detailed information about how the result was deteremined.  This system is then kept up-to-date with the current state of the data in those external systems, so the results are as timely and accurate as possible in the changing publishing landscape.
+        </div>
+    </div>
+
+    <div class="project-page--section project-page--success">
+        <div class="project-page--section--text red">
+            <h2><img class="icon" src="../theme/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
+            The Journal Checker Tool is widely used, and has visitors from all over the globe.  It has served over 1m compliance checks.  It has been customised to deliver funder-specific advice as new funders have joined the coalition, and has even driven publishers to be interested in how well represented their Open Access policies are.
+        </div>
+
+        <div class="project-page--section--screenshot">
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/jct3.jpg" />
+        </div>
+    </div>
+
+</div>
+<h2>Related Technologies:</h2>
 
 <div class="related_technologies">
-    <a href="../projects/samvera" class="tag tag--red">Samvera</a>
-    <a href="../projects/dspace" class="tag tag--green">DSpace</a>
-    <a href="../projects/elasticsearch" class="tag tag--brown"></a>
+    <a href="../projects/es" class="tag tag--red">Elasticsearch</a>
+    <a href="../projects/dv" class="tag tag--green"></a>
+    <a href="../projects/apis" class="tag tag--brown">APIs</a>
     <a href="../projects/python" class="tag tag--red">Python</a>
-</div>    </div>
-    <div class="col-lg-3">
-<section class="explore-more explore-more--content">
-    <h2>Explore More</h2>
-
-    <p>Discover the intricacies of our projects and how we bring them to life.</p>
-
-    <h3>Project lifecycle</h3>
-    <p class="explore-more--section">
-        Dive into the journey of our projects, from inception to completion.
-        <a href="/project-lifecycle" class="tag tag--read-more tag--green">Read more...</a>
-    </p>
-
-
-    <h3>Data lifecycle</h3>
-    <p class="explore-more--section">
-        Gain a deeper understanding of how we manage data throughout its lifecycle
-        <a href="/data-lifecycle" class="tag tag--read-more tag--green">Read more...</a>
-    </p>
-</section>
-    </div>
+    <a href="../projects/js" class="tag tag--green">JavaScript</a>
+    <a href="../projects/oai" class="tag tag--brown">Open Access Infrastructure</a>
 </div>
+
+
     </div>
 </main>
 <footer role="contentinfo">
