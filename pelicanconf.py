@@ -35,8 +35,8 @@ PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_TEMPLATE = 'page'
 
 ARTICLE_PATHS = ['projects']
-ARTICLE_URL = '{slug}/'
-ARTICLE_SAVE_AS = '{slug}/index.html'
+ARTICLE_URL = 'projects/{slug}/'
+ARTICLE_SAVE_AS = 'projects/{slug}/index.html'
 ARTICLE_TEMPLATE = 'project'
 
 TAGS_SAVE_AS = 'projects/index.html'
