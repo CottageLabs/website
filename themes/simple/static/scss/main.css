@@ -151,8 +151,9 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: auto; }
+    width: 6.75rem;
+    height: auto;
+    max-height: 5.7rem; }
   .project-thumbnail:focus, .project-thumbnail:hover {
     box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.5); }
 

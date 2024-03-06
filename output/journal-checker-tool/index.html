@@ -56,39 +56,41 @@
     <div class="container">
 <div class="project-page">
     <div class="project-page--section project-page--intro">
-        <img class="project-logo" src="../theme/images/projects/materiom.svg" alt="Materiom Data Commons page">
+        <img class="project-logo" src="../theme/images/projects/JCT.svg" alt="Journal Checker Tool page">
         <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
-            <p>Materiom is a materials science company building an open database of sustainable bio-materials, their recipes and their physical properties.  Cottage Labs has helped them build their search and data visualisation enviornment for researchers</p>
+            <p>cOAlition S, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and
+encourage more and more publishers to support that route. Cottage Labs provides several services to the consortium,
+including this tool to allow authors to verify the compliance of their preferred publishing routes.</p>
         </div>
     </div>
     <div class="project-page--section project-page--challenge">
         <div class="project-page--section--text brown">
             <h2><img class="icon" src="../theme/images/icons/challenge.svg" aria-hidden="true">CHALLANGE</h2>
-            Materiom had a growing dataset of materials from research publications and from user submissions, and they wanted a way for end users to find materials by their properties, and to comparatively graph them against each other.  This would enable scientists to find materials which had suitable properties for their needs, and to select the most appropriate ones by comparison to other matierials and to their non-renewable alternatives.
+            cOAlition S's Plan S requires funded authors to publish under certain conditions for their grant funding to be valid.  To enable authors to check that their preferred publishing route is compliant, or to support them in finding alternative routes, the coalition wanted a tool which would survey the known information about journals in multiple sources and deliver advice on the publishing options available.
         </div>
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/materiom1.jpg" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Journal Checker Tool project" src="../theme/screenshots/jct1.jpg" />
         </div>
     </div>
 
     <div class=" project-page--section project-page--solution">
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/materiom2.jpg" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Journal Checker Tool project" src="../theme/screenshots/jct2.jpg" />
         </div>
         <div class="project-page--section--text green">
             <h2><img class="icon" src="../theme/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
-            We build a data indexing pipeline to run from Materiom's primary database into a custom built search and visualisation environment.  This allowed us to provide novel searching tools (such as searching by material property), and to combine with a researcher-focused comparison view using contour plots.  Reseachers would select a number of materials from search, and then switch to comparison view, where multiple properties can be plotted against each other.  Behind the scenes this involved a lot of data normalisation to ensure coherent and comparable results.
+            We developed several new data sources which we maintain (and especially for Transformative Agreements), and we built a comprehensive data gathering and caching system which pulls information from definitive scholarly information sources such as Crossref, DOAJ, ROR, and OA.Works.  Then in close collaboration with our colleagues at the coalition, we developed a layered query algorithm that allows us to answer compliance questions with nuanced responses, references to additional information, and detailed information about how the result was deteremined.  This system is then kept up-to-date with the current state of the data in those external systems, so the results are as timely and accurate as possible in the changing publishing landscape.
         </div>
     </div>
 
     <div class="project-page--section project-page--success">
         <div class="project-page--section--text red">
             <h2><img class="icon" src="../theme/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
-            Materiom successfully launched their MVP with support from Cottage Labs, and are growing their database with input from users and Machine Learning algorithms reviewing the materials science literature.  We are now looking together at future work to make the data even more valuable to researchers.
+            The Journal Checker Tool is widely used, and has visitors from all over the globe.  It has served over 1m compliance checks.  It has been customised to deliver funder-specific advice as new funders have joined the coalition, and has even driven publishers to be interested in how well represented their Open Access policies are.
         </div>
 
         <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from Materiom Data Commons project" src="../theme/screenshots/materiom3.jpg" />
+            <img class="screenshot" aria-hidden="true" alt="screenshot from Journal Checker Tool project" src="../theme/screenshots/jct3.jpg" />
         </div>
     </div>
 
@@ -97,10 +99,11 @@
 
 <div class="related_technologies">
     <a href="../projects/es" class="tag tag--red">Elasticsearch</a>
-    <a href="../projects/datavisualisation" class="tag tag--green">Data visualisation</a>
-    <a href="../projects/python" class="tag tag--brown">Python</a>
-    <a href="../projects/js" class="tag tag--red">JavaScript</a>
-    <a href="../projects/search" class="tag tag--green">Search</a>
+    <a href="../projects/dv" class="tag tag--green"></a>
+    <a href="../projects/apis" class="tag tag--brown">APIs</a>
+    <a href="../projects/python" class="tag tag--red">Python</a>
+    <a href="../projects/js" class="tag tag--green">JavaScript</a>
+    <a href="../projects/oai" class="tag tag--brown">Open Access Infrastructure</a>
 </div>
 
 
