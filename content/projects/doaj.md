@@ -19,7 +19,6 @@ solution:
 success:
     text: DOAJ and Cottage Labs have been in close partnership since 2013, and our collaboration has produced a robust, content-rich piece of Open Access infrastructure.  Data from DOAJ is widely used by individuals and organisations, and is integrated into a huge variety of scholarly information systems.
     screenshot: "DOAJ3.png"
-thumbnail: http://placekeanu.com/120/120
 ---
 
 The Directory of Open Access Journals (DOAJ) stands as a monumental repository, hosting approximately 20,000 fully open access journals and over 6 million associated articles. As the largest and most comprehensive service of its kind, DOAJ plays a critical role in the Open Access ecosystem, serving as a cornerstone for numerous other services.

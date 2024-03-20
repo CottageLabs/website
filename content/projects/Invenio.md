@@ -16,7 +16,6 @@ solution:
 success:
     text: TODO
     screenshot: "invenio3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 During the pandemic, the European University Institute reached out to us to build a digital repository for CODIV-19 related research.  We customised and deployed an instance of CERN's InvenioRDM platform to support them

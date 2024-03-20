@@ -18,7 +18,6 @@ solution:
 success:
     text: TODO
     screenshot: "DeepGreen3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 DeepGreen is a delivery service for Open Access articles, who supply Open Access repositories with automated and targeted publisher content. 

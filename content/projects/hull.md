@@ -16,7 +16,6 @@ solution:
 success:
     text: We developed novel code that combined three major pieces of the university infrastructure, that could be used for the City of Culture outputs.  Additionally, this same infrastructure could provide additional capabilities for the university, such as supporting researchers in easily self-archiving from their cloud storage accounts.
     screenshot: "hull3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 During 2017 the city of Hull was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.

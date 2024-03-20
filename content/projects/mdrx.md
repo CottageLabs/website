@@ -18,7 +18,6 @@ solution:
 success:
     text: "the NIMS Materials Data Repository is a substantial national-level archive of cutting edge research data, and forms the backbone of a number of further projects looking to extract the most value from the contents."
     screenshot: "mdrx3.jpg"
-thumbnail: http://placekeanu.com/120/120
 ---
 
 The National Institute of Materials Science is a nationally funded Japanese organisation which produces a large amount of data related to their research in materials science.  Cottage Labs partners with NIMS to provide repository services suitable to deal with the scale and complexity of the data that comes out of departments such as their superconductor laboratories.

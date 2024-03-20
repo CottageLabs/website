@@ -17,7 +17,6 @@ solution:
 success:
     text: Materiom successfully launched their MVP with support from Cottage Labs, and are growing their database with input from users and Machine Learning algorithms reviewing the materials science literature.  We are now looking together at future work to make the data even more valuable to researchers.
     screenshot: "materiom3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 Materiom is a materials science company building an open database of sustainable bio-materials, their recipes and their physical properties.  Cottage Labs has helped them build their search and data visualisation enviornment for researchers

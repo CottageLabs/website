@@ -13,7 +13,6 @@ solution:
 success:
   text: TODO
   screenshot: "emlo3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 TODO
