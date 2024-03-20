@@ -138,7 +138,7 @@ footer {
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 0.625rem;
-  box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(148, 1, 1, 0.25);
   text-align: center;
   line-height: 150%;
   overflow: hidden; }
@@ -156,7 +156,7 @@ footer {
     height: auto;
     max-height: 5.7rem; }
   .project-thumbnail:focus, .project-thumbnail:hover {
-    box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.5); }
+    box-shadow: 0px 4px 4px 0px rgba(148, 1, 1, 0.5); }
     .project-thumbnail:focus .background, .project-thumbnail:hover .background {
       opacity: 1; }
 
