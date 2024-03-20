@@ -15,7 +15,7 @@
     gap: 0.625rem;
     &.active {
       border-left: 4px solid $red;
-      background: linear-gradient(90deg, rgba(190, 18, 66, 0.20) 1.9%, rgba(190, 18, 66, 0.00) 100%);
+      background: linear-gradient(90deg, rgba(148, 1, 1, 0.20) 1.9%, rgba(148, 1, 1, 0.00) 100%);
       a {
         font-weight: 700;
       }
