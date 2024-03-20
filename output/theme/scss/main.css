@@ -118,15 +118,19 @@ footer {
   .tag--red {
     background: #940101; }
     .tag--red:hover {
-      background: #940101E6; }
+      background: #A76968; }
   .tag--green {
-    background: #5D5E3E; }
+    background: #005500; }
     .tag--green:hover {
-      background: #5D5E3EE6; }
+      background: #a5ae9d; }
   .tag--brown {
-    background: #603E1F; }
+    background: #56423d; }
     .tag--brown:hover {
-      background: #603E1FE6; }
+      background: #BEA6A0; }
+  .tag--blue {
+    background: #005b93; }
+    .tag--blue:hover {
+      background: #57B8D0; }
   .tag--read-more {
     float: right; }
   .tag a {
@@ -335,7 +339,7 @@ footer {
       .technologies-browser .technology.active a {
         font-weight: 700; }
     .technologies-browser .technology a {
-      color: #603E1F;
+      color: #56423d;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
@@ -384,13 +388,13 @@ footer {
       .project-page--section--text.red h2 {
         color: #940101; }
     .project-page--section--text.green {
-      border-left: 5px solid #5D5E3E; }
+      border-left: 5px solid #005500; }
       .project-page--section--text.green h2 {
-        color: #5D5E3E; }
+        color: #005500; }
     .project-page--section--text.brown {
-      border-left: 5px solid #603E1F; }
+      border-left: 5px solid #56423d; }
       .project-page--section--text.brown h2 {
-        color: #603E1F; }
+        color: #56423d; }
   .project-page--section--screenshot {
     flex-grow: 1; }
     .project-page--section--screenshot .screenshot {

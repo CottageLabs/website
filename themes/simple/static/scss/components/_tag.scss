@@ -14,21 +14,28 @@
     &--red {
         background: $red;
         &:hover {
-            background: $red-transp;
+            background: $redwood;
         }
     }
 
     &--green {
         background: $green;
         &:hover {
-            background: $green-transp;
+            background: $sage;
         }
     }
 
     &--brown {
         background: $brown;
         &:hover {
-            background: $brown-transp;
+            background: $rosy-brown;
+        }
+    }
+
+    &--blue {
+        background: $blue;
+        &:hover {
+            background: $moonstone;
         }
     }
 
