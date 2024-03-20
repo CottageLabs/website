@@ -5,14 +5,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #000000; }
+  color: #333333; }
 
 p {
   margin-bottom: 3rem; }
 
 a {
   text-decoration: none;
-  color: #000000; }
+  color: #333333; }
 
 a:hover {
   color: #940101; }
@@ -82,7 +82,7 @@ nav {
   nav .nav-link {
     z-index: 1;
     text-decoration: none;
-    color: #000;
+    color: #333333;
     text-align: right; }
     nav .nav-link:focus, nav .nav-link:hover {
       color: #940101; }

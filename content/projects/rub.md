@@ -18,7 +18,6 @@ solution:
 success:
   text: TODO
   screenshot: "rub3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 TODO

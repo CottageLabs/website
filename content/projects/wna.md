@@ -17,7 +17,6 @@ solution:
 success:
   text: We have been through several rounds of development with WNA to further extend and enhance the visualisations.  The system continues to provide relevant and up-to-date data to all the end user stakeholders.
   screenshot: "wna3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 The World Nuclear Association are a trade body representing the nuclear industry.  Among the large amounts of data they curate is a database of nuclear reactors and their ongoing performance data.  Cottage Labs helped WNA in making this data more publicly available and usable through search and data visualisation

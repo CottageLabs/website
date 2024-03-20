@@ -22,7 +22,6 @@ solution:
 success:
   text: SWORD is broadly supported in all the major open source repository platforms, and has been used extensively in custom integrations between machine users.  The latest version has been constructed with a view to support the latest use cases around research data, designed in collaboration with the community.
   screenshot: "sword3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 In 2011 Jisc in the UK identified the need for a repository deposit protocol, which came to be SWORD.  Soon after that more advanced deposit use cases became apparent, and Cottage Labs took over as technical lead for the specification and have driven it forward through 2 subsequent versions.

@@ -18,7 +18,6 @@ solution:
 success:
   text: The Journal Checker Tool is widely used, and has visitors from all over the globe.  It has served over 1m compliance checks.  It has been customised to deliver funder-specific advice as new funders have joined the coalition, and has even driven publishers to be interested in how well represented their Open Access policies are.
   screenshot: "jct3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 cOAlition S, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and

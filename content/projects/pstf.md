@@ -19,7 +19,6 @@ solution:
 success:
   text: The system has started slowly but not without some successes. The security model has made it so that publishers are at least willing to interact with the system.  Meanwhile the tools for end users have been seen as broadly useful, and we continue to discuss with the stakeholders further data or analytics that we can provide.
   screenshot: "pstf3.jpg"
-thumbnail: http://placekitten.com/600/400
 ---
 
 cOAlition S, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and encourage more and more publishers to support that route.  Cottage Labs provides several services to the consortium, including this tool to allow institutions to explore publisher cost models.

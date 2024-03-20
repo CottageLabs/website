@@ -17,7 +17,7 @@ nav {
     .nav-link {
         z-index: 1;
         text-decoration: none;
-        color: #000;
+        color: $black;
         text-align: right;
         &:focus, &:hover {
             color: $red;
