@@ -64,7 +64,7 @@ strong {
   bottom: -1rem;
   width: 30px;
   /* Adjust the width of the shadow as needed */
-  box-shadow: 10px 0 10px -10px #BE1242;
+  box-shadow: 10px 0 10px -10px #940101;
   /* Adjust the shadow properties as needed */ }
 
 nav {
@@ -272,7 +272,7 @@ footer {
     bottom: 0;
     width: 30px;
     /* Adjust the width of the shadow as needed */
-    box-shadow: 10px 0 10px -10px #BE1242;
+    box-shadow: 10px 0 10px -10px #940101;
     /* Adjust the shadow properties as needed */ }
 .about .partners {
   margin-bottom: 3rem; }
@@ -331,7 +331,7 @@ footer {
     gap: 0.625rem; }
     .technologies-browser .technology.active {
       border-left: 4px solid #940101;
-      background: linear-gradient(90deg, rgba(190, 18, 66, 0.2) 1.9%, rgba(190, 18, 66, 0) 100%); }
+      background: linear-gradient(90deg, rgba(148, 1, 1, 0.2) 1.9%, rgba(148, 1, 1, 0) 100%); }
       .technologies-browser .technology.active a {
         font-weight: 700; }
     .technologies-browser .technology a {
@@ -356,7 +356,7 @@ footer {
     bottom: 0;
     width: 30px;
     /* Adjust the width of the shadow as needed */
-    box-shadow: -10px 0 10px -10px #BE1242;
+    box-shadow: -10px 0 10px -10px #940101;
     /* Adjust the shadow properties as needed */ }
 .explore-more--section {
   overflow: hidden; }
