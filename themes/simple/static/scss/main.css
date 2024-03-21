@@ -253,7 +253,7 @@ footer {
   align-content: flex-start;
   gap: 1.25rem;
   flex-wrap: wrap;
-  margin: auto; }
+  max-width: 25rem; }
 .homepage .clients-logo {
   width: 7.5rem;
   height: 7.5rem;
