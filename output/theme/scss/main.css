@@ -124,13 +124,13 @@ footer {
     .tag--green:hover {
       background: #a5ae9d; }
   .tag--brown {
-    background: #56423d; }
+    background: #5A3F40; }
     .tag--brown:hover {
       background: #BEA6A0; }
   .tag--blue {
     background: #005b93; }
     .tag--blue:hover {
-      background: #57B8D0; }
+      background: #67A6D1; }
   .tag--read-more {
     float: right; }
   .tag a {
@@ -339,7 +339,7 @@ footer {
       .technologies-browser .technology.active a {
         font-weight: 700; }
     .technologies-browser .technology a {
-      color: #56423d;
+      color: #5A3F40;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
@@ -392,9 +392,9 @@ footer {
       .project-page--section--text.green h2 {
         color: #005500; }
     .project-page--section--text.brown {
-      border-left: 5px solid #56423d; }
+      border-left: 5px solid #5A3F40; }
       .project-page--section--text.brown h2 {
-        color: #56423d; }
+        color: #5A3F40; }
   .project-page--section--screenshot {
     flex-grow: 1; }
     .project-page--section--screenshot .screenshot {
