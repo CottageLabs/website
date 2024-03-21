@@ -236,13 +236,15 @@ footer {
   background-image: url("../images/icons/icon-DV-hover.svg"); }
 @media (min-width: 992px) {
   .homepage #section-clients {
-    padding: 3rem 3rem 1rem 3rem; }
+    padding: 3rem 3rem 1rem 3rem;
+    text-align: center; }
     .homepage #section-clients .content {
       width: 25rem;
       margin: auto; } }
 @media (max-width: 991px) {
   .homepage #section-clients {
     position: relative;
+    text-align: center;
     padding: 2rem; }
     .homepage #section-clients .content {
       width: 100vw;
@@ -251,6 +253,7 @@ footer {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
+  margin: auto;
   gap: 1.25rem;
   flex-wrap: wrap;
   max-width: 25rem; }
