@@ -6,7 +6,7 @@
             <a href="{{ SITEURL }}/projects/"><span class="tag tag--read-more tag--green">See how we do it in our projects.</span></a>
         </div>
         <div class="col-lg-6">
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ page.image }}" alt="Data Lifecycle graph">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ page.image }}" alt="Data Lifecycle graph" {% if page.title == "Project Lifecycle" %} id="project_lifestyle--graphic" {% endif %}>
         </div>
     </div>
 {% endblock %}
