@@ -406,7 +406,7 @@ footer {
       width: 600px;
       height: 300px; }
 .project-page--intro {
-  margin-bottom: 3rem; }
+  margin: 3rem 0; }
 
 #background {
   position: absolute;
