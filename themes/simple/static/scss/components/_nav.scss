@@ -22,6 +22,13 @@ nav {
         &:focus, &:hover {
             color: $red;
         }
+        img {
+            width: 24px;
+            vertical-align: text-bottom;
+            &:focus, &:hover {
+                filter: invert(7%) sepia(100%) saturate(5458%) hue-rotate(360deg) brightness(91%) contrast(107%);
+            }
+        }
     }
     #logo {
         position: relative;
