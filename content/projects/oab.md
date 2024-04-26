@@ -1,5 +1,5 @@
 ---
-title: OA Button/OA.Works
+title: OA.Works
 tags:
   - es
   - apis
