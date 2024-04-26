@@ -1,11 +1,7 @@
 ---
 Title: Data Visualisation
 Template: expertise
-# related technologies
-Tags: 
-  - Samvera
-  - DSpace
-# featured projects - use slugs (lowercase)!
+# featured projects 
 Projects: 
   - World Nuclear Association
   - NGLP

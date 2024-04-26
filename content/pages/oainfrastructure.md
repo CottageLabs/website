@@ -1,12 +1,6 @@
 ---
 Title: Open Access Infrastructure
 Template: expertise
-# related technologies
-Tags: 
-  - Samvera
-  - DSpace
-  - Elasticsearch
-  - Python
 Projects: 
   - DOAJ
   - Deep Green

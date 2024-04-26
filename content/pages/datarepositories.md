@@ -1,11 +1,6 @@
 ---
 Title: Data Repositories
 Template: expertise
-# related technologies
-Tags: 
-  - Samvera
-  - DSpace
-# featured projects - use slugs (lowercase)!
 Projects: 
   - Ruhr-University Bochum Hyrax
   - NIMS MDR
