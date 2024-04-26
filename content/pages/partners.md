@@ -4,7 +4,7 @@ Save-As: None
 
   - ## Richard Jones
   - ![Richard Jones]({static}/images/RJ.jpg)
-  - Richard is an experienced software engineer who works comfortably on both back-end data management systems, and front-end visualizations.
+  - Richard is an experienced software engineer who works comfortably on both back-end data management systems, and front-end visualisations.
   
 <!-- -->
 
