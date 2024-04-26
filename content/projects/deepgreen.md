@@ -5,7 +5,6 @@ tags:
   - python
   - oaipmh
   - apis
-  - sword
   - oai
 template: project
 logo: DeepGreen.svg

@@ -4,8 +4,7 @@ tags:
   - samvera
   - ruby
   - solr
-  - sso
-  - postgres
+  - security
   - dr
 template: project
 logo: nims.svg

@@ -1,11 +1,10 @@
 ---
 title: Ruhr-University Bochum Hyrax
 tags:
-  - samver
+  - samvera
   - ruby
   - solr
-  - sso
-  - postgres
+  - security
   - dr
 template: project
 logo: RUB.svg

@@ -2,7 +2,6 @@
 title: Journal Checker Tool
 tags:
   - es
-  - dv
   - apis
   - python
   - js

@@ -4,7 +4,6 @@ tags:
   - es
   - python
   - js
-  - search
   - datavisualisation
 template: project
 logo: WNA.svg

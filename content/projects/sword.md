@@ -1,7 +1,6 @@
 ---
 title: SWORDv3
 tags:
-  - sword
   - python
   - js
   - ruby

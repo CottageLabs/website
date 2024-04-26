@@ -5,7 +5,6 @@ tags:
   - python
   - oaipmh
   - apis
-  - search
   - cloud
   - oai
 template: project
