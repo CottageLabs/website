@@ -5,7 +5,6 @@ tags:
   - datavisualisation
   - python
   - js
-  - search
 template: project
 logo: materiom.svg
 challenge:

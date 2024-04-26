@@ -1,7 +1,5 @@
 ---
 title: EMLO
-tags:
-  - todo
 template: project
 logo: emlo.jpg
 challenge:

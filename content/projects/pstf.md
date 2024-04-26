@@ -1,12 +1,10 @@
 ---
 title: PSTF/JCS
 tags:
-  - postgres
   - es
   - python
   - js
   - security
-  - search
   - oai
 template: project
 logo: JCS.svg

@@ -3,7 +3,6 @@ title: NGLP
 tags:
   - es
   - dspace
-  - ojs
   - python
   - js
   - datavisualisation
