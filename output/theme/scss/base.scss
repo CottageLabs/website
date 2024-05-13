@@ -1,74 +1,114 @@
 body {
-    background-color: $baby-powder;
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: $black;
+  background-color: $baby-powder;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
 }
 
 p {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
-a {
-    text-decoration: none;
-    color: $black;
+.change_underline_color_on_hover {
+  position: relative; // Ensures the pseudo-element positionss itself relative to the anchor
+  text-decoration: none; // Remove default underline
+  color: $black; // Change link color to whatever you want
+  background: linear-gradient(
+                  to right,
+                  $black, /* Black */
+                  $black /* Black */
+  ),
+  linear-gradient(
+                  to right,
+                  $green 0%, /* Green */
+                  $green 75%, /* Green */
+                  $red 75%, /* Red */
+                  $red /* Red */
+  );
+  background-size: 100% 1px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+
+  &:hover {
+    background-size: 0 1px, 100% 2px;
+  }
 }
 
-a:hover {
-    color: $red;
+.underline_on_hover {
+  position: relative; // Ensures the pseudo-element positionss itself relative to the anchor
+  text-decoration: none; // Remove default underline
+  background: linear-gradient(
+                  to right,
+                  $green 0%, /* Green */
+                  $green 75%, /* Green */
+                  $red 75%, /* Red */
+                  $red /* Red */
+  ) no-repeat 0 100%;
+  background-size: 0 2px;
+  transition: background-size 400ms;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}
+
+a:not(.navbar-brand) {
+  text-decoration: none;
 }
 
 .fa {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 h1 {
-    margin-bottom: 2rem;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem; /* 85.714% */
-    text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem; /* 85.714% */
+  text-transform: uppercase;
 }
 
 h2 {
-    margin-bottom: 2rem;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.225rem;
-    text-transform: capitalize;
+  margin-bottom: 2rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: capitalize;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .list-section {
-    position: relative;
-    margin-left: 2rem;
+  position: relative;
+  margin-left: 2rem;
 }
+
 .list-section::before {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute;
-    top: -1rem;
-    left: -4rem;
-    bottom: -1rem;
-    width: 30px; /* Adjust the width of the shadow as needed */
-    box-shadow: 10px 0 10px -10px $red; /* Adjust the shadow properties as needed */
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: -1rem;
+  left: -4rem;
+  bottom: -1rem;
+  width: 30px; /* Adjust the width of the shadow as needed */
+  box-shadow: 10px 0 10px -10px $red; /* Adjust the shadow properties as needed */
 }

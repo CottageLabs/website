@@ -10,12 +10,29 @@ body {
 p {
   margin-bottom: 3rem; }
 
-a {
+.change_underline_color_on_hover {
+  position: relative;
   text-decoration: none;
-  color: #333333; }
+  color: #333333;
+  background: linear-gradient(to right, #333333, #333333), linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101);
+  background-size: 100% 1px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms; }
+  .change_underline_color_on_hover:hover {
+    background-size: 0 1px, 100% 2px; }
 
-a:hover {
-  color: #940101; }
+.underline_on_hover, nav .nav-link {
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
+  background-size: 0 2px;
+  transition: background-size 400ms; }
+  .underline_on_hover:hover, nav .nav-link:hover {
+    background-size: 100% 2px; }
+
+a:not(.navbar-brand) {
+  text-decoration: none; }
 
 .fa {
   margin-right: 10px; }
@@ -81,11 +98,8 @@ nav {
     justify-content: flex-end; }
   nav .nav-link {
     z-index: 1;
-    text-decoration: none;
     color: #333333;
     text-align: right; }
-    nav .nav-link:focus, nav .nav-link:hover {
-      color: #940101; }
     nav .nav-link img {
       width: 24px;
       vertical-align: text-bottom; }
@@ -109,6 +123,12 @@ footer {
     bottom: 0;
     height: max-content;
     padding: 1rem; }
+    footer .container a {
+      color: #333333;
+      text-decoration: none; }
+      footer .container a:hover {
+        color: #940101;
+        text-decoration: none; }
 
 .tag {
   display: flex;
