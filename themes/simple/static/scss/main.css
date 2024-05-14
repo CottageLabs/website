@@ -23,6 +23,7 @@ p {
     background-size: 0 1px, 100% 2px; }
 
 .underline_on_hover, nav .nav-link {
+  display: table;
   position: relative;
   text-decoration: none;
   background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
@@ -228,6 +229,8 @@ footer {
     max-width: 100%; }
     .homepage .links-container .section-link--text {
       font-family: 'Manrope', sans-serif;
+      color: #333333;
+      text-decoration: none;
       font-size: 1.5rem;
       font-style: normal;
       line-height: normal;
