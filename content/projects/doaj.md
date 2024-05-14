@@ -9,6 +9,7 @@ tags:
   - oai
 template: project
 logo: doaj.svg
+externalurl: https://doaj.org/
 challenge:
     text: Since beginning to work with DOAJ in 2013 the platform's requirements have expanded considerably.  The volume of content has grown many times over, the number of active users is extremely high, and it has complex data management and review requirements.  Our challenge has been to scale the platform in all these directions while maintaining service continuity, and adapting to the changing needs of the Open Access landscape.
     screenshot: "DOAJ1.png"
@@ -20,4 +21,4 @@ success:
     screenshot: "DOAJ3.png"
 ---
 
-The Directory of Open Access Journals (DOAJ) stands as a monumental repository, hosting approximately 20,000 fully open access journals and over 6 million associated articles. As the largest and most comprehensive service of its kind, DOAJ plays a critical role in the Open Access ecosystem, serving as a cornerstone for numerous other services.
+**The Directory of Open Access Journals (DOAJ)** stands as a monumental repository, hosting approximately 20,000 fully open access journals and over 6 million associated articles. As the largest and most comprehensive service of its kind, DOAJ plays a critical role in the Open Access ecosystem, serving as a cornerstone for numerous other services.
