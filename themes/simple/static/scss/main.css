@@ -410,6 +410,8 @@ footer {
     max-height: 6rem;
     min-height: 4rem;
     width: auto; }
+    .project-page--section .project-logo img {
+      width: 100%; }
   .project-page--section .icon {
     padding-right: 1rem; }
   .project-page--section--text {
