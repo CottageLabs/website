@@ -2,7 +2,7 @@
 {% block content %}
 <div class="project-page">
     <div class="project-page--section project-page--intro">
-        <a href="{{ article.url }}" target="_blank" class="project-logo" ><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="link to {{ article.title }} page"></a>
+        <a href="{{ article.externalurl }}" target="_blank" class="project-logo" ><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="link to {{ article.title }} page"></a>
         <div style="margin-bottom: -3rem">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
             {{ article.content }}
         </div>

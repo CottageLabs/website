@@ -407,6 +407,7 @@ footer {
   align-items: flex-start; }
   .project-page--section .project-logo {
     max-width: 25%;
+    min-width: 25%;
     max-height: 6rem;
     min-height: 4rem;
     width: auto; }

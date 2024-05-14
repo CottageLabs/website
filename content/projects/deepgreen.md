@@ -7,7 +7,7 @@ tags:
   - apis
   - oai
 template: project
-url: https://info.oa-deepgreen.de/en/
+externalurl: https://info.oa-deepgreen.de/en/
 logo: DeepGreen.svg
 challenge:
     text: TODO
