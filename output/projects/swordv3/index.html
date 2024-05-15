@@ -58,48 +58,54 @@
 </div></nav>
 <main>
     <div class="container">
-<div class="project-page">
-    <div class="project-page--section project-page--intro row">
-        <div class="col-md-2">
-            <a href="https://sword.cottagelabs.com/" target="_blank"><img src="../../theme/images/projects/sword.png" alt="link to SWORDv3 page" class="project-logo"></a>
+    <div class="project-page">
+        <div class="project-page--section project-page--intro row">
+            <div class="col-md-2">
+                <a href="https://sword.cottagelabs.com/" target="_blank"><img
+                        src="../../theme/images/projects/sword.png"
+                        alt="link to SWORDv3 page" class="project-logo"></a>
+            </div>
+            <div style="margin-bottom: -3rem" class="col-md-9">
+                <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
+                <p>In 2011 Jisc in the UK identified the need for a repository deposit protocol, which came to be <strong>SWORD</strong>.  Soon after that more advanced deposit use cases became apparent, and Cottage Labs took over as technical lead for the specification and have driven it forward through 2 subsequent versions.</p>
+            </div>
         </div>
-        <div style="margin-bottom: -3rem" class="col-md-9">  <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
-            <p>In 2011 Jisc in the UK identified the need for a repository deposit protocol, which came to be <strong>SWORD</strong>.  Soon after that more advanced deposit use cases became apparent, and Cottage Labs took over as technical lead for the specification and have driven it forward through 2 subsequent versions.</p>
-        </div>
-    </div>
-    <div class="project-page--section project-page--challenge">
-        <div class="project-page--section--text brown">
-            <h2><img class="icon" src="../../theme/images/icons/challenge.svg" aria-hidden="true">CHALLENGE</h2>
-            Before SWORD there was no standardised way of depsositing individual digital objects in repositories; a machine-to-machine counterpart to the manual deposit forms of the early repositories.  The aim was to replace that, and to then support the ongoing integration between scholarly systems supporting this kind of point-to-point transfer.  The primary use case was CRIS systems, which were increasingly being used as front-ends to repository deposit.
-        </div>
-        <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from SWORDv3 project" src="../../theme/screenshots/sword1.jpg" />
-        </div>
-    </div>
-
-    <div class=" project-page--section project-page--solution">
-        <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from SWORDv3 project" src="../../theme/screenshots/sword2.jpg" />
-        </div>
-        <div class="project-page--section--text green">
-            <h2><img class="icon" src="../../theme/images/icons/solution.svg" aria-hidden="true">SOLUTION</h2>
-            SWORDv1 supported a single package deposit in a "fire and forget" protocol.  Subsequently we developed more sophisticated RESTful interactions with repositories, supporting the full CRUD (Create, Retrieve, Update, Delete) lifecycle.  This enabled systems like CRIS to integrate, and allowed institutions to build embeddable deposit interfaces in, for example, departmental web pages.  The latest version of SWORD modernises the standard, moving it from XML to JSON, supporting operations for large file deposit, and removes aspects of the specification that were unwarranted in earlier versions.
-        </div>
-    </div>
-
-    <div class="project-page--section project-page--success">
-        <div class="project-page--section--text red">
-            <h2><img class="icon" src="../../theme/images/icons/success.svg" aria-hidden="true">SUCCESS</h2>
-            SWORD is broadly supported in all the major open source repository platforms, and has been used extensively in custom integrations between machine users.  The latest version has been constructed with a view to support the latest use cases around research data, designed in collaboration with the community.
+        <div class="project-page--section project-page--challenge">
+            <div class="project-page--section--text brown">
+                <h2><img class="icon" src="../../theme/images/icons/challenge.svg"
+                         aria-hidden="true">CHALLENGE</h2>
+                Before SWORD there was no standardised way of depsositing individual digital objects in repositories; a machine-to-machine counterpart to the manual deposit forms of the early repositories.  The aim was to replace that, and to then support the ongoing integration between scholarly systems supporting this kind of point-to-point transfer.  The primary use case was CRIS systems, which were increasingly being used as front-ends to repository deposit.
+            </div>
+            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                 alt="screenshot from SWORDv3 project"
+                 src="../../theme/screenshots/sword1.png"/>
         </div>
 
-        <div class="project-page--section--screenshot">
-            <img class="screenshot" aria-hidden="true" alt="screenshot from SWORDv3 project" src="../../theme/screenshots/sword3.jpg" />
+        <div class=" project-page--section project-page--solution">
+            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                 alt="screenshot from SWORDv3 project"
+                 src="../../theme/screenshots/sword2.png"/>
+            <div class="project-page--section--text green">
+                <h2><img class="icon" src="../../theme/images/icons/solution.svg"
+                         aria-hidden="true">SOLUTION</h2>
+                SWORDv1 supported a single package deposit in a "fire and forget" protocol.  Subsequently we developed more sophisticated RESTful interactions with repositories, supporting the full CRUD (Create, Retrieve, Update, Delete) lifecycle.  This enabled systems like CRIS to integrate, and allowed institutions to build embeddable deposit interfaces in, for example, departmental web pages.  The latest version of SWORD modernises the standard, moving it from XML to JSON, supporting operations for large file deposit, and removes aspects of the specification that were unwarranted in earlier versions.
+            </div>
         </div>
-    </div>
 
-</div>
-<h2>Related Technologies:</h2>
+        <div class="project-page--section project-page--success">
+            <div class="project-page--section--text red">
+                <h2><img class="icon" src="../../theme/images/icons/success.svg"
+                         aria-hidden="true">SUCCESS</h2>
+                SWORD is broadly supported in all the major open source repository platforms, and has been used extensively in custom integrations between machine users.  The latest version has been constructed with a view to support the latest use cases around research data, designed in collaboration with the community.
+            </div>
+
+            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                 alt="screenshot from SWORDv3 project"
+                 src="../../theme/screenshots/sword3.png"/>
+        </div>
+
+    </div>
+        <h2>Related Technologies:</h2>
 
 <div class="related_technologies">
     <a href="../../projects/python" class="tag tag--red">Python</a>
