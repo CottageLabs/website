@@ -7,6 +7,7 @@ tags:
   - dr
 template: project
 logo: Hull.jpeg
+externalurl: https://en.wikipedia.org/wiki/Hull_UK_City_of_Culture_2017
 challenge:
     text: The University of Hull was providing support to the City Council to capture both official and unofficial digital outputs from the year of cultural events.  These materials needed to be captured and archived, and also preserved for the long term.  The content could come in any number of forms, and not necessarily in an organised manner. We were to help them with the back-end management of that data.
     screenshot: "hull1.jpg"
@@ -18,4 +19,4 @@ success:
     screenshot: "hull3.jpg"
 ---
 
-During 2017 the city of Hull was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.
+During 2017 **the city of Hull** was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.

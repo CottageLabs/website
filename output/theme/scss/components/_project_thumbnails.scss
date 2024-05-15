@@ -1,5 +1,6 @@
 .project-thumbnail {
   position: relative;
+  background-color: rgba($rosy-brown, 0.2);
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 0.625rem;
@@ -10,7 +11,7 @@
   .background {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
     transition: opacity 0.3s ease;
   }
   .project-logo {
@@ -18,8 +19,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 6.75rem;
-    height: auto;
+    max-width: 6.75rem;
     max-height: 5.7rem;
   }
   &:focus, &:hover {

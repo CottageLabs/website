@@ -1,5 +1,5 @@
 ---
-title: World Nuclear Association
+title: WNA ReactorDB
 tags:
   - es
   - python
@@ -7,6 +7,7 @@ tags:
   - datavisualisation
 template: project
 logo: WNA.svg
+externalurl: https://www.world-nuclear.org/information-library/facts-and-figures/reactor-database.aspx
 challenge:
   text: Nuclear performance data can be dense and mostly of relevance to experts.  Nonetheless, WNA has a remit to communicate with the public about activities in the nuclear industry.  As such, they wanted to find a way to make their reactor and performance data available and understandable for members of the public, as well as journalists and science communicators, as well as for industry professionals.
   screenshot: "wna1.jpg"
@@ -18,4 +19,4 @@ success:
   screenshot: "wna3.jpg"
 ---
 
-The World Nuclear Association are a trade body representing the nuclear industry.  Among the large amounts of data they curate is a database of nuclear reactors and their ongoing performance data.  Cottage Labs helped WNA in making this data more publicly available and usable through search and data visualisation
+**The World Nuclear Association** are a trade body representing the nuclear industry.  Among the large amounts of data they curate is a database of nuclear reactors and their ongoing performance data.  Cottage Labs helped WNA in making this data more publicly available and usable through search and data visualisation

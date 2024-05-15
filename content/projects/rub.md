@@ -7,7 +7,7 @@ tags:
   - security
   - dr
 template: project
-logo: RUB.svg
+logo: rub.png
 challenge:
   text: TODO
   screenshot: "rub1.jpg"
