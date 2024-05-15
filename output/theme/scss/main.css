@@ -22,6 +22,11 @@ p {
   .change_underline_color_on_hover:hover {
     background-size: 0 1px, 100% 2px; }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; }
+
 .underline_on_hover, nav .nav-link {
   display: table;
   position: relative;
@@ -430,12 +435,10 @@ footer {
       .project-page--section--text.brown h2 {
         color: #5A3F40; }
   .project-page--section--screenshot {
-    flex-grow: 1; }
-    .project-page--section--screenshot .screenshot {
-      border-radius: 0.625rem;
-      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
-      width: 600px;
-      height: 300px; }
+    flex-grow: 1;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
+    width: 600px; }
 .project-page--intro {
   margin: 3rem 0; }
 
