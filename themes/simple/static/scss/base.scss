@@ -6,14 +6,50 @@ body {
   font-weight: 400;
   line-height: normal;
   color: $black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.container {
-  overflow: scroll;
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+main:not(:has(.homepage)) {
+  overflow-y: auto; /* This will enable vertical scrolling if content exceeds viewport height */
 }
 
 p {
   margin-bottom: 3rem;
+}
+
+.thumbnail {
+  position: relative;
+  background: linear-gradient(to bottom, rgba($brown, 0.5), $white);
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 4px 0px rgba($red, 0.25);
+  text-align: center;
+  line-height: 150%;
+  overflow: hidden;
+
+  .background {
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+  }
+
+  .project-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 6.75rem;
+    max-height: 5.7rem;
+  }
 }
 
 .change_underline_color_on_hover {
