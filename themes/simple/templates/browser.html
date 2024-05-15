@@ -10,4 +10,3 @@
     <li class="technology {% if active_tag == tag %}active{% endif %}"><a href="{{ SITEURL }}/projects/{{ tag|lower }}">{% if tags_titles[tag] %}{{ tags_titles[tag] }}{% else %}{{ tag }}{% endif %} ({{ articles|count }})</a></li>
     {% endfor %}
 </ul>
-<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/browser-background.svg" aria-hidden="true" id="background">
