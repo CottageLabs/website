@@ -8,6 +8,10 @@ body {
   color: $black;
 }
 
+.container {
+  overflow: scroll;
+}
+
 p {
   margin-bottom: 3rem;
 }
