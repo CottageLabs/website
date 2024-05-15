@@ -7,6 +7,9 @@ body {
   line-height: normal;
   color: #333333; }
 
+.container {
+  overflow: scroll; }
+
 p {
   margin-bottom: 3rem; }
 
@@ -117,18 +120,14 @@ nav {
     z-index: 1000; }
 
 footer {
+  background: #FFFCF8;
   position: absolute;
-  width: 100%; }
+  z-index: 100;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem; }
   footer .container {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    z-index: 100;
-    background: #FFFCF8;
-    bottom: 0;
-    height: max-content;
-    padding: 1rem; }
+    height: max-content; }
     footer .container a {
       color: #333333;
       text-decoration: none; }
@@ -215,13 +214,17 @@ footer {
       box-shadow: 0 0 20px -10px #940101;
       padding-top: 15rem;
       padding-left: 2rem;
-      margin-top: -12rem; } }
+      margin-top: -12rem; }
+    .homepage .section-clients {
+      padding: 2rem; } }
 @media (max-width: 991px) {
   .homepage {
     display: block; }
     .homepage .section-links {
       position: relative;
       background-color: #ffffff;
+      padding: 2rem; }
+    .homepage .section-clients {
       padding: 2rem; } }
 .homepage .links-container {
   display: flex;
@@ -268,37 +271,48 @@ footer {
   background-image: url("../images/icons/icon-DV.svg"); }
 .homepage a.section-link:hover > div#dv-logo {
   background-image: url("../images/icons/icon-DV-hover.svg"); }
-@media (min-width: 992px) {
-  .homepage #section-clients {
-    padding: 3rem 3rem 1rem 3rem;
-    text-align: center; }
-    .homepage #section-clients .content {
-      width: 25rem;
-      margin: auto; } }
-@media (max-width: 991px) {
-  .homepage #section-clients {
-    position: relative;
-    text-align: center;
-    padding: 2rem; }
-    .homepage #section-clients .content {
-      width: 100vw;
-      margin: auto; } }
-.homepage .clients-logos {
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin: auto;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-  max-width: 25rem; }
-.homepage .clients-logo {
-  width: 7.5rem;
-  height: 7.5rem;
-  padding: 1.25rem 1.25rem;
-  border-radius: 0.625rem;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25); }
+@keyframes moveCarousel {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-30rem); } }
+.homepage .carousel-wrapper {
+  position: relative;
+  width: 27rem;
+  margin: 0 auto; }
+  .homepage .carousel-wrapper .clients-logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    transition: opacity 1s ease-in-out;
+    margin: auto; }
+    .homepage .carousel-wrapper .clients-logos h2 {
+      text-align: center; }
+    .homepage .carousel-wrapper .clients-logos .set-1 {
+      animation: fadeInOut 8s infinite; }
+    .homepage .carousel-wrapper .clients-logos .set-2 {
+      animation: fadeInOut 8s infinite;
+      animation-delay: 4s; }
+    .homepage .carousel-wrapper .clients-logos .clients-logo {
+      background-color: rgba(190, 166, 160, 0.2);
+      width: 7.5rem;
+      height: 7.5rem;
+      padding: 1.25rem 1.25rem;
+      border-radius: 0.625rem;
+      box-shadow: 0px 4px 4px 0px rgba(190, 18, 66, 0.25);
+      margin-right: 1.25rem;
+      /* Optional: Adjust spacing between logos */ }
 
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
 .about--content {
   position: relative;
   /* Set position to relative for pseudo-element positioning */

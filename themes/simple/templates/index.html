@@ -10,19 +10,8 @@
                     <a href="{{ SITEURL }}/bespoke-development" class="section-link"><div id="bd-logo" class="section-link--icon" alt="bespoke developement icon"></div><span class="section-link--text">Craft your Bespoke development</span></a>
                 </div>
         </section>
-        <section id="section-clients" class="col col-lg-7">
-                <h2>Trusted partners with</h2>
-                <div class="clients-logos">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/mdr.svg" alt="MDR">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/doaj.svg" alt="DOAJ">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/nglp.svg" alt="NGLP">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/oa.svg" alt="CoalitionS" style="padding: 2.25rem;">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/deepgreen.svg" alt="DeepGreen">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/wna.svg" alt="World Nuclear Association">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/materiom.svg" alt="Materiom">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/invenio.svg" alt="Inverio">
-                    <img class="clients-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/clients/wpi.svg" alt="Digital WPI">
-                </div>
+        <section id="section-clients" class="section-clients col col-lg-7">
+                {% include "partials/_clients_logos.html" %}
         </section>
     </div>
 {% endblock %}
