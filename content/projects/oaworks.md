@@ -6,7 +6,8 @@ tags:
   - js
   - oai
 template: project
-logo: OAB.svg
+logo: oaworks.svg
+externalurl: https://oa.works/
 challenge:
   text: Initially the challenge was to connect readers with authors when Open Access versions of their papers were not available.  This quickly grew into a suite of tools to help authors self-archive, to help other infrastructure services to unerstand about self-archiving policies, and to provide next generation inter-library loans tools.
   screenshot: "oabtn1.jpg"

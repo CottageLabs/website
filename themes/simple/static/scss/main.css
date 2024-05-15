@@ -165,6 +165,7 @@ footer {
 
 .project-thumbnail {
   position: relative;
+  background-color: rgba(190, 166, 160, 0.2);
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 0.625rem;
@@ -175,15 +176,14 @@ footer {
   .project-thumbnail .background {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
     transition: opacity 0.3s ease; }
   .project-thumbnail .project-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 6.75rem;
-    height: auto;
+    max-width: 6.75rem;
     max-height: 5.7rem; }
   .project-thumbnail:focus, .project-thumbnail:hover {
     box-shadow: 0px 4px 4px 0px rgba(148, 1, 1, 0.5); }
@@ -366,8 +366,8 @@ footer {
     align-items: center;
     gap: 0.625rem; }
     .technologies-browser .technology.active {
-      border-left: 4px solid #940101;
-      background: linear-gradient(90deg, rgba(148, 1, 1, 0.2) 1.9%, rgba(148, 1, 1, 0) 100%); }
+      background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
+      background-size: 100% 4px; }
       .technologies-browser .technology.active a {
         font-weight: 700; }
     .technologies-browser .technology a {
@@ -405,14 +405,16 @@ footer {
   gap: 1rem;
   padding-top: 1rem;
   align-items: flex-start; }
+  @media (max-width: 992px) {
+    .project-page--section {
+      flex-direction: column; } }
   .project-page--section .project-logo {
     max-width: 25%;
-    min-width: 25%;
-    max-height: 6rem;
-    min-height: 4rem;
-    width: auto; }
+    min-width: 25%; }
     .project-page--section .project-logo img {
-      width: 100%; }
+      max-height: 6rem;
+      min-height: 4rem;
+      width: auto; }
   .project-page--section .icon {
     padding-right: 1rem; }
   .project-page--section--text {

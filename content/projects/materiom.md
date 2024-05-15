@@ -6,7 +6,8 @@ tags:
   - python
   - js
 template: project
-logo: materiom.svg
+logo: materiom.png
+externalurl: https://materiom.org/
 challenge:
     text: Materiom had a growing dataset of materials from research publications and from user submissions, and they wanted a way for end users to find materials by their properties, and to comparatively graph them against each other.  This would enable scientists to find materials which had suitable properties for their needs, and to select the most appropriate ones by comparison to other matierials and to their non-renewable alternatives.
     screenshot: "materiom1.jpg"
@@ -18,4 +19,4 @@ success:
     screenshot: "materiom3.jpg"
 ---
 
-Materiom is a materials science company building an open database of sustainable bio-materials, their recipes and their physical properties.  Cottage Labs has helped them build their search and data visualisation enviornment for researchers
+**Materiom** is a materials science company building an open database of sustainable bio-materials, their recipes and their physical properties.  Cottage Labs has helped them build their search and data visualisation enviornment for researchers

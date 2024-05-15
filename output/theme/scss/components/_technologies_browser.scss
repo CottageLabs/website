@@ -14,8 +14,16 @@
     align-items: center;
     gap: 0.625rem;
     &.active {
-      border-left: 4px solid $red;
-      background: linear-gradient(90deg, rgba(148, 1, 1, 0.20) 1.9%, rgba(148, 1, 1, 0.00) 100%);
+      //border-left: 4px solid $red;
+      //background: linear-gradient(90deg, rgba($red, 0.5) 2%, rgba($rosy-brown, 0.2) 100%);
+      background: linear-gradient(
+                  to right,
+                  $green 0%, /* Green */
+                  $green 75%, /* Green */
+                  $red 75%, /* Red */
+                  $red /* Red */
+  ) no-repeat 0 100%;
+  background-size: 100% 4px;
       a {
         font-weight: 700;
       }
