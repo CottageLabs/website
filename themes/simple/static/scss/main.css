@@ -195,7 +195,8 @@ footer {
     .tag--blue:hover {
       background: #67A6D1; }
   .tag--read-more {
-    float: right; }
+    float: left;
+    max-width: 100%; }
   .tag--see-in-projects {
     float: left; }
   .tag a {
