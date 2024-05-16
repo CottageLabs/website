@@ -29,6 +29,12 @@
         list-style: none;
         gap: .5rem;
         text-align: left; /* Align text to the left */
+        li {
+          display: contents;
+          h2 {
+            height: unset;
+          }
+        }
       }
 
       img {
