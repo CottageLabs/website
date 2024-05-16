@@ -22,4 +22,4 @@ success:
   screenshot: "nglp3.jpg"
 ---
 
-The Next Generation Library Publishing project received significant funding to explore new ways of providing an open publishing environment, using open source tools.  Cottage Labs worked with the team to develop flexible data analytics to allow publishers using the tools to have access to usage data and business intelligence comparable to or better than commercial tooling.
+**The Next Generation Library Publishing** project received significant funding to explore new ways of providing an open publishing environment, using open source tools.  Cottage Labs worked with the team to develop flexible data analytics to allow publishers using the tools to have access to usage data and business intelligence comparable to or better than commercial tooling.
