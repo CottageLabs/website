@@ -1,7 +1,7 @@
 ---
 title: EUI Covid Data
 template: project
-logo: EUI.svg
+logo: eui.svg
 externalurl: https://covid19data.eui.eu/
 challenge:
   text: A metadata-only repository using brand new software, we customised a few components to better suit EUI's needs.

@@ -8,7 +8,7 @@ tags:
   - oai
 template: project
 externalurl: https://journalcheckertool.org/
-logo: JCT.svg
+logo: jct.svg
 challenge:
   text: cOAlition S's Plan S requires funded authors to publish under certain conditions for their grant funding to be valid.  To enable authors to check that their preferred publishing route is compliant, or to support them in finding alternative routes, the coalition wanted a tool which would survey the known information about journals in multiple sources and deliver advice on the publishing options available.
   screenshot: "jct1.png"

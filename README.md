@@ -129,6 +129,24 @@ Generate styles from `/website_pelican/src/themes/simple/static/scss`
 
 ### see `src/themes/simple/templates/partials/_tags.html` for slugs and tags' names
 
+# List of project's full names
+
+- deepgreen: DeepGreen
+- doaj: DOAJ
+- emlo: EMLO
+- eui: EUI Covid Data
+- hull: Hull City of Culture
+- jct: Journal Checker Tool
+- jcs: Journal Comparison Service
+- materiom: Materiom Data Commons
+- nglp: NGLP
+- nims: NIMS MDR
+- oaworks: OA.Works
+- rub: Ruhr-University Bochum Hyrax
+- sword: SWORDv3
+- wna: WNA ReactorDB
+
+
 # Deployment on next.cottagelabs.com
 
 This is managed using git hooks. You'll need the server in your ```.ssh/config``` file,

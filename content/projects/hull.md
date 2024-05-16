@@ -6,7 +6,7 @@ tags:
   - cloud
   - dr
 template: project
-logo: Hull.jpeg
+logo: hull.jpeg
 externalurl: https://en.wikipedia.org/wiki/Hull_UK_City_of_Culture_2017
 challenge:
     text: The University of Hull was providing support to the City Council to capture both official and unofficial digital outputs from the year of cultural events.  These materials needed to be captured and archived, and also preserved for the long term.  The content could come in any number of forms, and not necessarily in an organised manner. We were to help them with the back-end management of that data.

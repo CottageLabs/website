@@ -3,12 +3,12 @@ Title: Open Access Infrastructure
 Template: expertise
 Projects: 
   - DOAJ
-  - Deep Green
+  - DeepGreen
   - Journal Checker Tool
   - NGLP
   - OA.Works
   - Journal Comparison Service
-  - SWORD
+  - SWORDv3
 ---
 
 
