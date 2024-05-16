@@ -1,8 +1,15 @@
 ---
 Title: Bespoke Development
 Template: expertise
-# related technologies
-
+Projects: 
+  - DOAJ
+  - Hull City of Culture
+  - EMLO
+  - Journal Checker Tool
+  - Materiom Data Commons
+  - OA.Works
+  - Journal Comparison Tool
+  - WNA ReactorDB
 ---
 
 

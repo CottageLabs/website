@@ -2,9 +2,11 @@
 Title: Data Visualisation
 Template: expertise
 Projects: 
-  - World Nuclear Association
-  - NGLP
+  - DOAJ
+  - EMLO
   - Materiom Data Commons
+  - NGLP
+  - WNA ReactorDB
 ---
 
 
