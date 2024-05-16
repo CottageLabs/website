@@ -1,5 +1,6 @@
 ---
 title: Journal Comparison Service
+name: Journal Comparison Service
 tags:
   - es
   - python

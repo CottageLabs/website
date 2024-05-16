@@ -1,5 +1,6 @@
 ---
 title: DeepGreen
+name: DeepGreen
 tags:
   - es
 template: project

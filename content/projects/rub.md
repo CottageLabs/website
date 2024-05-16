@@ -1,5 +1,6 @@
 ---
-title: Ruhr-University Bochum Hyrax
+title: RUB Hyrax
+name: Ruhr-University Bochum Hyrax
 tags:
   - samvera
   - ruby

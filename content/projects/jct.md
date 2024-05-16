@@ -1,5 +1,6 @@
 ---
 title: Journal Checker Tool
+name: Journal Checker Tool
 tags:
   - es
   - apis

@@ -1,5 +1,6 @@
 ---
 title: WNA ReactorDB
+name: WNA Reactor Database
 tags:
   - es
   - python
