@@ -152,7 +152,6 @@ nav {
     z-index: 1000; }
 
 footer {
-  background: #FFFCF8;
   z-index: 100;
   width: 100%;
   padding: 1rem;
@@ -166,6 +165,8 @@ footer {
       footer .container a:hover {
         color: #940101;
         text-decoration: none; }
+    footer .container .contact {
+      padding-left: 1.75rem; }
 
 .tag {
   display: flex;
@@ -226,7 +227,8 @@ footer {
       box-shadow: 0 0 20px -10px #940101;
       padding-top: 15rem;
       padding-left: 2rem;
-      margin-top: -12rem; }
+      margin-top: -12rem;
+      margin-bottom: -6rem; }
     .homepage .section-clients {
       padding: 2rem; } }
 @media (max-width: 991px) {
@@ -348,6 +350,10 @@ footer {
       gap: .5rem;
       text-align: left;
       /* Align text to the left */ }
+      .about .partners-profiles ul li {
+        display: contents; }
+        .about .partners-profiles ul li h2 {
+          height: unset; }
     .about .partners-profiles img {
       width: 200px;
       /* Make sure all images take up the full width of their container */

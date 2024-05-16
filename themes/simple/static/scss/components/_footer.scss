@@ -1,5 +1,4 @@
 footer {
-  background: $baby-powder;
   z-index: 100;
   width: 100%;
   padding: 1rem;
@@ -14,6 +13,9 @@ footer {
         color: $red;
         text-decoration: none;
       }
+    }
+    .contact {
+      padding-left: 1.75rem;
     }
   }
 }
