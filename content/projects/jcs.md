@@ -8,7 +8,7 @@ tags:
   - oai
 template: project
 externalurl: https://journalcomparisonservice.org/
-logo: JCS.svg
+logo: jcs.svg
 challenge:
   text: cOAlition S has an interest in convincing publishers to move to Open Access models of publishing. To enable institutions to make more informed decisions during negotiations with publishers over Open Access agreements, the coalition wanted to encourage publishers to share information about their cost models.  This is a substantial challenge in its own right, and one that the coalition has taken on.  Cottage Labs job here was to build a system sufficiently trustworthy to the publishers that they woud be comfortable sharing data that could lead to competition law issues if shared too widely, while at the same time building tools that are actually useful to institutions.
   screenshot: "pstf1.png"

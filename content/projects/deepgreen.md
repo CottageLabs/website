@@ -4,7 +4,7 @@ tags:
   - es
 template: project
 externalurl: https://info.oa-deepgreen.de/en/
-logo: DeepGreen.svg
+logo: deepgreen.svg
 challenge:
     text: Deepgreen was a protype designed to showcase the possibility of a  a delivery service for Open Access articles, to supply Open Access repositories with automated and targeted publisher content from publishers. Since developing the prototype, the deepgreen service has had to support the changing landscape of delivery between publishers and repositories and the nature of open access supporting the different types of open access articles, while being legally compliant. Cottage Labs have been working with Deepgreen over the past four years, working on enhancements and service maintenance.
     screenshot: "DeepGreen1.jpg"

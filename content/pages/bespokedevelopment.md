@@ -10,6 +10,7 @@ Projects:
   - OA.Works
   - Journal Comparison Service
   - WNA ReactorDB
+  - DeepGreen
 ---
 
 

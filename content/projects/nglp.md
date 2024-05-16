@@ -9,7 +9,7 @@ tags:
   - oai
 template: project
 externalurl: https://www.nextgenlibpub.org/
-logo: NGLP.svg
+logo: nglp.png
 challenge:
   text: The NGLP team wanted to provide a set of open source options for publishing bodies to select from, including repository platforms for content storage, dissemination platforms for publishing, and so on.  To bind it together, an analytics package was required which would take heterogenous usage data from all the different sources, and provide a coherent view.
   screenshot: "nglp1.jpg"

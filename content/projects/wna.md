@@ -6,7 +6,7 @@ tags:
   - js
   - datavisualisation
 template: project
-logo: WNA.svg
+logo: wna.svg
 externalurl: https://www.world-nuclear.org/information-library/facts-and-figures/reactor-database.aspx
 challenge:
   text: Nuclear performance data can be dense and mostly of relevance to experts.  Nonetheless, WNA has a remit to communicate with the public about activities in the nuclear industry.  As such, they wanted to find a way to make their reactor and performance data available and understandable for members of the public, as well as journalists and science communicators, as well as for industry professionals.
