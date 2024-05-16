@@ -20,4 +20,4 @@ success:
   screenshot: "oaw3.png"
 ---
 
-Cottage Labs has been working with OA.Works since 2013 back when it was called OA Button.  The platform, at its heart, monitors the Self-Archiving policies of journals, and it now provides multiple tools to support Open Access, such as rapid self-archiving, and intra-library loans.
+Cottage Labs has been working with **OA.Works** since 2013 back when it was called OA Button.  The platform, at its heart, monitors the Self-Archiving policies of journals, and it now provides multiple tools to support Open Access, such as rapid self-archiving, and intra-library loans.

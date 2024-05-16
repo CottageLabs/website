@@ -15,4 +15,4 @@ success:
   screenshot: "eui3.png"
 ---
 
-During the pandemic, **the European University Institute** reached out to us to build a digital repository for COVID-19 related research.  We customised and deployed an instance of CERN's InvenioRDM platform to support their metadata project. We subsequently re-implemented their metadata harvesters to further populate this repository.
+During the pandemic, the **European University Institute** reached out to us to build a digital repository for COVID-19 related research.  We customised and deployed an instance of CERN's InvenioRDM platform to support their metadata project. We subsequently re-implemented their metadata harvesters to further populate this repository.

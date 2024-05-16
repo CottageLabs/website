@@ -20,4 +20,4 @@ success:
     screenshot: "hull3.png"
 ---
 
-During 2017 **the city of Hull** was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.
+During 2017 the **City of Hull** was named UK City of Culture, and hosted many national cultural events throughout the year.  Cottage Labs supported the University of Hull as the official record keeper for the event to capture and preserve the digital outputs of the year.
