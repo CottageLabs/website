@@ -1,5 +1,6 @@
 ---
 title: OA.Works
+name: OA.Works
 tags:
   - es
   - apis

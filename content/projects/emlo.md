@@ -1,5 +1,6 @@
 ---
 title: EMLO
+name: Early Modern Letters Online
 template: project
 logo: emlo.png
 externalurl: http://emlo.bodleian.ox.ac.uk/

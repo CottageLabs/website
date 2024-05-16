@@ -1,5 +1,6 @@
 ---
-title: SWORDv3
+title: SWORD
+name: SWORD
 tags:
   - python
   - js

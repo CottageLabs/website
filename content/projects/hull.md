@@ -1,5 +1,6 @@
 ---
 title: Hull City of Culture
+name: Hull City of Culture
 tags:
   - samvera
   - archivematica

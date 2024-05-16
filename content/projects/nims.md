@@ -1,5 +1,6 @@
 ---
 title: NIMS MDR
+name: NIMS Materials Data Repository
 tags:
   - samvera
   - ruby

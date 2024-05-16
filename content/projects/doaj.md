@@ -1,5 +1,6 @@
 ---
 title: DOAJ
+name: Directory of Open Access Journals
 tags:
   - es
   - python

@@ -1,5 +1,6 @@
 ---
 title: NGLP
+name: Next Generation Library Publishing
 tags:
   - es
   - dspace

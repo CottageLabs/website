@@ -1,5 +1,6 @@
 ---
 title: Materiom Data Commons
+name: Materiom Data Commons
 tags:
   - es
   - datavisualisation

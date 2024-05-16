@@ -1,5 +1,6 @@
 ---
 title: EUI Covid Data
+name: EUI COVID Data Portal
 template: project
 logo: eui.svg
 externalurl: https://covid19data.eui.eu/
