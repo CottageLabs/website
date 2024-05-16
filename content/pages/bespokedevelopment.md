@@ -8,7 +8,7 @@ Projects:
   - Journal Checker Tool
   - Materiom Data Commons
   - OA.Works
-  - Journal Comparison Tool
+  - Journal Comparison Service
   - WNA ReactorDB
 ---
 
