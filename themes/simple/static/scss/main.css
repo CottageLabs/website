@@ -307,12 +307,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    transition: opacity 1s ease-in-out;
+    transition: opacity .5s ease-in;
     margin: auto; }
     .homepage .section-clients .carousel-wrapper .clients-logos .clients-logo {
       padding: 1.25rem 1.25rem; }
+  .homepage .section-clients .carousel-wrapper .set-1 {
+    animation: fadeInOut 15s infinite; }
   .homepage .section-clients .carousel-wrapper .set-2 {
-    opacity: 1; }
+    animation: fadeInOut 15s infinite;
+    animation-delay: 7.5s; }
 
 @keyframes fadeInOut {
   0%, 100% {

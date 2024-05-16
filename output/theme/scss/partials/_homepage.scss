@@ -124,10 +124,10 @@
         left: 0;
         width: 100%;
         opacity: 0;
-        display: grid; // Maintain grid layout
-        grid-template-columns: repeat(3, 1fr); // 3-column grid
-        gap: 1.25rem; // Adjust spacing between logos
-        transition: opacity 1s ease-in-out; // Smooth fade-in/out transition
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        transition: opacity .5s ease-in;
         margin: auto;
 
         .clients-logo {
@@ -136,13 +136,12 @@
       }
 
       .set-1 {
-        //animation: fadeInOut 20s infinite;
+        animation: fadeInOut 15s infinite;
       }
 
       .set-2 {
-        opacity: 1;
-        //animation: fadeInOut 20s infinite;
-        //animation-delay: 10s; // Delay the animation of the second div by 4 seconds
+        animation: fadeInOut 15s infinite;
+        animation-delay: 7.5s;
       }
     }
   }

@@ -6,9 +6,9 @@ Projects:
   - Deep Green
   - Journal Checker Tool
   - NGLP
-  - OA Button/OA.Works
-  - PSTF/JCS
-  - SWORDv3
+  - OA.Works
+  - Journal Comparison Service
+  - SWORD
 ---
 
 

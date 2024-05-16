@@ -2,10 +2,12 @@
 Title: Data Repositories
 Template: expertise
 Projects: 
-  - Ruhr-University Bochum Hyrax
   - NIMS MDR
+  - Hull City of Culture
   - EMLO
-  - EUI Invenio
+  - EUI Covid Data
+  - Ruhr-University Bochum Hyrax
+  - 
 ---
 
 
