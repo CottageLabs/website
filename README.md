@@ -125,7 +125,7 @@ Generate styles from `/website_pelican/src/themes/simple/static/scss`
 - `tag.html`
 - `browser.html`
 
-## Related Technologies tags:
+## Themes tags:
 
 ### see `src/themes/simple/templates/partials/_tags.html` for slugs and tags' names
 
