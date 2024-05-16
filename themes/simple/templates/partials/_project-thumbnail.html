@@ -1,1 +1,8 @@
-<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}" target="_blank"><div class="thumbnail project-thumbnail">{% if article.thumbnail %}<img src="{{ article.thumbnail }}" class="background" alt="project thumbnail">{% endif %}{% if article.logo %}<img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{article.logo}}" alt="{{ article.title }}">{% else %}<p>{{ article.title }}</p>{% endif %}</div></a>
+<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}" target="_blank">
+    <div class="thumbnail project-thumbnail">
+        {% if article.logo %}
+            <img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{ article.logo }}"
+                 alt="{{ article.title }}">{% else %}<p>{{ article.title }}</p>
+        {% endif %}
+    </div>
+</a>
