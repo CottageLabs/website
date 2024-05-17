@@ -2,8 +2,8 @@
   &--section {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    padding-top: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
     align-items: flex-start;
 
     @media (max-width: 992px) {
@@ -58,6 +58,6 @@
   }
 
   &--intro {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 }
