@@ -18,8 +18,12 @@ Run the server from the project root
 For development you can use auto-reload mode so you can see changes immediately in browser:
 `pelican --autoreload --listen`
 
-Generate styles from `/website_pelican/src/themes/simple/static/scss`
-`scss main.scss main.css`
+Install sass with e.g.
+`sudo apt install ruby-sass`
+
+Generate styles from `themes/simple/static/scss`
+
+```scss main.scss main.css```
 
 # Generating new pages
 
