@@ -7,7 +7,6 @@ Projects:
   - EMLO
   - EUI Covid Data
   - Ruhr-University Bochum Hyrax
-  - 
 ---
 
 

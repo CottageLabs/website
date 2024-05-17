@@ -7,6 +7,7 @@ tags:
   - solr
   - security
   - dr
+  - repository
 template: project
 logo: nims.png
 externalurl: https://mdr.nims.go.jp/
