@@ -1,4 +1,7 @@
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: $baby-powder;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
@@ -21,12 +24,11 @@ main:not(:has(.homepage)) {
 }
 
 p {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .thumbnail {
   position: relative;
-  background: linear-gradient(to bottom, rgba($brown, 0.5), $white);
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 0.625rem;
@@ -35,11 +37,12 @@ p {
   line-height: 150%;
   overflow: hidden;
 
-  .background {
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    transition: opacity 0.3s ease;
+  &--dark {
+    background: $black;
+  }
+
+  &--light {
+    background: $white;
   }
 
   .project-logo {
@@ -143,6 +146,21 @@ h3 {
 
 strong {
   font-weight: 700;
+}
+
+.line {
+  position: relative;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(
+                  to right,
+                  $green 0%,
+                  $green 75%,
+                  $red 75%,
+                  $red
+  ) no-repeat 0 100%;
+  border-radius: 99px;
+
 }
 
 .list-section {

@@ -1,15 +1,17 @@
 .homepage {
   @media (min-width: 992px) {
     position: relative;
-    min-height: 74vh;
+    min-height: 50vh;
     top: 30%;
     .section-links {
+      flex: 1 0 auto;
       background-color: $white;
       box-shadow: 0 0 20px -10px $red;
       padding-top: 15rem;
       padding-left: 2rem;
       margin-top: -12rem;
-      margin-bottom: -6rem;
+      overflow-y: hidden;
+      box-sizing: border-box;
     }
     .section-clients {
       padding: 2rem;
@@ -28,41 +30,52 @@
     }
   }
 
-  .links-container {
-    display: flex;
-    flex-direction: column;
+  .section-links {
+    .line {
+      width: 75%;
+      left: -2.1rem;
+    }
 
-    .section-link {
+    .links-container {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 1rem 0;
-      max-width: 100%;
+      flex-direction: column;
 
-      &--text {
-        font-family: 'Manrope', sans-serif;
-        color: $black;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-style: normal;
-        line-height: normal;
-        font-weight: 300;
-        letter-spacing: 0.225rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding-left: 1rem;
-        text-transform: uppercase;
-      }
+      .section-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 0;
+        max-width: 100%;
 
-      &--icon {
-        min-width: 4.75rem;
-        height: 3.75rem;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+        &--text {
+          font-family: 'Manrope', sans-serif;
+          color: $black;
+          text-decoration: none;
+          font-size: 1.5rem;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 300;
+          letter-spacing: 0.225rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-left: 1rem;
+          text-transform: uppercase;
 
-      &:hover > span.section-link--text {
-        color: $red;
+          &_red-on-hover:hover {
+            color: $red;
+          }
+
+          &_green-on-hover:hover {
+            color: $green;
+          }
+        }
+
+        &--icon {
+          min-width: 4.75rem;
+          height: 3.75rem;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
       }
     }
   }
@@ -113,35 +126,16 @@
       text-align: center;
     }
 
-    .carousel-wrapper {
-      position: relative;
-      width: 27rem; // Adjust width as needed
-      margin: 0 auto;
+    .clients-logos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.25rem;
+      transition: opacity .5s ease-in;
+      margin: auto;
 
-      .clients-logos {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem;
-        transition: opacity .5s ease-in;
-        margin: auto;
-
-        .clients-logo {
-          padding: 1.25rem 1.25rem;
-        }
-      }
-
-      .set-1 {
-        animation: fadeInOut 15s infinite;
-      }
-
-      .set-2 {
-        animation: fadeInOut 15s infinite;
-        animation-delay: 7.5s;
+      .clients-logo {
+        padding: 1.25rem 1.25rem;
       }
     }
   }

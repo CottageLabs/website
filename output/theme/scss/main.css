@@ -1,4 +1,7 @@
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #FFFCF8;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
@@ -19,11 +22,10 @@ main:not(:has(.homepage)) {
   /* This will enable vertical scrolling if content exceeds viewport height */ }
 
 p {
-  margin-bottom: 3rem; }
+  margin-bottom: 1.5rem; }
 
 .thumbnail {
   position: relative;
-  background: linear-gradient(to bottom, rgba(90, 63, 64, 0.5), #ffffff);
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 0.625rem;
@@ -31,11 +33,10 @@ p {
   text-align: center;
   line-height: 150%;
   overflow: hidden; }
-  .thumbnail .background {
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    transition: opacity 0.3s ease; }
+  .thumbnail--dark {
+    background: #333333; }
+  .thumbnail--light {
+    background: #ffffff; }
   .thumbnail .project-logo {
     position: absolute;
     top: 50%;
@@ -108,6 +109,13 @@ h3 {
 strong {
   font-weight: 700; }
 
+.line {
+  position: relative;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
+  border-radius: 99px; }
+
 .list-section {
   position: relative;
   margin-left: 2rem; }
@@ -154,19 +162,31 @@ nav {
 footer {
   z-index: 100;
   width: 100%;
-  padding: 1rem;
-  min-height: 4rem;
-  margin-top: auto; }
+  padding: 1.5rem 0;
+  margin-top: auto;
+  background: #333333;
+  color: #ffffff; }
+  footer p:not(:last-child) {
+    margin-bottom: 1rem !important; }
+  footer p:last-child {
+    margin-bottom: 0 !important; }
   footer .container {
+    position: relative;
     height: max-content; }
-    footer .container a {
-      color: #333333;
-      text-decoration: none; }
-      footer .container a:hover {
-        color: #940101;
-        text-decoration: none; }
+    footer .container #cottage-shape {
+      position: absolute;
+      top: -97px;
+      right: 0;
+      width: 100px;
+      height: 100px; }
     footer .container .contact {
       padding-left: 1.75rem; }
+      footer .container .contact a {
+        color: #ffffff;
+        text-decoration: none; }
+        footer .container .contact a:hover {
+          color: #940101;
+          text-decoration: none; }
 
 .tag {
   display: flex;
@@ -221,15 +241,17 @@ footer {
 @media (min-width: 992px) {
   .homepage {
     position: relative;
-    min-height: 74vh;
+    min-height: 50vh;
     top: 30%; }
     .homepage .section-links {
+      flex: 1 0 auto;
       background-color: #ffffff;
       box-shadow: 0 0 20px -10px #940101;
       padding-top: 15rem;
       padding-left: 2rem;
       margin-top: -12rem;
-      margin-bottom: -6rem; }
+      overflow-y: hidden;
+      box-sizing: border-box; }
     .homepage .section-clients {
       padding: 2rem; } }
 @media (max-width: 991px) {
@@ -242,16 +264,19 @@ footer {
       padding: 2rem; }
     .homepage .section-clients {
       padding: 2rem; } }
-.homepage .links-container {
+.homepage .section-links .line {
+  width: 75%;
+  left: -2.1rem; }
+.homepage .section-links .links-container {
   display: flex;
   flex-direction: column; }
-  .homepage .links-container .section-link {
+  .homepage .section-links .links-container .section-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 1rem 0;
     max-width: 100%; }
-    .homepage .links-container .section-link--text {
+    .homepage .section-links .links-container .section-link--text {
       font-family: 'Manrope', sans-serif;
       color: #333333;
       text-decoration: none;
@@ -264,13 +289,15 @@ footer {
       text-overflow: ellipsis;
       padding-left: 1rem;
       text-transform: uppercase; }
-    .homepage .links-container .section-link--icon {
+      .homepage .section-links .links-container .section-link--text_red-on-hover:hover {
+        color: #940101; }
+      .homepage .section-links .links-container .section-link--text_green-on-hover:hover {
+        color: #005500; }
+    .homepage .section-links .links-container .section-link--icon {
       min-width: 4.75rem;
       height: 3.75rem;
       background-repeat: no-repeat;
       background-position: center; }
-    .homepage .links-container .section-link:hover > span.section-link--text {
-      color: #940101; }
 .homepage #oa-logo {
   background-image: url("../images/icons/icon-OA.svg"); }
 .homepage a.section-link:hover > div#oa-logo {
@@ -294,28 +321,15 @@ footer {
     transform: translateX(-30rem); } }
 .homepage .section-clients h2 {
   text-align: center; }
-.homepage .section-clients .carousel-wrapper {
-  position: relative;
-  width: 27rem;
-  margin: 0 auto; }
-  .homepage .section-clients .carousel-wrapper .clients-logos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    transition: opacity .5s ease-in;
-    margin: auto; }
-    .homepage .section-clients .carousel-wrapper .clients-logos .clients-logo {
-      padding: 1.25rem 1.25rem; }
-  .homepage .section-clients .carousel-wrapper .set-1 {
-    animation: fadeInOut 15s infinite; }
-  .homepage .section-clients .carousel-wrapper .set-2 {
-    animation: fadeInOut 15s infinite;
-    animation-delay: 7.5s; }
+.homepage .section-clients .clients-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  transition: opacity .5s ease-in;
+  margin: auto; }
+  .homepage .section-clients .clients-logos-container .clients-logo {
+    padding: 1.25rem 1.25rem; }
 
 @keyframes fadeInOut {
   0%, 100% {
