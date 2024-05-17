@@ -266,7 +266,8 @@ footer {
       padding: 2rem; } }
 .homepage .section-links .line {
   width: 75%;
-  left: -2.1rem; }
+  left: -2.1rem;
+  margin-bottom: 2rem; }
 .homepage .section-links .links-container {
   display: flex;
   flex-direction: column; }
