@@ -1,6 +1,10 @@
 ---
 title: EUI Covid Data
 name: EUI COVID Data Portal
+tags:
+  - python
+  - invenio
+  - repository
 template: project
 logo: eui.svg
 externalurl: https://covid19data.eui.eu/

@@ -8,17 +8,20 @@ Install `pelican` with
 ```
 pip install pelican pelican-yaml-metadata
 ```
+Generate content from the project root with the command
+`pelican content`
+We commit the resulting HTML from the build (under `output/`) into the repo so it can be served immediately from the repo on the server.
 
 Run the server from the project root
 `pelican --listen`
 
-Generate content from the project root
-`pelican content`
+For development you can use auto-reload mode so you can see changes immediately in browser:
+`pelican --autoreload --listen`
 
 Generate styles from `/website_pelican/src/themes/simple/static/scss`
 `scss main.scss main.css`
 
-# Generating new page
+# Generating new pages
 
 ## To add new project page:
 - Add the content file `.md` to the `/content/projects` folder
