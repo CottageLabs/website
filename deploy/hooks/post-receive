@@ -2,7 +2,7 @@
 while read oldrev newrev ref
 do
   echo "Ref $ref successfully received.  Deploying to production..."
-  git --work-tree=/var/www/next.cottagelabs.com --git-dir=/home/cloo/next.cottagelabs.com.git checkout -f
+  git --work-tree=/var/www/next.cottagelabs.com --git-dir=/home/cloo/next.cottagelabs.com.git checkout -f $ref
   sudo nginx -t && sudo nginx -s reload
 
 #    if [[ $ref =~ .*/master$ ]];
