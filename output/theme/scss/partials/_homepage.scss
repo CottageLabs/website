@@ -4,12 +4,12 @@
     min-height: 50vh;
     top: 30%;
     .section-links {
-      flex: 1 0 auto;
       background-color: $white;
       box-shadow: 0 0 20px -10px $red;
       padding-top: 15rem;
       padding-left: 2rem;
       margin-top: -12rem;
+      margin-bottom: -6rem;
       overflow-y: hidden;
       box-sizing: border-box;
     }
