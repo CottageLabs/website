@@ -1,0 +1,4 @@
+{% for p in pages|selectattr("title", "eq", "Team") %}
+    <h1>{{ p.header }}</h1>
+    {{ p.content }}
+{% endfor %}
