@@ -1,6 +1,10 @@
 ---
 title: EMLO
 name: Early Modern Letters Online
+tags:
+  - search
+  - python
+  - oaipmh
 template: project
 logo: emlo.png
 externalurl: http://emlo.bodleian.ox.ac.uk/
