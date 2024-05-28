@@ -5,6 +5,7 @@ tags:
   - python
   - invenio
   - dr
+  - oaipmh
 template: project
 logo: eui.svg
 externalurl: https://covid19data.eui.eu/

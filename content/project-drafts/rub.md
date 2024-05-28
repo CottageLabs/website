@@ -4,9 +4,9 @@ name: Ruhr-University Bochum Hyrax
 tags:
   - samvera
   - ruby
-  - es
+  - search
   - dr
-  - cloud storage
+  - cloud
 template: project
 logo: rub.png
 challenge:

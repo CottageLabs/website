@@ -4,7 +4,7 @@ name: NIMS Materials Data Repository
 tags:
   - samvera
   - ruby
-  - es
+  - search
   - dr
 template: project
 logo: nims.png

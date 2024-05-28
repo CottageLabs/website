@@ -2,8 +2,8 @@
 title: DeepGreen
 name: DeepGreen
 tags:
-  - es
-  - apis
+  - search
+  - api
 template: project
 externalurl: https://info.oa-deepgreen.de/en/
 logo: deepgreen.svg
