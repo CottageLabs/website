@@ -6,6 +6,7 @@
     border-radius: 3rem;
     width: max-content;
     color: $baby-powder;
+    text-wrap: nowrap;
 
     &:hover {
         color: $baby-powder;
@@ -42,6 +43,7 @@
     &--read-more {
         float: left;
         max-width: 100%;
+        text-wrap: auto;
     }
 
     &--see-in-projects {
