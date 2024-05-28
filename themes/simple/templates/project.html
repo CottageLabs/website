@@ -29,7 +29,7 @@
             {% if article.challenge.screenshot %}
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.challenge.screenshot }}"/>
+                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.challenge.screenshot }}" id="project-screenshot--{{ article.title }}--1"/>
             {% endif %}
         </div>
 
@@ -37,7 +37,7 @@
             {% if article.solution.screenshot %}
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.solution.screenshot }}"/>
+                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.solution.screenshot }}" id="project-screenshot--{{ article.title }}--2"/>
             {% endif %}
             <div class="project-page--section--text green">
                 <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/solution.svg"
@@ -55,7 +55,7 @@
 {% if article.success.screenshot %}
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.success.screenshot }}"/>
+                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.success.screenshot }}" id="project-screenshot--{{ article.title }}--3"/>
             {% endif %}
         </div>
 
