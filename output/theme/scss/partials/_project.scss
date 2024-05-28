@@ -10,10 +10,10 @@
       flex-direction: column;
     }
 
-    .project-logo {
-      object-fit: contain;
-      max-width: 100%;
-      max-height: 100%;
+    .thumbnail {
+      width: unset;
+      height: unset;
+      aspect-ratio: 1 / 1;
     }
 
     .icon {
@@ -60,4 +60,18 @@
   &--intro {
     margin: 2rem 0;
   }
+
+  #project-screenshot--NGLP--1,
+  #project-screenshot--NGLP--2 {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #project-screenshot--NGLP--3 {
+     height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
 }

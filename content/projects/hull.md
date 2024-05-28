@@ -6,6 +6,8 @@ tags:
   - archivematica
   - cloud
   - dr
+  - api
+  - ruby
 template: project
 logo: hull.jpeg
 externalurl: https://en.wikipedia.org/wiki/Hull_UK_City_of_Culture_2017

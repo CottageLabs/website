@@ -2,11 +2,12 @@
 title: Journal Comparison Service
 name: Journal Comparison Service
 tags:
-  - es
+  - search
   - python
   - js
-  - security
   - oai
+  - cloud
+  - datavisualisation
 template: project
 externalurl: https://journalcomparisonservice.org/
 logo: jcs.svg

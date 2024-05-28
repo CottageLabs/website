@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../theme/scss/main.css" />
+    <link rel="icon" type="image/png" href="../../theme/favicon/dark/favicon.png">
 
 </head>
 <body>
@@ -63,9 +64,12 @@
     <div class="project-page">
         <div class="project-page--section project-page--intro row">
             <div class="col-md-2">
-                <a href="https://en.wikipedia.org/wiki/Hull_UK_City_of_Culture_2017" target="_blank"><img
-                        src="../../theme/images/projects/hull.jpeg"
-                        alt="link to Hull City of Culture page" class="project-logo"></a>
+                <a href="https://en.wikipedia.org/wiki/Hull_UK_City_of_Culture_2017" title="Hull City of Culture" target="_blank">
+                    <div class="thumbnail project-thumbnail project-thumbnail--Hull City of Culture">
+                            <img class="project-logo"
+                                 src="../../theme/images/projects/hull.jpeg"
+                                 alt="Hull City of Culture">                    </div>
+                </a>
             </div>
             <div style="margin-bottom: -3rem" class="col-md-9">
                 <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
@@ -80,13 +84,13 @@
             </div>
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from Hull City of Culture project"
-                 src="../../theme/screenshots/hull1.png"/>
+                 src="../../theme/screenshots/hull1.png" id="project-screenshot--Hull City of Culture--1"/>
         </div>
 
         <div class=" project-page--section project-page--solution">
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from Hull City of Culture project"
-                 src="../../theme/screenshots/hull2.png"/>
+                 src="../../theme/screenshots/hull2.png" id="project-screenshot--Hull City of Culture--2"/>
             <div class="project-page--section--text green">
                 <h2><img class="icon" src="../../theme/images/icons/solution.svg"
                          aria-hidden="true">Solution</h2>
@@ -100,10 +104,9 @@
                          aria-hidden="true">Success</h2>
                 We developed novel code that combined three major pieces of the university infrastructure, that could be used for the City of Culture outputs.  Additionally, this same infrastructure could provide additional capabilities for the university, such as supporting researchers in easily self-archiving from their cloud storage accounts.
             </div>
-
             <img class="project-page--section--screenshot screenshot" aria-hidden="true"
                  alt="screenshot from Hull City of Culture project"
-                 src="../../theme/screenshots/hull3.png"/>
+                 src="../../theme/screenshots/hull3.png" id="project-screenshot--Hull City of Culture--3"/>
         </div>
 
     </div>
@@ -114,13 +117,15 @@
     <a href="../../projects/archivematica" class="tag tag--green">Archivematica</a>
     <a href="../../projects/cloud" class="tag tag--brown">Cloud Storage</a>
     <a href="../../projects/dr" class="tag tag--blue">Data Repositories</a>
+    <a href="../../projects/api" class="tag tag--red">API</a>
+    <a href="../../projects/ruby" class="tag tag--green">Ruby</a>
 </div>    </div>
 </main>
 <footer role="contentinfo">
 <div class="container">
     <img id="cottage-shape" src="../../theme/images/cottage.svg" alt="" />
     <div class="row">
-        <div class="contact col">
+        <div class="contact col-7">
             <p>Email: <a href="mailto:us@cottagelabs.com"><strong>us@cottagelabs.com</strong></a></p>
             <p><a href="https://www.twitter.com/cottagelabs"><strong>Twitter</strong></a> | <a href="https://www.linkedin.com/company/cottagelabs"><strong>LinkedIn</strong></a></p>
             <p><span>&copy; Cottage Labs LLP 2011-2024. All site content CC-BY</span></p>

@@ -1,9 +1,9 @@
 ---
-title: OA.Works
+title: oaworks
 name: OA.Works
 tags:
-  - es
-  - apis
+  - search
+  - api
   - js
   - oai
 template: project
