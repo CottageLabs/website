@@ -510,6 +510,15 @@ footer {
     width: 600px; }
 .project-page--intro {
   margin: 2rem 0; }
+.project-page #project-screenshot--NGLP--1,
+.project-page #project-screenshot--NGLP--2 {
+  height: 400px;
+  object-fit: cover;
+  object-position: top; }
+.project-page #project-screenshot--NGLP--3 {
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom; }
 
 #background {
   position: absolute;

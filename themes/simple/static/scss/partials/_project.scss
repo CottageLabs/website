@@ -60,4 +60,18 @@
   &--intro {
     margin: 2rem 0;
   }
+
+  #project-screenshot--NGLP--1,
+  #project-screenshot--NGLP--2 {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #project-screenshot--NGLP--3 {
+     height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
 }
