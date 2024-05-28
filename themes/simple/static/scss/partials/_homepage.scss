@@ -17,13 +17,17 @@
       padding-left: 2rem;
       margin-top: -11rem; // calc(-1 * ($nav-height + 1));
       padding-top: 11rem; //calc($nav-height + 1);
-
+      &--content {
+        max-height: calc(100vh - 22rem);
+        overflow: scroll;
+        padding-bottom: 1rem;
+      }
     }
     .section-clients {
       position: absolute;
       left: calc(40% + 5rem);
-      padding: 0 2rem 2rem;
-      max-height: calc(100vh - 20rem); //calc(100vh - ($nav-height + $footer-height));
+      padding: 0 2rem 1rem;
+      max-height: calc(100vh - 22rem); //calc(100vh - ($nav-height + $footer-height));
       overflow: scroll;
     }
   }

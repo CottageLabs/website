@@ -205,7 +205,8 @@ footer {
   gap: 0.625rem;
   border-radius: 3rem;
   width: max-content;
-  color: #FFFCF8; }
+  color: #FFFCF8;
+  text-wrap: nowrap; }
   .tag:hover {
     color: #FFFCF8; }
   .tag--red {
@@ -226,7 +227,8 @@ footer {
       background: #67A6D1; }
   .tag--read-more {
     float: left;
-    max-width: 100%; }
+    max-width: 100%;
+    text-wrap: auto; }
   .tag--see-in-projects {
     float: left; }
   .tag a {
@@ -265,11 +267,15 @@ footer {
       padding-left: 2rem;
       margin-top: -11rem;
       padding-top: 11rem; }
+      .homepage .section-links--content {
+        max-height: calc(100vh - 22rem);
+        overflow: scroll;
+        padding-bottom: 1rem; }
     .homepage .section-clients {
       position: absolute;
       left: calc(40% + 5rem);
-      padding: 0 2rem 2rem;
-      max-height: calc(100vh - 20rem);
+      padding: 0 2rem 1rem;
+      max-height: calc(100vh - 22rem);
       overflow: scroll; } }
 @media (max-width: 1024px) {
   .homepage {
