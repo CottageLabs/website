@@ -1,11 +1,12 @@
 ---
-title: OA.Works
+title: oaworks
 name: OA.Works
 tags:
   - es
   - apis
   - js
   - oai
+  - api
 template: project
 logo: oaworks.svg
 externalurl: https://oa.works/
