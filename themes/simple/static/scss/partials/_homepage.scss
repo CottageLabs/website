@@ -1,24 +1,29 @@
 .homepage {
-  @media (min-width: 992px) {
+  @media (min-width: 1025px) {
     position: relative;
     min-height: 50vh;
-    top: 30%;
+    height: calc(100vh - 11rem);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     .section-links {
       background-color: $white;
       box-shadow: 0 0 20px -10px $red;
-      padding-top: 15rem;
+      padding-top: 10rem;
       padding-left: 2rem;
-      margin-top: -12rem;
-      margin-bottom: -6rem;
-      overflow-y: hidden;
+      height: calc(100% + 11rem);
+      margin-top: -11rem;
       box-sizing: border-box;
     }
     .section-clients {
-      padding: 2rem;
+      max-height: 100%;
+      padding: 0 2rem 2rem;
     }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     display: block;
     overflow: scroll;
     .section-links {
@@ -135,6 +140,9 @@
       gap: 1.25rem;
       transition: opacity .5s ease-in;
       margin: auto;
+      max-height: 100%;
+      overflow: scroll;
+      padding-bottom: 1rem;
 
       .clients-logo {
         padding: 1.25rem 1.25rem;
