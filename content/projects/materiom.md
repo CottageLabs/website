@@ -2,7 +2,7 @@
 title: Materiom Data Commons
 name: Materiom Data Commons
 tags:
-  - es
+  - search
   - datavisualisation
   - python
   - js
