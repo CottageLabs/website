@@ -7,6 +7,6 @@ Cottage Labs is a partnership of software and data experts who can help you unde
 
 # CONTACT
 
-<span class="tag tag--red">[<i class="fa fa-envelope"></i> us@cottagelabs.com](emailto: us@cottagelabs.com)</span><br>
+<span class="tag tag--red">[<i class="fa fa-envelope"></i> us@cottagelabs.com](mailto:us@cottagelabs.com)</span><br>
 
 
