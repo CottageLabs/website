@@ -14,13 +14,14 @@
       width: 40%;
       background-color: $white;
       box-shadow: 0 0 20px -10px $red;
-      padding-left: 2rem;
+      padding-left: 0;
       margin-top: -11rem; // calc(-1 * ($nav-height + 1));
       padding-top: 11rem; //calc($nav-height + 1);
       &--content {
         max-height: calc(100vh - 22rem);
         overflow: scroll;
         padding-bottom: 1rem;
+        padding-left: 2rem;
       }
     }
     .section-clients {
