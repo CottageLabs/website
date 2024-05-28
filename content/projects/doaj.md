@@ -2,10 +2,10 @@
 title: DOAJ
 name: Directory of Open Access Journals
 tags:
-  - es
+  - search
   - python
   - oaipmh
-  - apis
+  - api
   - cloud
   - oai
 template: project

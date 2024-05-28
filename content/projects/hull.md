@@ -6,7 +6,7 @@ tags:
   - archivematica
   - cloud
   - dr
-  - apis
+  - api
   - ruby
 template: project
 logo: hull.jpeg

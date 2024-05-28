@@ -2,7 +2,7 @@
 title: WNA ReactorDB
 name: WNA Reactor Database
 tags:
-  - es
+  - search
   - python
   - js
   - datavisualisation

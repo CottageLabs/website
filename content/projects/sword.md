@@ -6,7 +6,7 @@ tags:
   - js
   - ruby
   - standards
-  - apis
+  - api
   - invenio
   - samvera
   - dspace
