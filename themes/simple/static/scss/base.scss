@@ -1,6 +1,5 @@
 body {
   position: relative;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: $baby-powder;
@@ -16,12 +15,14 @@ body {
 }
 
 main {
+  min-height: calc(100vh - $footer-height - $nav-height);
+  overflow: auto;
   flex: 1;
   padding: 1rem;
 }
 
-main:not(:has(.homepage)) {
-  overflow-y: auto; /* This will enable vertical scrolling if content exceeds viewport height */
+main:has(.homepage) {
+  overflow: visible; /* This will enable vertical scrolling if content exceeds viewport height */
 }
 
 p {

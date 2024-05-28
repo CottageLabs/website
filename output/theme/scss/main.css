@@ -1,6 +1,5 @@
 body {
   position: relative;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #FFFCF8;
@@ -15,11 +14,13 @@ body {
   min-height: 100vh; }
 
 main {
+  min-height: calc(100vh - $footer-height - $nav-height);
+  overflow: auto;
   flex: 1;
   padding: 1rem; }
 
-main:not(:has(.homepage)) {
-  overflow-y: auto;
+main:has(.homepage) {
+  overflow: visible;
   /* This will enable vertical scrolling if content exceeds viewport height */ }
 
 p {
@@ -135,7 +136,6 @@ strong {
 
 nav {
   background: linear-gradient(180deg, rgba(96, 62, 31, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
-  z-index: 1000;
   height: 10rem;
   padding: 0; }
   nav .container {
@@ -161,9 +161,8 @@ nav {
     z-index: 1000; }
 
 footer {
-  position: absolute;
-  bottom: -1rem;
-  z-index: 100;
+  position: relative;
+  z-index: 1;
   width: 100%;
   padding: 1.5rem 0;
   min-height: 10rem;
@@ -245,22 +244,25 @@ footer {
 @media (min-width: 1025px) {
   .homepage {
     position: relative;
-    min-height: 50vh;
-    height: calc(100vh - 11rem);
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start; }
     .homepage .section-links {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 40%;
       background-color: #ffffff;
       box-shadow: 0 0 20px -10px #940101;
-      padding-top: 10rem;
       padding-left: 2rem;
-      height: calc(100% + 11rem);
       margin-top: -11rem;
-      box-sizing: border-box; }
+      padding-top: 11rem; }
     .homepage .section-clients {
+      position: absolute;
+      left: calc(40% + 5rem);
       max-height: 100%;
       padding: 0 2rem 2rem; } }
 @media (max-width: 1024px) {
