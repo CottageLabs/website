@@ -39,13 +39,20 @@ p {
     background: #333333; }
   .thumbnail--light {
     background: #ffffff; }
-  .thumbnail .project-logo {
+  .thumbnail:focus, .thumbnail:hover {
+    box-shadow: 0px 4px 4px 0px rgba(148, 1, 1, 0.5); }
+    .thumbnail:focus .background, .thumbnail:hover .background {
+      opacity: 1; }
+  .thumbnail .project-logo,
+  .thumbnail .client-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 6.75rem;
-    max-height: 5.7rem; }
+    max-width: 90%;
+    min-width: 90%;
+    width: 90%;
+    max-height: 90%; }
 
 .change_underline_color_on_hover {
   position: relative;
@@ -179,7 +186,7 @@ footer {
     footer .container #cottage-shape {
       position: absolute;
       top: -97px;
-      right: 0;
+      right: -100px;
       width: 100px;
       height: 100px; }
     footer .container .contact {
@@ -193,10 +200,10 @@ footer {
 
 .tag {
   display: flex;
-  padding: 0.3125rem 0.625rem;
+  padding: .5rem 3rem;
   align-items: flex-start;
   gap: 0.625rem;
-  border-radius: 0.625rem;
+  border-radius: 3rem;
   width: max-content;
   color: #FFFCF8; }
   .tag:hover {
@@ -226,10 +233,8 @@ footer {
     color: #FFFCF8 !important;
     font-weight: bold; }
 
-.project-thumbnail:focus, .project-thumbnail:hover {
-  box-shadow: 0px 4px 4px 0px rgba(148, 1, 1, 0.5); }
-  .project-thumbnail:focus .background, .project-thumbnail:hover .background {
-    opacity: 1; }
+.project-thumbnail--NIMS-MDR, .project-thumbnail--oaworks {
+  background-color: #333333; }
 
 .featured_projects {
   padding-left: 0;
@@ -469,10 +474,10 @@ footer {
   @media (max-width: 992px) {
     .project-page--section {
       flex-direction: column; } }
-  .project-page--section .project-logo {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%; }
+  .project-page--section .thumbnail {
+    width: unset;
+    height: unset;
+    aspect-ratio: 1 / 1; }
   .project-page--section .icon {
     padding-right: 1rem; }
   .project-page--section--text {
@@ -506,7 +511,8 @@ footer {
   opacity: 0.5; }
 
 #project_lifestyle--graphic {
-  width: 125%;
-  margin-top: -8rem; }
+  height: 100%;
+  width: 100%;
+  object-fit: contain; }
 
 /*# sourceMappingURL=main.css.map */

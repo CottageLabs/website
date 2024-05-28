@@ -2,7 +2,7 @@
 Title: Data Repositories
 Template: expertise
 Projects: 
-  - NIMS MDR
+  - NIMS-MDR
   - Hull City of Culture
   - EMLO
   - EUI Covid Data
