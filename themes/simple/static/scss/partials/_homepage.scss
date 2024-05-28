@@ -22,8 +22,9 @@
     .section-clients {
       position: absolute;
       left: calc(40% + 5rem);
-      max-height: 100%;
       padding: 0 2rem 2rem;
+      max-height: calc(100vh - 20rem); //calc(100vh - ($nav-height + $footer-height));
+      overflow: scroll;
     }
   }
 
