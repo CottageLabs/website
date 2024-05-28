@@ -268,8 +268,9 @@ footer {
     .homepage .section-clients {
       position: absolute;
       left: calc(40% + 5rem);
-      max-height: 100%;
-      padding: 0 2rem 2rem; } }
+      padding: 0 2rem 2rem;
+      max-height: calc(100vh - 20rem);
+      overflow: scroll; } }
 @media (max-width: 1024px) {
   .homepage {
     display: block;
