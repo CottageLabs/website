@@ -8,30 +8,27 @@ Image: DataLifecycle.svg
 # Your data lifecycle
 
 
-The data lifecycle refers to the stages that data goes through from its creation or capture to its eventual disposal or archival.
+The data lifecycle refers to the stages that data goes through from its creation or capture to its eventual destination with users and archives.
 
-Understanding the lifecycle of the data is crucial for all projects to manage your data effectively, ensure compliance and optimize resource utilization.
+Understanding the lifecycle of the data is crucial for all projects to manage your data effectively, ensure compliance and optimise resource utilisation.
 
 Cottage Labs can design and develop processes to streamline your data lifecycle and gain maximum value from your data assets. These stages typically include:
 
 <div class="list-section" markdown=1>
 
-**Creation/Capture:**
+**Capture:**
 This is where data is generated or collected. It could be through manual entry, spreadsheets, integration with other systems and user interactions for quality control and assurance. 
 
 **Store:**
-This stage involves decisions about where and how data should be stored for efficient access, usage, retrieval, preservation and archival.
+Where and how should your data be stored for efficient access, usage, retrieval, preservation and archive.  We can store your data in the right environment for your project needs.
+
+**Manage:**
+Manage your data through custom processes and workflows, empowering your data managers. This could mean comprehensive user tools, preservation and access environments, and data destruction at the end of its life.
 
 **Analyse:**
-Data is often processed or analyzed to clean the data, extract insights, make the data easily discoverable and maximise usage and apply business logic.
+Data is often processed or analysed to clean it, extract insights for decision makers, to make the data easily discoverable, and to maximise its usage.
 
-**Use, present and share**
-The available data is presented to users (the different stakeholders) in specific ways using text, graphs, reports to best showcase the data, making it easy to consume and share the data.
-
-**Preservation and Archival**
-In data preservation, we focus on ensuring the long-term accessibility and usability of data in active use and archival involves storing data in a way that it can be retrieved if needed but doesn't take up resources needed for active data.
-
-**Deletion/Disposal**
-Eventually, data may reach the end of its useful life or become obsolete. It should be securely deleted or disposed of according to relevant policies and regulations to prevent unauthorized access or breaches.
+**Share:**
+Share your data via flexible interfaces for humans or machines, using text, charts and reports which best showcase the data, and make it easy to consume and disseminate.
 
 </div>
