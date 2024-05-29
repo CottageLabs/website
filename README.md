@@ -180,7 +180,7 @@ As above, but with `production` instead of `next`, and a host set up for `cottag
     git remote add production cloo@cl-docker:cottagelabs.com.git
     git push production master
 
-Also, use the `-production` hook.
+Also, use the `-production` hook which is hardcoded for `cottagelabs.com`.
 
 ## SSL Certificates
 
