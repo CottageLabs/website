@@ -4,9 +4,20 @@
         <div class="about--content col-lg-4">
             {{ page.content }}
         </div>
+
         <div class="col-lg-7">
             <div class="partners">
                 {% include "partners.html" %}
+            </div>
+            {% include "team.html" %}
+            <div class="partners">
+                {% include "team_row1.html" %}
+            </div>
+            <div class="partners">
+                {% include "team_row2.html" %}
+            </div>
+            <div class="partners">
+                {% include "team_row3.html" %}
             </div>
         </div>
     </div>
