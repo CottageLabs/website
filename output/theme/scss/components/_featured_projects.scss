@@ -11,14 +11,5 @@
   &--tag-name {
     text-transform: uppercase;
     font-weight: 700;
-    background: linear-gradient(
-                    to right,
-                    $green 0%, /* Green */
-                    $green 75%, /* Green */
-                    $red 75%, /* Red */
-                    $red /* Red */
-    ) no-repeat 0 100%;
-    background-size: 100% 3px;
-
   }
 }
