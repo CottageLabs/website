@@ -33,11 +33,13 @@ footer {
       a {
         color: $white;
         text-decoration: none;
+        .fa {
+          margin-right: 0;
+        }
 
-        //&:hover {
-        //  color: $red;
-        //  text-decoration: none;
-        //}
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
