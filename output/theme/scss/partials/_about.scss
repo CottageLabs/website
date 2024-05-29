@@ -15,22 +15,29 @@
     }
   }
 
-  .partners {
+  .partners,
+  .team {
     margin-bottom: 3rem;
 
     &-profiles {
       display: flex;
-      justify-content: space-around; /* Adjust the alignment as needed */
+      justify-content: space-between; /* Adjust the alignment as needed */
       padding: 0; /* Remove default padding */
+      flex-wrap: wrap;
+
       ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         list-style: none;
-        gap: .5rem;
         text-align: left; /* Align text to the left */
+        max-width: 30%;
+        min-width: 200px;
+        padding: 0 2rem 2rem 0;
+
         li {
           display: contents;
+
           h2 {
             height: unset;
           }
@@ -50,8 +57,11 @@
         vertical-align: bottom;
       }
 
-      ul > li > h2 {
+      ul > li > h2:first-of-type {
         margin-bottom: 0 !important;
+      }
+      ul > li > h2:not(:first-of-type) {
+        margin-bottom: 1rem !important;
       }
     }
   }
