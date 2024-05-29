@@ -5,6 +5,7 @@
         {% include "browser.html" %}
     {% endwith %}
 
+    <h2>Featured projects with <span class="featured_projects--tag-name">{{ tag }}</span> tag</h2>
     <ul class="featured_projects">
         {% for article in articles if tag in article.tags %}
             <li>{% include "partials/_project-thumbnail.html" %}</li>

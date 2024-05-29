@@ -1,10 +1,24 @@
 .featured_projects {
-    padding-left: 0;
-    margin-bottom: 3rem;
-    list-style: none;
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 3rem;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+
+  &--tag-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(
+                    to right,
+                    $green 0%, /* Green */
+                    $green 75%, /* Green */
+                    $red 75%, /* Red */
+                    $red /* Red */
+    ) no-repeat 0 100%;
+    background-size: 100% 3px;
+
+  }
 }
