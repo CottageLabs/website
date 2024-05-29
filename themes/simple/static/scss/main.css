@@ -194,9 +194,8 @@ footer {
       footer .container .contact a {
         color: #ffffff;
         text-decoration: none; }
-        footer .container .contact a:hover {
-          color: #940101;
-          text-decoration: none; }
+    footer .container .registration {
+      text-align: right; }
 
 .tag {
   display: flex;
