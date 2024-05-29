@@ -1,10 +1,13 @@
 {% extends "base.html" %}
+{% from "partials/_tags.html" import tags_titles %}
 
 {% block content %}
     {% with active_tag=tag %}
         {% include "browser.html" %}
     {% endwith %}
 
+    <h2>Featured projects</h2>
+    <p>Projects tagged with "{{tags_titles[tag]}}"</p>
     <ul class="featured_projects">
         {% for article in articles if tag in article.tags %}
             <li>{% include "partials/_project-thumbnail.html" %}</li>
