@@ -175,15 +175,20 @@ Afterwards, replace the copied hook with a symlink to the checked out hook (so y
 
 # Deployment on cottagelabs.com
 
-As above, but with `production` instead of `next`, and a host set up for `cottagelabs.com`:
+Set up server as above, but with `production` instead of `next`, and a host set up for `cottagelabs.com`:
 
     git remote add production cloo@cl-docker:cottagelabs.com.git
     git push production master
 
-Also, use the `-production` hook which is hardcoded for `cottagelabs.com`.
+Also, use the `-production` hook which is hardcoded for `cottagelabs.com`, along with its corresponding `nginx` config.
 
 ## SSL Certificates
 
 The nginx config expects an SSL certificate - this should be created via LetsEncrypt / certbot.
 
 To use the nginx config, symlink it within `/etc/nginx/sites-available` and add a symlink to that one inside `/etc/nginx/sites-enabled`.
+
+e.g.
+```
+sudo ln -s /var/www/next.cottagelabs.com/deploy/nginx/next.cottagelabs.com /etc/nginx/sites-available/next.cottagelabs.com
+```
