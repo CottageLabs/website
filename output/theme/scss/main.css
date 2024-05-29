@@ -194,6 +194,10 @@ footer {
       footer .container .contact a {
         color: #ffffff;
         text-decoration: none; }
+        footer .container .contact a .fa {
+          margin-right: 0; }
+        footer .container .contact a:hover {
+          text-decoration: underline; }
     footer .container .registration {
       text-align: right; }
 
