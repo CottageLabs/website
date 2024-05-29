@@ -252,6 +252,11 @@ footer {
   align-content: flex-start;
   gap: 1.25rem;
   flex-wrap: wrap; }
+  .featured_projects--tag-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
+    background-size: 100% 3px; }
 
 @media (min-width: 1025px) {
   .homepage {
