@@ -385,41 +385,55 @@ footer {
     /* Adjust the width of the shadow as needed */
     box-shadow: 10px 0 10px -10px #940101;
     /* Adjust the shadow properties as needed */ }
-.about .partners {
+.about .partners,
+.about .team {
   margin-bottom: 3rem; }
-  .about .partners-profiles {
+  .about .partners-profiles,
+  .about .team-profiles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* Adjust the alignment as needed */
     padding: 0;
-    /* Remove default padding */ }
-    .about .partners-profiles ul {
+    /* Remove default padding */
+    flex-wrap: wrap; }
+    .about .partners-profiles ul,
+    .about .team-profiles ul {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       list-style: none;
-      gap: .5rem;
       text-align: left;
-      /* Align text to the left */ }
-      .about .partners-profiles ul li {
+      /* Align text to the left */
+      max-width: 30%;
+      min-width: 200px;
+      padding: 0 2rem 2rem 0; }
+      .about .partners-profiles ul li,
+      .about .team-profiles ul li {
         display: contents; }
-        .about .partners-profiles ul li h2 {
+        .about .partners-profiles ul li h2,
+        .about .team-profiles ul li h2 {
           height: unset; }
-    .about .partners-profiles img {
+    .about .partners-profiles img,
+    .about .team-profiles img {
       width: 200px;
       /* Make sure all images take up the full width of their container */
       max-width: 200px;
       /* Ensure the images don't exceed their original size */
       height: auto;
       /* Maintain the aspect ratio of the images */ }
-    .about .partners-profiles h2 {
+    .about .partners-profiles h2,
+    .about .team-profiles h2 {
       margin-bottom: 10px;
       /* Adjust the margin as needed */
       height: 4rem;
       display: table-cell;
       vertical-align: bottom; }
-    .about .partners-profiles ul > li > h2 {
+    .about .partners-profiles ul > li > h2:first-of-type,
+    .about .team-profiles ul > li > h2:first-of-type {
       margin-bottom: 0 !important; }
+    .about .partners-profiles ul > li > h2:not(:first-of-type),
+    .about .team-profiles ul > li > h2:not(:first-of-type) {
+      margin-bottom: 1rem !important; }
 .about .registration {
   text-align: right; }
 
