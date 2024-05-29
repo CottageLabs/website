@@ -234,8 +234,10 @@ footer {
     color: #FFFCF8 !important;
     font-weight: bold; }
 
-.project-thumbnail--NIMS-MDR, .project-thumbnail--oaworks {
-  background-color: #333333; }
+.project-thumbnail {
+  background-color: #ffffff; }
+  .project-thumbnail--NIMS-MDR, .project-thumbnail--oaworks {
+    background-color: #333333; }
 
 .featured_projects {
   padding-left: 0;
