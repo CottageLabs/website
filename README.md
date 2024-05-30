@@ -141,18 +141,18 @@ Generate styles from `themes/simple/static/scss`
 This is managed using git hooks. You'll need the server in your ```.ssh/config``` file,
 and run the following from your local checked-out repo to add the remote:
 
-    git remote add production cloo@sauron:next.cottagelabs.com.git
+    git remote add next cloo@sauron:next.cottagelabs.com.git
 
 You can only deploy the master branch. To do so, run the following command:
 
-    git push production master
+    git push next master
 
-i.e. you are pushing master to the production remote. This will run the hooks, and
+i.e. you are pushing master to the remote repo on machine `sauron`. This will run the hooks, and
 restart ```nginx``` for you to pick up the changes.
 
 ## Server configuration
 
-Requires a bare git repo on the host, called ```next.cottagelabs.com.git```. This is created
+Requires a bare git repo on the host, e.g. called ```next.cottagelabs.com.git```. This is created
 with ```git init --bare next.cottagelabs.com.git``` in the home directory.
 
 Create the working tree directory where nginx will serve the files from and fix the
@@ -173,8 +173,22 @@ Afterwards, replace the copied hook with a symlink to the checked out hook (so y
     ln -sf /var/www/next.cottagelabs.com/deploy/hooks/post-receive hooks/post-receive
     chmod +x hooks/post-receive
 
+# Deployment on cottagelabs.com
+
+Set up server as above, but with `production` instead of `next`, and a host set up for `cottagelabs.com`:
+
+    git remote add production cloo@cl-docker:cottagelabs.com.git
+    git push production master
+
+Also, use the `-production` hook which is hardcoded for `cottagelabs.com`, along with its corresponding `nginx` config.
+
 ## SSL Certificates
 
 The nginx config expects an SSL certificate - this should be created via LetsEncrypt / certbot.
 
 To use the nginx config, symlink it within `/etc/nginx/sites-available` and add a symlink to that one inside `/etc/nginx/sites-enabled`.
+
+e.g.
+```
+sudo ln -s /var/www/next.cottagelabs.com/deploy/nginx/next.cottagelabs.com /etc/nginx/sites-available/next.cottagelabs.com
+```
