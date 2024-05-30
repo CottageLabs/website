@@ -1,5 +1,5 @@
 .homepage {
-  @media (min-width: 1025px) {
+  @media (max-width: 993px) {
     position: relative;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 992px) {
     display: block;
     overflow: scroll;
     .section-links {
