@@ -19,6 +19,9 @@ main {
   flex: 1;
   padding: 1rem; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 main:has(.homepage) {
   overflow: visible;
   /* This will enable vertical scrolling if content exceeds viewport height */ }
