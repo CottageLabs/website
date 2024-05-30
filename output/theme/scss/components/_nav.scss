@@ -1,7 +1,12 @@
 nav {
-  background: $nav-gradient;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-image: $nav-gradient;
+  background-color: $baby-powder;
   height: $nav-height;
   padding: 0;
+  z-index: 1000;
 
   .container {
     display: flex;

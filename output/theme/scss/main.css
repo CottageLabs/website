@@ -18,6 +18,8 @@ main {
   overflow: auto;
   flex: 1;
   padding: 1rem; }
+  main .container {
+    margin-top: 10rem; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -145,9 +147,14 @@ strong {
   /* Adjust the shadow properties as needed */ }
 
 nav {
-  background: linear-gradient(180deg, rgba(96, 62, 31, 0.2) 0%, rgba(190, 18, 66, 0) 64.94%);
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(96, 62, 31, 0.2) 0%, #fffcf8 100%);
+  background-color: #FFFCF8;
   height: 10rem;
-  padding: 0; }
+  padding: 0;
+  z-index: 1000; }
   nav .container {
     display: flex;
     align-items: center;
