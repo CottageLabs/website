@@ -1,17 +1,7 @@
 #!/usr/bin/env bash
 while read oldrev newrev ref
 do
-  echo "Ref $ref successfully received.  Deploying to production..."
+  echo "Ref $ref successfully received.  Deploying to next.cottagelabs.com..."
   git --work-tree=/var/www/next.cottagelabs.com --git-dir=/home/cloo/next.cottagelabs.com.git checkout -f $ref
   sudo nginx -t && sudo nginx -s reload
-
-## Uncomment lines below to only allow master ref deployment
-#    if [[ $ref =~ .*/master$ ]];
-#    then
-#        echo "Master ref received.  Deploying master branch to production..."
-#        git --work-tree=/var/www/next.cottagelabs.com --git-dir=/home/cloo/next.cottagelabs.com.git checkout -f
-#        sudo nginx -t && sudo nginx -s reload
-#    else
-#        echo "Ref $ref successfully received.  Doing nothing: only the master branch may be deployed on this server."
-#    fi
 done
