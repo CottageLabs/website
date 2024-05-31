@@ -177,7 +177,7 @@ nav {
     max-height: 7rem;
     z-index: 1000; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar-nav {
     background-color: #ffffff;
     padding: 0.5rem;
@@ -277,7 +277,7 @@ footer {
     text-transform: uppercase;
     font-weight: 700; }
 
-@media (max-width: 993px) {
+@media (max-width: 991px) {
   .homepage {
     position: relative;
     margin: 0;
@@ -307,7 +307,7 @@ footer {
       padding: 0 2rem 1rem;
       max-height: calc(100vh - 22rem);
       overflow: scroll; } }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .homepage {
     display: block;
     overflow: scroll; }
@@ -522,7 +522,7 @@ footer {
   gap: 1.5rem;
   padding: 1.5rem 0;
   align-items: flex-start; }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     .project-page--section {
       flex-direction: column; } }
   .project-page--section .thumbnail {
