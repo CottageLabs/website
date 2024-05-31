@@ -3,7 +3,7 @@ while read oldrev newrev ref
 do
     if [[ $ref =~ .*/master$ ]];
     then
-        echo "Master ref received.  Deploying master branch to production..."
+        echo "Master ref received.  Deploying master branch to production at cottagelabs.com..."
         git --work-tree=/var/www/cottagelabs.com --git-dir=/home/cloo/cottagelabs.com.git checkout -f
         sudo nginx -t && sudo nginx -s reload
     else
