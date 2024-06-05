@@ -59,7 +59,7 @@ p {
     width: 90%;
     max-height: 90%; }
 
-.change_underline_color_on_hover, .or24 a, .or24-content a {
+.change_underline_color_on_hover, .or24 a, .or24-content a, .project-page--section a {
   position: relative;
   text-decoration: none;
   color: #333333;
@@ -68,7 +68,7 @@ p {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms; }
-  .change_underline_color_on_hover:hover, .or24 a:hover, .or24-content a:hover {
+  .change_underline_color_on_hover:hover, .or24 a:hover, .or24-content a:hover, .project-page--section a:hover {
     background-size: 0 1px, 100% 2px; }
 
 img {
@@ -560,6 +560,8 @@ a.section-link:hover > div#dv-logo {
   @media (max-width: 991px) {
     .project-page--section {
       flex-direction: column; } }
+  .project-page--section a {
+    color: #333333; }
   .project-page--section .thumbnail {
     width: unset;
     height: unset;
