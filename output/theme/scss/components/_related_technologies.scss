@@ -1,5 +1,6 @@
 .related_technologies {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 1rem;
   margin-bottom: 3rem;
