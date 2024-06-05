@@ -59,7 +59,7 @@ p {
     width: 90%;
     max-height: 90%; }
 
-.change_underline_color_on_hover {
+.change_underline_color_on_hover, .or24 a, .or24-content a {
   position: relative;
   text-decoration: none;
   color: #333333;
@@ -68,7 +68,7 @@ p {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms; }
-  .change_underline_color_on_hover:hover {
+  .change_underline_color_on_hover:hover, .or24 a:hover, .or24-content a:hover {
     background-size: 0 1px, 100% 2px; }
 
 img {
@@ -276,6 +276,25 @@ footer {
   .featured_projects--tag-name {
     text-transform: uppercase;
     font-weight: 700; }
+
+.or24 {
+  width: 100%;
+  border: #940101 solid 3px;
+  border-radius: 0.625rem;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  .or24 a {
+    color: #333333; }
+  .or24-content a {
+    color: #333333;
+    line-height: 150%; }
+  .or24-content ul {
+    padding-left: 0; }
+    .or24-content ul li {
+      margin-bottom: 1rem;
+      list-style: none; }
 
 .homepage {
   position: relative;
