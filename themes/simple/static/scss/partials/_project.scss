@@ -10,6 +10,11 @@
       flex-direction: column;
     }
 
+    a {
+      @extend .change_underline_color_on_hover;
+      color: $black;
+    }
+
     .thumbnail {
       width: unset;
       height: unset;
