@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>{{ page.title }}</h2>
-<h2>{{ page.content }}</h2>
-<h1>Page template</h1>
+    <div class="{{ page.title }}-content row">
+        <div class="col-md-6">
+            {{ page.content }}
+        </div>
+        <div class="col-md-6">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ page.background }}" alt=""/>
+        </div>
+    </div>
 {% endblock %}
