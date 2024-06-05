@@ -291,10 +291,9 @@ footer {
     color: #333333;
     line-height: 150%; }
   .or24-content ul {
-    padding-left: 0; }
+    padding-left: 0.85rem; }
     .or24-content ul li {
-      margin-bottom: 1rem;
-      list-style: none; }
+      margin-bottom: 1.5rem; }
 
 .homepage {
   position: relative;
