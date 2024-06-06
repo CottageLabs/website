@@ -1,0 +1,86 @@
+$base-font-size: 1rem;
+
+// Define breakpoints for different screen sizes
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Function to calculate font size based on the viewport width
+@function calculate-font-size($size) {
+  @return ($size / 16) * 1rem;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $base-font-size; // Base font size
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  // Media query for larger mobile screens and tablets
+  @media screen and (min-width: $breakpoint-mobile) {
+    font-size: calculate-font-size(18); // Adjust as needed
+  }
+
+  // Media query for desktop screens
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: calculate-font-size(20); // Adjust as needed
+  }
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: calculate-font-size(28); // Adjust as needed
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem; /* 85.714% */
+  text-transform: uppercase;
+
+  // Media query for larger mobile screens and tablets
+  @media screen and (min-width: $breakpoint-mobile) {
+    font-size: calculate-font-size(32); // Adjust as needed
+  }
+
+  // Media query for desktop screens
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: calculate-font-size(36); // Adjust as needed
+  }
+
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: calculate-font-size(24); // Adjust as needed
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: capitalize;
+
+   // Media query for tablets and larger screens
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: calculate-font-size(24); // Adjust as needed
+  }
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calculate-font-size(16); // Adjust as needed
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  // Media query for tablets and larger screens
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: calculate-font-size(18); // Adjust as needed
+  }
+
+}
+
+strong {
+  font-weight: 700;
+}
