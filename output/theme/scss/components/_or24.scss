@@ -11,21 +11,27 @@
     @extend .change_underline_color_on_hover;
     color: $black;
   }
+}
 
-  &-content {
-
-    a {
-      @extend .change_underline_color_on_hover;
-      color: $black;
-      line-height: 150%;
+.or24-content {
+  .or24-background {
+    @media (max-width: $breakpoint-tablet) {
+      display: none !important;
     }
+  }
 
-    ul {
-      padding-left: 0.85rem;
-      li {
-        margin-bottom: 1.5rem;
-        //list-style: none;
-      }
+  a {
+    @extend .change_underline_color_on_hover;
+    color: $black;
+    line-height: 150%;
+  }
+
+  ul {
+    padding-left: 0.85rem;
+
+    li {
+      margin-bottom: 1.5rem;
+      //list-style: none;
     }
   }
 }
