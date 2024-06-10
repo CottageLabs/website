@@ -185,7 +185,9 @@ nav {
     height: max-content;
     padding: 1rem;
     border: #dee2e6 1px solid;
-    border-radius: 0.625rem; }
+    border-radius: 0.625rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Simple shadow */ }
     .navbar-nav a {
       font-size: 1.75rem; }
 
@@ -290,13 +292,17 @@ footer {
   margin-bottom: 1rem; }
   .or24 a {
     color: #333333; }
-  .or24-content a {
-    color: #333333;
-    line-height: 150%; }
-  .or24-content ul {
-    padding-left: 0.85rem; }
-    .or24-content ul li {
-      margin-bottom: 1.5rem; }
+
+@media (max-width: 768px) {
+  .or24-content .or24-background {
+    display: none !important; } }
+.or24-content a {
+  color: #333333;
+  line-height: 150%; }
+.or24-content ul {
+  padding-left: 0.85rem; }
+  .or24-content ul li {
+    margin-bottom: 1.5rem; }
 
 .homepage {
   position: relative;
