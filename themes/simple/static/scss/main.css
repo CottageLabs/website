@@ -172,6 +172,8 @@ nav {
       vertical-align: text-bottom; }
       nav .nav-link img:focus, nav .nav-link img:hover {
         filter: invert(7%) sepia(100%) saturate(5458%) hue-rotate(360deg) brightness(91%) contrast(107%); }
+  nav .dropdown-menu {
+    right: 0; }
   nav #logo {
     position: relative;
     max-height: 7rem;
