@@ -1,9 +1,10 @@
 .tag {
+    @include label;
     display: flex;
-    padding: .5rem 3rem;
+    padding: $spacing-01 $spacing-02;
     align-items: flex-start;
-    gap: 0.625rem;
-    border-radius: 3rem;
+    gap: $spacing-03;
+    border-radius: $pill;
     width: max-content;
     color: $baby-powder;
     text-wrap: nowrap;

@@ -3,40 +3,24 @@
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
-  gap: .5rem;
-  padding-left: 0;
-  margin-bottom: 3rem;
+  gap: $spacing-02;
+  padding-left: calc(-1 * #{$spacing-02});
+  margin-bottom: $spacing-05;
   .technology {
     display: flex;
-    height: 2.875rem;
-    padding: 0.625rem .75rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    padding: $spacing-02 $spacing-02 0;
+
     &.active {
-      //border-left: 4px solid $red;
-      //background: linear-gradient(90deg, rgba($red, 0.5) 2%, rgba($rosy-brown, 0.2) 100%);
-      background: linear-gradient(
-                  to right,
-                  $green 0%, /* Green */
-                  $green 75%, /* Green */
-                  $red 75%, /* Red */
-                  $red /* Red */
-  ) no-repeat 0 100%;
-  background-size: 100% 4px;
+      @include underline;
       a {
         font-weight: 700;
       }
     }
     a {
+      @include label;
       color: $brown;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      text-transform: capitalize;
     }
   }
 }

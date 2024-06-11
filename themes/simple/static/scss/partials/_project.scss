@@ -2,16 +2,16 @@
   &--section {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+    gap: $spacing-04;
+    padding: $spacing-04 0;
     align-items: flex-start;
 
-    @media (max-width: 991px) {
+    @media (max-width: $breakpoint-lg) {
       flex-direction: column;
     }
 
     a {
-      @extend .change_underline_color_on_hover;
+      @include change_underline_color_on_hover;
       color: $black;
     }
 
@@ -22,12 +22,12 @@
     }
 
     .icon {
-      padding-right: 1rem;
+      padding-right: $spacing-03;
     }
 
     &--text {
       flex-basis: 50%;
-      padding: 2rem 1rem;
+      padding: $spacing-03 $spacing-04;
 
       &.red {
         border-left: 5px solid $red;
@@ -56,7 +56,7 @@
 
     &--screenshot {
       flex-grow: 1;
-      border-radius: 0.625rem;
+      border-radius: $border-radius;
       box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
       width: 600px;
     }

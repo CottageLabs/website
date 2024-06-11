@@ -10,28 +10,41 @@
     bottom: 0;
     height: 100vh;
     width: 40%;
-    background-color: rgba($white, 0.2);
+    background-color: $white;
     box-shadow: 0 0 20px -10px $red;
     padding-left: 0;
     margin-top: -11rem; // calc(-1 * ($nav-height + 1));
     padding-top: 11rem; //calc($nav-height + 1);
+
+    #logo {
+      position: absolute;
+      left: 0;
+      top: 1.45rem;
+      max-height: $logo-size;
+      @media (max-width: $breakpoint-lg) {
+        display: none;
+      }
+    }
+
     &--content {
       max-height: calc(100vh - 22rem);
       overflow: scroll;
       padding-bottom: 1rem;
       padding-left: 2rem;
 
-      .links-container {
-        display: flex;
-        flex-direction: column;
-
-        .line {
+      .line {
+        @include line;
           width: 75%;
           left: -2.1rem;
           margin-bottom: 2rem;
         }
 
+      .links-container {
+        display: flex;
+        flex-direction: column;
+
         .section-link {
+          background: none;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -39,12 +52,11 @@
           max-width: 100%;
 
           &--text {
-            font-family: 'Manrope', sans-serif;
+            @include header1;
+            @include typescale-03;
+            line-height: 100%;
             color: $black;
             text-decoration: none;
-            font-size: 1.5rem;
-            font-style: normal;
-            line-height: normal;
             font-weight: 300;
             letter-spacing: 0.225rem;
             overflow: hidden;
