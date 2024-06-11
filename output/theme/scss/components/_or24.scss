@@ -8,20 +8,20 @@
   margin-bottom: 1rem;
 
   a {
-    @extend .change_underline_color_on_hover;
+    @include change_underline_color_on_hover;
     color: $black;
   }
 }
 
 .or24-content {
   .or24-background {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-lg) {
       display: none !important;
     }
   }
 
   a {
-    @extend .change_underline_color_on_hover;
+    @include change_underline_color_on_hover;
     color: $black;
     line-height: 150%;
   }

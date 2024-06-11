@@ -22,7 +22,7 @@ nav {
   }
 
   .nav-link {
-    @extend .underline_on_hover;
+    @include underline_on_hover;
     z-index: 1;
     color: $black;
     text-align: right;
@@ -43,7 +43,7 @@ nav {
 
   #logo {
     position: relative;
-    max-height: 7rem;
+    max-height: $logo-size;
     z-index: 1000;
   }
 }
@@ -54,12 +54,12 @@ nav {
     display: flex;
     width: 100vw;
     height: max-content;
-    padding: 1rem;
+    padding: $spacing-03;
     border: #dee2e6 1px solid;
-    border-radius: 0.625rem;
+    border-radius: $border-radius;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Simple shadow */
     a {
-      font-size: 1.75rem;
+      @include link;
     }
   }
 

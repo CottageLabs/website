@@ -1,0 +1,61 @@
+@mixin underline {
+  display: table;
+  position: relative; // Ensures the pseudo-element positionss itself relative to the anchor
+  text-decoration: none; // Remove default underline
+  background: linear-gradient(
+                  to right,
+                  $green 0%,
+                  $green 75%,
+                  $red 75%,
+                  $red
+  ) no-repeat 0 100%;
+  background-size: 100% 2px;
+}
+
+@mixin underline_on_hover {
+  @include underline;
+  transition: background-size 400ms;
+  background-size: 0 2px;
+  &:hover {
+    background-size: 100% 2px;
+  }
+}
+
+@mixin change_underline_color_on_hover {
+  position: relative; // Ensures the pseudo-element positionss itself relative to the anchor
+  text-decoration: none; // Remove default underline
+  color: $black; // Change link color to whatever you want
+  background: linear-gradient(
+                  to right,
+                  $black, /* Black */
+                  $black /* Black */
+  ),
+  linear-gradient(
+                  to right,
+                  $green 0%, /* Green */
+                  $green 75%, /* Green */
+                  $red 75%, /* Red */
+                  $red /* Red */
+  );
+  background-size: 100% 1px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+
+  &:hover {
+    background-size: 0 1px, 100% 2px;
+  }
+}
+
+@mixin line {
+  position: relative;
+  height: 4px;
+  background: linear-gradient(
+                  to right,
+                  $green 0%,
+                  $green 75%,
+                  $red 75%,
+                  $red
+  ) no-repeat 0 100%;
+  border-radius: 99px;
+}
