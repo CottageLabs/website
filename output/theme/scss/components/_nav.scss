@@ -61,11 +61,10 @@ nav {
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: $breakpoint-xl) {
   .navbar-nav {
     background-color: $white;
     display: flex;
-    width: 100vw;
     height: max-content;
     padding: $spacing-03;
     border: #dee2e6 1px solid;
