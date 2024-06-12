@@ -7,4 +7,8 @@
     align-content: flex-start;
     gap: 1.25rem;
     flex-wrap: wrap;
+    background-color: hotpink;
+    li > a {
+        background: none !important;
+    }
 }
