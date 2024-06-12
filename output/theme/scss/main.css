@@ -210,11 +210,10 @@ nav {
     max-height: 7.5rem;
     z-index: 1000; }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .navbar-nav {
     background-color: #ffffff;
     display: flex;
-    width: 100vw;
     height: max-content;
     padding: 0.75rem;
     border: #dee2e6 1px solid;
