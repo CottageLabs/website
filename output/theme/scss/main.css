@@ -200,6 +200,10 @@ nav {
     nav a.dropdown-item:hover {
       background-size: 100% 2px; }
   nav .dropdown-menu {
+    width: max-content; }
+  nav .dropdown:first-of-type > .dropdown-menu {
+    left: 0; }
+  nav .dropdown:last-of-type > .dropdown-menu {
     right: 0; }
   nav #logo {
     position: relative;
