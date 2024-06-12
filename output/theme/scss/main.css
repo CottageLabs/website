@@ -34,6 +34,7 @@ p {
   margin-bottom: 1.5rem; }
 
 .thumbnail {
+  background: none;
   position: relative;
   width: 7.5rem;
   height: 7.5rem;
@@ -307,6 +308,8 @@ footer {
   align-content: flex-start;
   gap: 1.25rem;
   flex-wrap: wrap; }
+  .featured_projects li > a {
+    background: none !important; }
   .featured_projects--tag-name {
     text-transform: uppercase;
     font-weight: 700; }
@@ -443,6 +446,8 @@ footer {
       max-height: 100%;
       overflow: scroll;
       padding-bottom: 1rem; }
+      .homepage .section-clients .clients-logos-container a {
+        background: none; }
       .homepage .section-clients .clients-logos-container .clients-logo {
         padding: 1.25rem 1.25rem; }
 

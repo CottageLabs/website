@@ -7,6 +7,9 @@
   align-content: flex-start;
   gap: 1.25rem;
   flex-wrap: wrap;
+  li > a {
+    background: none !important;
+  }
 
   &--tag-name {
     text-transform: uppercase;

@@ -1,5 +1,5 @@
-<a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}" target="_blank">
-    <div class="thumbnail project-thumbnail project-thumbnail--{{ article.title }}">
+<a class="thumbnail" href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}" target="_blank">
+    <div class="project-thumbnail project-thumbnail--{{ article.title }}">
         {% if article.logo %}
             <img class="project-logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{ article.logo }}"
                  alt="{{ article.title }}">{% else %}<p>{{ article.title }}</p>

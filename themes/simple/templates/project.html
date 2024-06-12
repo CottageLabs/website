@@ -5,8 +5,8 @@
     <div class="project-page">
         <div class="project-page--section project-page--intro row">
             <div class="col-md-2">
-                <a href="{{ article.externalurl }}" title="{{ article.title }}" target="_blank">
-                    <div class="thumbnail project-thumbnail project-thumbnail--{{ article.title }}">
+                <a class="thumbnail" href="{{ article.externalurl }}" title="{{ article.title }}" target="_blank">
+                    <div class="project-thumbnail project-thumbnail--{{ article.title }}">
                         {% if article.logo %}
                             <img class="project-logo"
                                  src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{ article.logo }}"
