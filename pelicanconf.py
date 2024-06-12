@@ -32,8 +32,8 @@ CSS_FILE = "main.css"
 USE_FOLDER_AS_CATEGORY = True
 
 PAGE_PATHS = ['pages']
-PAGE_URL = '{category}/{slug}/'
-PAGE_SAVE_AS = '{category}/{slug}/index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_TEMPLATE = 'page'
 
 ARTICLE_PATHS = ['projects']

@@ -15,6 +15,7 @@ main {
   overflow: auto;
   flex: 1;
   padding: $spacing-03;
+
   .container {
     margin-top: $nav-height;
   }
@@ -33,6 +34,7 @@ p {
 }
 
 .thumbnail {
+  display: table;
   background: none;
   position: relative;
   width: 7.5rem;
@@ -44,11 +46,11 @@ p {
   overflow: hidden;
 
   &--dark {
-    background: $black;
+    background: $black !important;
   }
 
   &--light {
-    background: $white;
+    background: $white !important;
   }
 
   &:focus, &:hover {
@@ -80,8 +82,12 @@ img {
   object-fit: contain;
 }
 
-a:not(.navbar-brand) {
-  text-decoration: none;
+.content {
+  a {
+    @include change_underline_color_on_hover;
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .fa {

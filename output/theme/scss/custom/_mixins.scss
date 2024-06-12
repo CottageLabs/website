@@ -1,5 +1,4 @@
 @mixin underline {
-  display: table;
   position: relative; // Ensures the pseudo-element positionss itself relative to the anchor
   text-decoration: none; // Remove default underline
   background: linear-gradient(
