@@ -42,6 +42,14 @@ nav {
   }
 
   .dropdown-menu {
+    width: max-content;
+  }
+
+  .dropdown:first-of-type > .dropdown-menu {
+    left: 0;
+  }
+
+  .dropdown:last-of-type > .dropdown-menu {
     right: 0;
   }
 
