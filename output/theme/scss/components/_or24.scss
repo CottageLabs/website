@@ -7,10 +7,6 @@
   padding: 1rem;
   margin-bottom: 1rem;
 
-  a {
-    @include change_underline_color_on_hover;
-    color: $black;
-  }
 }
 
 .or24-content {
@@ -18,12 +14,6 @@
     @media (max-width: $breakpoint-lg) {
       display: none !important;
     }
-  }
-
-  a {
-    @include change_underline_color_on_hover;
-    color: $black;
-    line-height: 150%;
   }
 
   ul {

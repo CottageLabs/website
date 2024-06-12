@@ -37,6 +37,10 @@ nav {
     }
   }
 
+  a.dropdown-item {
+    @include underline_on_hover;
+  }
+
   .dropdown-menu {
     right: 0;
   }
@@ -46,6 +50,7 @@ nav {
     max-height: $logo-size;
     z-index: 1000;
   }
+
 }
 
 @media (max-width: 991px) {

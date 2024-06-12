@@ -8,7 +8,12 @@
   gap: 1.25rem;
   flex-wrap: wrap;
   li > a {
-    background: none !important;
+    background: $white;
+    &:has(.project-thumbnail--NIMS-MDR),
+    &:has(.project-thumbnail--oaworks) {
+      background-color: $black !important;
+    }
+
   }
 
   &--tag-name {

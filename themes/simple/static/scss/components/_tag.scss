@@ -1,13 +1,14 @@
-.tag {
+a.tag {
     @include label;
     display: flex;
-    padding: $spacing-01 $spacing-02;
+    padding: $spacing-02 $spacing-03;
     align-items: flex-start;
     gap: $spacing-03;
     border-radius: $pill;
     width: max-content;
     color: $baby-powder;
     text-wrap: nowrap;
+    margin: $spacing-02 0;
 
     &:hover {
         color: $baby-powder;
@@ -52,7 +53,7 @@
     }
 
     a {
-        color: $baby-powder !important;
+        color: $baby-powder;
         font-weight: bold;
     }
 }

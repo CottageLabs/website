@@ -1,6 +1,8 @@
+---
 Title: About
 Template: about
-
+email: us@cottagelabs.com
+---
 # ABOUT US
 
 Cottage Labs is a partnership of software and data experts who can help you understand and work with your data more effectively. 
@@ -13,8 +15,5 @@ implementation, long-term maintenance and hosting, providing effective project m
 Whatever your data needs are, from capturing at source, to tools for management, analysis and insights, right through 
 to making your data available and useful for others, Cottage Labs can help you.
 
-# CONTACT
-
-<span class="tag tag--red">[<i class="fa fa-envelope"></i> us@cottagelabs.com](mailto:us@cottagelabs.com)</span><br>
 
 
