@@ -20,5 +20,5 @@ success:
 ---
 
 **DeepGreen** is a delivery service for Open Access articles, who supply Open Access repositories with automated and targeted publisher content.
-Deepgreen collaborates with 10 Publishers, 74 Institutional Repositories, 6 Subject Repositories.
+Deepgreen collaborates with 13 Publishers, 82 Institutional Repositories, 6 Subject Repositories.
 Cottage Labs are technology partners for Deepgreen router, helping with ongoing development, enhancements and service management.
