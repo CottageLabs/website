@@ -4,6 +4,7 @@ name: DeepGreen
 tags:
   - search
   - api
+  - python
 template: project
 externalurl: https://info.oa-deepgreen.de/en/
 logo: deepgreen.svg
