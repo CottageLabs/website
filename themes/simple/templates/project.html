@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-
+    {% if article.tags %}
+        {% with tags=article.tags, all=True %}
+            {% include "partials/_related_technologies.html" %}
+        {% endwith %}
+    {% endif %}
     <h1>{% if article.name %}{{ article.name }}{% else %}{{ article.title }}{% endif %}</h1>
     <div class="project-page">
         <div class="project-page--section project-page--intro row">
@@ -27,17 +31,19 @@
                 {{ article.challenge.text }}
             </div>
             {% if article.challenge.screenshot %}
-            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                 alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.challenge.screenshot }}" id="project-screenshot--{{ article.title }}--1"/>
+                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                     alt="screenshot from {{ article.title }} project"
+                     src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.challenge.screenshot }}"
+                     id="project-screenshot--{{ article.title }}--1"/>
             {% endif %}
         </div>
 
         <div class=" project-page--section project-page--solution">
             {% if article.solution.screenshot %}
-            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                 alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.solution.screenshot }}" id="project-screenshot--{{ article.title }}--2"/>
+                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                     alt="screenshot from {{ article.title }} project"
+                     src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.solution.screenshot }}"
+                     id="project-screenshot--{{ article.title }}--2"/>
             {% endif %}
             <div class="project-page--section--text green">
                 <h2><img class="icon" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/solution.svg"
@@ -52,18 +58,13 @@
                          aria-hidden="true">Success</h2>
                 {{ article.success.text }}
             </div>
-{% if article.success.screenshot %}
-            <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                 alt="screenshot from {{ article.title }} project"
-                 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.success.screenshot }}" id="project-screenshot--{{ article.title }}--3"/>
+            {% if article.success.screenshot %}
+                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
+                     alt="screenshot from {{ article.title }} project"
+                     src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/screenshots/{{ article.success.screenshot }}"
+                     id="project-screenshot--{{ article.title }}--3"/>
             {% endif %}
         </div>
 
     </div>
-    {% if article.tags %}
-        <h2>Themes</h2>
-        {% with tags=article.tags %}
-            {% include "partials/_related_technologies.html" %}
-        {% endwith %}
-    {% endif %}
 {% endblock %}
