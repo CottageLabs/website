@@ -2,10 +2,10 @@
 title: Hull City of Culture
 name: Hull City of Culture
 tags:
+  - dr
   - samvera
   - archivematica
   - cloud
-  - dr
   - api
   - ruby
 template: project

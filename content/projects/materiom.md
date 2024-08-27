@@ -2,8 +2,8 @@
 title: Materiom Data Commons
 name: Materiom Data Commons
 tags:
-  - search
   - datavisualisation
+  - search
   - python
   - js
 template: project

@@ -2,10 +2,10 @@
 title: RUB Hyrax
 name: Ruhr-University Bochum Hyrax
 tags:
+  - dr
   - samvera
   - ruby
   - search
-  - dr
   - cloud
 template: project
 logo: rub.png
