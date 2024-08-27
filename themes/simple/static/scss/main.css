@@ -634,64 +634,71 @@ a.section-link:hover > div#dv-logo {
   .explore-more--section a {
     margin-top: 1rem; }
 
-.project-page--section {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-  align-items: flex-start; }
-  @media (max-width: 992px) {
-    .project-page--section {
-      flex-direction: column; } }
-  .project-page--section a {
-    position: relative;
-    text-decoration: none;
-    color: #333333;
-    background: linear-gradient(to right, #333333, #333333), linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101);
-    background-size: 100% 1px, 0 2px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-    color: #333333; }
-    .project-page--section a:hover {
-      background-size: 0 1px, 100% 2px; }
-  .project-page--section .thumbnail {
-    width: unset;
-    height: unset;
-    aspect-ratio: 1 / 1; }
-  .project-page--section .icon {
-    padding-right: 0.75rem; }
-  .project-page--section--text {
-    flex-basis: 50%;
-    padding: 0.75rem 1.5rem; }
-    .project-page--section--text.red {
-      border-left: 5px solid #940101; }
-      .project-page--section--text.red h2 {
-        color: #940101; }
-    .project-page--section--text.green {
-      border-left: 5px solid #005500; }
-      .project-page--section--text.green h2 {
-        color: #005500; }
-    .project-page--section--text.brown {
-      border-left: 5px solid #5A3F40; }
-      .project-page--section--text.brown h2 {
-        color: #5A3F40; }
-  .project-page--section--screenshot {
-    flex-grow: 1;
-    border-radius: 0.625rem;
-    box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
-    width: 600px; }
-.project-page--intro {
-  margin: 2rem 0; }
-.project-page #project-screenshot--NGLP--1,
-.project-page #project-screenshot--NGLP--2 {
-  height: 400px;
-  object-fit: cover;
-  object-position: top; }
-.project-page #project-screenshot--NGLP--3 {
-  height: 400px;
-  object-fit: cover;
-  object-position: bottom; }
+.project-page {
+  margin-top: -3rem; }
+  .project-page--section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    align-items: flex-start; }
+    @media (max-width: 992px) {
+      .project-page--section {
+        flex-direction: column; } }
+    .project-page--section a {
+      position: relative;
+      text-decoration: none;
+      color: #333333;
+      background: linear-gradient(to right, #333333, #333333), linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101);
+      background-size: 100% 1px, 0 2px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+      color: #333333; }
+      .project-page--section a:hover {
+        background-size: 0 1px, 100% 2px; }
+    .project-page--section .thumbnail {
+      display: block;
+      box-shadow: none;
+      background: none;
+      width: unset;
+      height: unset;
+      aspect-ratio: 1 / 1; }
+      .project-page--section .thumbnail:has(.project-thumbnail--NIMS-MDR), .project-page--section .thumbnail:has(.project-thumbnail--oaworks) {
+        background-color: #333333 !important; }
+    .project-page--section .icon {
+      padding-right: 0.75rem; }
+    .project-page--section--text {
+      flex-basis: 50%;
+      padding: 0.75rem 1.5rem; }
+      .project-page--section--text.red {
+        border-left: 5px solid #940101; }
+        .project-page--section--text.red h2 {
+          color: #940101; }
+      .project-page--section--text.green {
+        border-left: 5px solid #005500; }
+        .project-page--section--text.green h2 {
+          color: #005500; }
+      .project-page--section--text.brown {
+        border-left: 5px solid #5A3F40; }
+        .project-page--section--text.brown h2 {
+          color: #5A3F40; }
+    .project-page--section--screenshot {
+      flex-grow: 1;
+      border-radius: 0.625rem;
+      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
+      width: 600px; }
+  .project-page--intro {
+    align-items: center; }
+  .project-page #project-screenshot--NGLP--1,
+  .project-page #project-screenshot--NGLP--2 {
+    height: 400px;
+    object-fit: cover;
+    object-position: top; }
+  .project-page #project-screenshot--NGLP--3 {
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom; }
 
 #background {
   position: absolute;
