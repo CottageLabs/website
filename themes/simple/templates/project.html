@@ -6,7 +6,7 @@
         <div class="project-page--section project-page--intro row">
             <div class="col-md-2">
                 <a class="thumbnail" href="{{ article.externalurl }}" title="{{ article.title }}" target="_blank">
-                    <div class="project-thumbnail project-thumbnail--{{ article.title }}">
+                    <div class="project-thumbnail--{{ article.title }}">
                         {% if article.logo %}
                             <img class="project-logo"
                                  src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/projects/{{ article.logo }}"
@@ -15,7 +15,7 @@
                     </div>
                 </a>
             </div>
-            <div style="margin-bottom: -3rem" class="col-md-9">
+            <div class="col-md-9">
                 <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
                 {{ article.content }}
             </div>

@@ -1,4 +1,5 @@
 .project-page {
+  margin-top: -3rem;
   &--section {
     display: flex;
     flex-direction: row;
@@ -16,9 +17,18 @@
     }
 
     .thumbnail {
+      display: block;
+      box-shadow: none;
+      background: none;
       width: unset;
       height: unset;
       aspect-ratio: 1 / 1;
+
+      &:has(.project-thumbnail--NIMS-MDR),
+      &:has(.project-thumbnail--oaworks) {
+        background-color: $black !important;
+      }
+
     }
 
     .icon {
@@ -63,7 +73,7 @@
   }
 
   &--intro {
-    margin: 2rem 0;
+    align-items: center;
   }
 
   #project-screenshot--NGLP--1,
@@ -74,7 +84,7 @@
   }
 
   #project-screenshot--NGLP--3 {
-     height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: bottom;
   }
