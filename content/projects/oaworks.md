@@ -2,10 +2,10 @@
 title: oaworks
 name: OA.Works
 tags:
+  - oai
   - search
   - api
   - js
-  - oai
 template: project
 logo: oaworks.svg
 externalurl: https://oa.works/

@@ -2,11 +2,11 @@
 title: Journal Checker Tool
 name: Journal Checker Tool
 tags:
+  - oai
   - search
   - api
   - python
   - js
-  - oai
 template: project
 externalurl: https://journalcheckertool.org/
 logo: jct.svg

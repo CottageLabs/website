@@ -2,6 +2,7 @@
 title: SWORD
 name: SWORD
 tags:
+  - oai
   - python
   - js
   - ruby
@@ -10,7 +11,6 @@ tags:
   - invenio
   - samvera
   - dspace
-  - oai
 template: project
 externalurl: https://sword.cottagelabs.com/
 logo: sword.png

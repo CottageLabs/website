@@ -2,9 +2,9 @@
 title: EUI Covid Data
 name: EUI COVID Data Portal
 tags:
+  - dr
   - python
   - invenio
-  - dr
   - oaipmh
 template: project
 logo: eui.svg

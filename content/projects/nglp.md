@@ -2,13 +2,13 @@
 title: NGLP
 name: Next Generation Library Publishing
 tags:
+  - datavisualisation
+  - dr
+  - oai
   - search
   - dspace
   - python
   - js
-  - datavisualisation
-  - oai
-  - dr
 template: project
 externalurl: https://www.nextgenlibpub.org/
 logo: nglp.png

@@ -2,10 +2,10 @@
 title: NIMS-MDR
 name: NIMS Materials Data Repository
 tags:
+  - dr
   - samvera
   - ruby
   - search
-  - dr
 template: project
 logo: nims.png
 externalurl: https://mdr.nims.go.jp/

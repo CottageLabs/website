@@ -2,12 +2,12 @@
 title: DOAJ
 name: Directory of Open Access Journals
 tags:
+  - oai
   - search
   - python
   - oaipmh
   - api
   - cloud
-  - oai
 template: project
 logo: doaj.svg
 externalurl: https://doaj.org/
