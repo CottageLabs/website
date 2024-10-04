@@ -5,7 +5,7 @@ body {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   position: relative;
   margin: 0;
   padding: 0;
@@ -640,6 +640,19 @@ a.section-link:hover > div#dv-logo {
   overflow: hidden; }
   .explore-more--section a {
     margin-top: 1rem; }
+
+.event-page h1, .event-page a.icon-link {
+  display: inline-block;
+  vertical-align: middle; }
+.event-page a.icon-link {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: none; }
+  .event-page a.icon-link i {
+    display: block;
+    color: inherit; }
+    .event-page a.icon-link i:hover {
+      color: #940101; }
 
 .project-page {
   margin-top: -3rem; }
