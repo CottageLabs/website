@@ -21,6 +21,15 @@ nav {
 
   }
 
+  .dropdown-section {
+    padding-left: 1rem;
+    &--header {
+      font-family: inherit;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $green;
+    }
+  }
   .nav-link {
     @include underline_on_hover;
     z-index: 1;
