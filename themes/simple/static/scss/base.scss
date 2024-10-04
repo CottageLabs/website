@@ -127,6 +127,10 @@ a {
   @include link;
 }
 
+a.disabled {
+  @include disabled-link;
+}
+
 .navbar-brand {
   background: none !important;
 }

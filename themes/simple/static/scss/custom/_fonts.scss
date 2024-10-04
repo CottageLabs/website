@@ -45,3 +45,11 @@
   @include label;
   @include underline_on_hover;
 }
+
+@mixin disabled-link {
+  @include label;
+  text-decoration: none;
+  background: none;
+  color: $grey;
+  cursor: default;
+}

@@ -137,6 +137,18 @@ a {
   a:hover {
     background-size: 100% 2px; }
 
+a.disabled {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .015rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  color: #8c8c8c;
+  cursor: default; }
+
 .navbar-brand {
   background: none !important; }
 

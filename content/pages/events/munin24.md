@@ -14,7 +14,7 @@ We are a proud sponsor of The 19th Munin Conference!
 
 ## Our presentation:
  
-[**Tracking institution and journal relationships in TAs: the devil in the details**](https://indico.desy.de/event/45166/contributions/175266/)  
+**Tracking institution and journal relationships in TAs: the devil in the details**
 _Richard Jones, 9th October, 12:00, H25 (2nd floor)_
 
-[//]: # (  <a href="{static}/assets/repositories.pdf" class="tag tag--green" title="Slides for 'Comparing some basic features...' presentation">SLIDES</a>)
+<a href="https://indico.desy.de/event/45166/contributions/175266/" target="_blank" class="tag tag--green" title="Read details about our presentation on the Munin Conference">DETAILS</a>
