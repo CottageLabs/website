@@ -173,6 +173,13 @@ nav {
     display: flex;
     width: 50%;
     justify-content: flex-end; }
+  nav .dropdown-section {
+    padding-left: 1rem; }
+    nav .dropdown-section--header {
+      font-family: inherit;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #005500; }
   nav .nav-link {
     position: relative;
     text-decoration: none;
