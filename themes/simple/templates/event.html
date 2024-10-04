@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="content {{ page.title }}-content row">
+    <div class="event-page content {{ page.title }}-content row">
         <div class="col-md">
+            <div class="event-header">
+                <h1>{{ page.conferencetitle }} <a class="icon-link" href="{{ page.conferencelink }}" target="_blank"><i class="fas fa-link fa-xs"></i></a></h1>
+            </div>
             {{ page.content }}
         </div>
         <div class="col-md-6 {{ page.title }}-background">
