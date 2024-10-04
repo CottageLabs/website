@@ -17,4 +17,4 @@ We will be sharing insights from our work with cOAlition S, focusing on the chal
  
 **Tracking institution and journal relationships in TAs: the devil in the details**
 _Richard Jones, 9th October, 12:00, H25 (2nd floor)_
-<a href="https://indico.desy.de/event/45166/contributions/175266/" target="_blank" class="tag tag--green" title="see more information about this presentation">READ MORE ABOUT THAT PRESENTATION</a>
+<a href="https://indico.desy.de/event/45166/contributions/175266/" target="_blank" class="tag tag--green" title="Read details about our presentation on the openCost Conference">DETAILS</a>
