@@ -1,14 +1,3 @@
-.or24 {
-  width: 100%;
-  border: $red solid 3px;
-  border-radius: 0.625rem;
-  background-color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-}
-
 .or24-content {
   .or24-background {
     @media (max-width: $breakpoint-lg) {
