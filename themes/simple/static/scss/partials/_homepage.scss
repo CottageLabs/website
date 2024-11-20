@@ -1,25 +1,16 @@
 .homepage {
-  position: relative;
-  margin: 0;
-  padding: 0;
+
 
   .section-links {
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 40%;
     background-color: $white;
+    z-index: 5;
+    margin-top: -11rem; // calc((-1) * $nav-height - 1rem)
+    padding: 6rem 2rem 2rem 2rem; // calc($nav-height + 1rem);
     box-shadow: 0 0 20px -10px $red;
-    padding-left: 0;
-    margin-top: -11rem; // calc(-1 * ($nav-height + 1));
-    padding-top: 11rem; //calc($nav-height + 1);
-
     #logo {
-      position: absolute;
-      left: 0;
-      top: 1.45rem;
+      position: relative;
+      left: -1.25rem;
+      top: -5.25rem;
       max-height: $logo-size;
       @media (max-width: $breakpoint-lg) {
         display: none;
@@ -27,15 +18,11 @@
     }
 
     &--content {
-      max-height: calc(100vh - 22rem);
-      overflow: scroll;
-      padding-bottom: 1rem;
-      padding-left: 2rem;
 
       .line {
         @include line;
           width: 75%;
-          left: -2.1rem;
+          left: -2rem;
           margin-bottom: 2rem;
         }
 
@@ -49,7 +36,6 @@
           flex-direction: row;
           align-items: center;
           margin: 1rem 0;
-          max-width: 100%;
 
           &--text {
             @include header1;
@@ -85,14 +71,12 @@
   }
 
   .section-clients {
-    position: absolute;
-    left: calc(40% + 5rem);
-    padding: 0 2rem 1rem;
-    max-height: calc(100vh - 22rem); //calc(100vh - ($nav-height + $footer-height));
-    overflow: scroll;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
 
     h2 {
       text-align: center;
+      margin-bottom: 3rem;
     }
 
     .clients-logos-container {

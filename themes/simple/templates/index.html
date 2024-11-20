@@ -1,7 +1,7 @@
-{% extends "base.html" %}
+{% extends "base_without_footer.html" %}
 {% block content %}
-    <div class="row homepage">
-        <section id="section-links" class="section-links col col-5">
+    <div class="row justify-content-between homepage">
+        <section id="section-links" class="section-links col col-lg-4 col-md-12">
             <div class="section-links--content">
                 <img id="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo.svg" alt="Cottage Labs Logo">
                 <h1>MAKE THE MOST OF YOUR DATA</h1>
@@ -22,10 +22,16 @@
                 </div>
             </div>
         </section>
-        <section id="section-clients" class="section-clients col-auto">
+        <section id="section-clients" class="section-clients col-lg-7 col-md-12">
             {# place for a banner #}
             {# ------- #}
             {% include "partials/_clients_logos.html" %}
         </section>
     </div>
 {% endblock %}
+
+{% block footer %}
+    <footer role="contentinfo" style="margin-top: -5rem">
+        {% include 'footer.html' %}
+    </footer>
+{%  endblock %}
