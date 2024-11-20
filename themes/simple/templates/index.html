@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="row homepage">
-        <section id="section-links" class="section-links col col-5">
+    <div class="row justify-content-between homepage">
+        <section id="section-links" class="section-links col col-lg-5 col-md-12">
             <div class="section-links--content">
-                <img id="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo.svg" alt="Cottage Labs Logo">
                 <h1>MAKE THE MOST OF YOUR DATA</h1>
                 <div class="line"></div>
                 <div class="links-container">
@@ -22,7 +21,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-clients" class="section-clients col-auto">
+        <section id="section-clients" class="section-clients col-lg-6 col-md-12">
             {# place for a banner #}
             {# ------- #}
             {% include "partials/_clients_logos.html" %}
