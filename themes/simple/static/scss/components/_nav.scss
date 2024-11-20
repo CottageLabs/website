@@ -2,21 +2,18 @@ nav {
   position: fixed !important;
   top: 0;
   width: 100%;
-  background-image: $nav-gradient;
-  background-color: $baby-powder;
-  height: $nav-height;
   padding: 0;
-  z-index: 1;
+  z-index: 5;
 
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    width: 100%;
   }
 
   .nav-links {
     display: flex;
-    width: 50%;
+    width: 100%;;
     justify-content: flex-end;
 
   }
