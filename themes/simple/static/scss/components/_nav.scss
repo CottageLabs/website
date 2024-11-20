@@ -2,22 +2,35 @@ nav {
   position: fixed !important;
   top: 0;
   width: 100%;
-  background-image: $nav-gradient;
   background-color: $baby-powder;
-  height: $nav-height;
-  padding: 0;
-  z-index: 1;
+  background-image: $nav-gradient;
+  z-index: 3;
 
   .container {
+    display: block !important;
+    align-items: center;
+    width: 100%;
+    .with-gap-1 {
+      gap: 1rem;
+    }
+  }
+
+  .section-left {
+  }
+
+  .section-right  {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   .nav-links {
     display: flex;
-    width: 50%;
+    width: 100%;;
     justify-content: flex-end;
+    .navbar-nav {
+      gap: 1rem;
+    }
 
   }
 
@@ -70,7 +83,10 @@ nav {
 
 }
 
-@media (max-width: $breakpoint-xl) {
+@media (max-width: $breakpoint-lg) {
+  .navbar {
+    background-color: $baby-powder;
+  }
   .navbar-nav {
     background-color: $white;
     display: flex;
@@ -78,7 +94,6 @@ nav {
     padding: $spacing-03;
     border: #dee2e6 1px solid;
     border-radius: $border-radius;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Simple shadow */
     a {
       @include link;
     }
