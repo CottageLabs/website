@@ -21,7 +21,11 @@ nav {
   .section-right  {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   .nav-links {
@@ -87,15 +91,36 @@ nav {
   .navbar {
     background-color: $baby-powder;
   }
+  button.navbar-toggler {
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+  }
   .navbar-nav {
-    background-color: $white;
-    display: flex;
-    height: max-content;
+    position: absolute;
+    display: block;
+    top: 7rem;
+    left: 1vw;
+    height: 80vh;
+    width: 98vw;
+    background-color: $black;
     padding: $spacing-03;
-    border: #dee2e6 1px solid;
-    border-radius: $border-radius;
-    a {
-      @include link;
+    * {
+      background-color: $black;
+      color: white;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 3rem;
+      .nav-link {
+        @include label;
+        @include typescale-03;
+        padding: 3rem;
+        color: white;
+        text-align: right;
+      }
     }
   }
 
