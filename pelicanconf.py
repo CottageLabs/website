@@ -20,6 +20,7 @@ DEFAULT_PAGINATION = False
 DEFAULT_DATE = 'fs'
 
 THEME = 'themes/simple'
+THEME_STATIC_PATHS = ['static']
 
 STATIC_DIR = 'content/images'
 
@@ -27,7 +28,7 @@ INDEX_SAVE_AS = 'index.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
-CSS_FILE = "main.css"
+CSS_FILE = "scss/main.css"
 
 USE_FOLDER_AS_CATEGORY = True
 
@@ -46,7 +47,8 @@ TAG_SAVE_AS = 'projects/{slug}/index.html'
 TAG_URL = 'projects/{slug}'
 
 PLUGINS = [
-    'yaml_metadata'
+    'yaml_metadata',
+    'css_cache_bust'
 ]
 
 JINJA_CONTEXTS = {

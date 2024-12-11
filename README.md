@@ -2,11 +2,11 @@ Cottage Labs website, powered by Pelican
 
 # Generating and previewing the website
 
-Create a virtualenv, if you like.
+Create a virtualenv, if you like. **Requires Python 3.12**
 
 Install `pelican` with
 ```
-pip install pelican pelican-yaml-metadata
+pip install pelican pelican-yaml-metadata pelican-css-cache-bust
 ```
 Generate content from the project root with the command
 `pelican content`
@@ -20,7 +20,7 @@ For development you can use auto-reload mode so you can see changes immediately 
 
 Install sass with e.g.
 `sudo apt install ruby-sass`
-
+~~~~
 Generate styles from `themes/simple/static/scss`
 
 ```scss main.scss main.css```
