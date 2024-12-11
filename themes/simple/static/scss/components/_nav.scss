@@ -34,6 +34,7 @@ nav {
     justify-content: flex-end;
     .navbar-nav {
       gap: 1rem;
+      white-space: nowrap;
     }
 
   }
