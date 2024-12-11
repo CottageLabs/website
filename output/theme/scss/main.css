@@ -15,6 +15,9 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+* {
+  box-sizing: unset; }
+
 main {
   min-height: calc(100vh - $footer-height - $nav-height);
   overflow: auto;
@@ -193,7 +196,8 @@ nav {
     width: 100%;
     justify-content: flex-end; }
     nav .nav-links .navbar-nav {
-      gap: 1rem; }
+      gap: 1rem;
+      white-space: nowrap; }
   nav .dropdown-section {
     padding-left: 1rem; }
     nav .dropdown-section--header {
