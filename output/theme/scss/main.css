@@ -550,11 +550,9 @@ a.section-link:hover > div#dv-logo {
   .about .partners-profiles,
   .about .team-profiles {
     display: flex;
-    justify-content: space-between;
-    /* Adjust the alignment as needed */
+    justify-content: flex-start;
     padding: 0;
-    /* Remove default padding */
-    flex-wrap: wrap; }
+    /* Remove default padding */ }
     .about .partners-profiles ul,
     .about .team-profiles ul {
       display: flex;
@@ -593,6 +591,8 @@ a.section-link:hover > div#dv-logo {
     .about .partners-profiles ul > li > h2:not(:first-of-type),
     .about .team-profiles ul > li > h2:not(:first-of-type) {
       margin-bottom: 1rem !important; }
+.about .team-profiles {
+  flex-wrap: wrap; }
 .about .registration {
   text-align: right; }
 
