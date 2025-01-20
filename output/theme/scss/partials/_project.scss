@@ -1,0 +1,92 @@
+.project-page {
+  margin-top: -3rem;
+  &--section {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-04;
+    padding: $spacing-04 0;
+    align-items: flex-start;
+
+    @media (max-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
+
+    a {
+      @include change_underline_color_on_hover;
+      color: $black;
+    }
+
+    .thumbnail {
+      display: block;
+      box-shadow: none;
+      background: none;
+      width: unset;
+      height: unset;
+      aspect-ratio: 1 / 1;
+
+      &:has(.project-thumbnail--NIMS-MDR),
+      &:has(.project-thumbnail--oaworks) {
+        background-color: $black !important;
+      }
+
+    }
+
+    .icon {
+      padding-right: $spacing-03;
+    }
+
+    &--text {
+      flex-basis: 50%;
+      padding: $spacing-03 $spacing-04;
+
+      &.red {
+        border-left: 5px solid $red;
+
+        h2 {
+          color: $red;
+        }
+      }
+
+      &.green {
+        border-left: 5px solid $green;
+
+        h2 {
+          color: $green;
+        }
+      }
+
+      &.brown {
+        border-left: 5px solid $brown;
+
+        h2 {
+          color: $brown;
+        }
+      }
+    }
+
+    &--screenshot {
+      flex-grow: 1;
+      border-radius: $border-radius;
+      box-shadow: 0px 4px 4px 0px rgba(96, 62, 31, 0.25);
+      width: 600px;
+    }
+  }
+
+  &--intro {
+    align-items: center;
+  }
+
+  #project-screenshot--NGLP--1,
+  #project-screenshot--NGLP--2 {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #project-screenshot--NGLP--3 {
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+}
