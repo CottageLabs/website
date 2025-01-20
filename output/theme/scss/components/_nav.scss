@@ -1,0 +1,131 @@
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: $baby-powder;
+  background-image: $nav-gradient;
+  z-index: 3;
+
+  .container {
+    display: block !important;
+    align-items: center;
+    width: 100%;
+    .with-gap-1 {
+      gap: 1rem;
+    }
+  }
+
+  .section-left {
+  }
+
+  .section-right  {
+    display: flex;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    width: 100%;;
+    justify-content: flex-end;
+    .navbar-nav {
+      gap: 1rem;
+      white-space: nowrap;
+    }
+
+  }
+
+  .dropdown-section {
+    padding-left: 1rem;
+    &--header {
+      font-family: inherit;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $green;
+    }
+  }
+  .nav-link {
+    @include underline_on_hover;
+    z-index: 1;
+    color: $black;
+    text-align: right;
+
+    img {
+      width: 24px;
+      vertical-align: text-bottom;
+
+      &:focus, &:hover {
+        filter: invert(7%) sepia(100%) saturate(5458%) hue-rotate(360deg) brightness(91%) contrast(107%);
+      }
+    }
+  }
+
+  a.dropdown-item {
+    @include underline_on_hover;
+  }
+
+  .dropdown-menu {
+    width: max-content;
+  }
+
+  .dropdown:first-of-type > .dropdown-menu {
+    left: 0;
+  }
+
+  .dropdown:last-of-type > .dropdown-menu {
+    right: 0;
+  }
+
+  #logo {
+    position: relative;
+    max-height: $logo-size;
+    z-index: 1000;
+  }
+
+}
+
+@media (max-width: $breakpoint-lg) {
+  .navbar {
+    background-color: $baby-powder;
+  }
+  button.navbar-toggler {
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+  }
+  .navbar-nav {
+    position: absolute;
+    display: block;
+    top: 7rem;
+    left: 1vw;
+    height: 80vh;
+    width: 98vw;
+    background-color: $black;
+    padding: $spacing-03;
+    * {
+      background-color: $black;
+      color: white;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 3rem;
+      .nav-link {
+        @include label;
+        @include typescale-03;
+        padding: 3rem;
+        color: white;
+        text-align: right;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+}

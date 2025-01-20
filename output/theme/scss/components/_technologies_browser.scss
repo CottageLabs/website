@@ -1,0 +1,27 @@
+.technologies-browser {
+  list-style: none;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: $spacing-02;
+  padding-left: calc(-1 * #{$spacing-02});
+  margin-bottom: $spacing-05;
+  .technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-02 $spacing-02 0;
+
+    &.active {
+      @include underline;
+      a {
+        font-weight: 700;
+      }
+    }
+    a {
+      @include label;
+      @include underline_on_hover;
+      color: $brown;
+    }
+  }
+}

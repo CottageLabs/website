@@ -1,0 +1,16 @@
+.or24-content {
+  .or24-background {
+    @media (max-width: $breakpoint-lg) {
+      display: none !important;
+    }
+  }
+
+  ul {
+    padding-left: 0.85rem;
+
+    li {
+      margin-bottom: 1.5rem;
+      //list-style: none;
+    }
+  }
+}

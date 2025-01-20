@@ -1,0 +1,59 @@
+a.tag {
+    @include label;
+    display: flex;
+    padding: $spacing-02 $spacing-03;
+    align-items: flex-start;
+    gap: $spacing-03;
+    border-radius: $pill;
+    width: max-content;
+    color: $baby-powder;
+    text-wrap: nowrap;
+    margin: $spacing-02 0;
+
+    &:hover {
+        color: $baby-powder;
+    }
+
+    &--red {
+        background: $red;
+        &:hover {
+            background: $redwood;
+        }
+    }
+
+    &--green {
+        background: $green;
+        &:hover {
+            background: $sage;
+        }
+    }
+
+    &--brown {
+        background: $brown;
+        &:hover {
+            background: $rosy-brown;
+        }
+    }
+
+    &--blue {
+        background: $blue;
+        &:hover {
+            background: $moonstone;
+        }
+    }
+
+    &--read-more {
+        float: left;
+        max-width: 100%;
+        text-wrap: wrap;
+    }
+
+    &--see-in-projects {
+        float: left;
+    }
+
+    a {
+        color: $baby-powder;
+        font-weight: bold;
+    }
+}
