@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="row justify-content-between lifecycle">
-        <div class="content col-lg-6">
+        <div class="content col-md">
             {{ page.content }}
             <a class="tag tag--see-in-projects tag--green" href="{{ SITEURL }}/projects/">Our projects</a>
         </div>
-        <div class="col-lg-6">
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ page.image }}" alt="Data Lifecycle graph" {% if page.title == "Project Lifecycle" %} id="project_lifestyle--graphic" {% endif %}>
+        <div class="col-md-6">
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ page.image }}" alt="{{ page.image_alt }}">
         </div>
     </div>
 {% endblock %}
