@@ -2,6 +2,7 @@
 Title: Data Lifecycle
 Template: lifecycle
 Image: DataLifecycle.svg
+Image_alt: Data Lifecycle graph
 ---
 
 

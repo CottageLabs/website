@@ -1,6 +1,6 @@
 import datetime
 
-AUTHOR = 'Aga'
+AUTHOR = 'us@cottagelabs.com'
 SITENAME = 'Cottage Labs'
 SITEURL = ''
 
@@ -52,8 +52,7 @@ PLUGINS = [
 ]
 
 JINJA_CONTEXTS = {
-    'now': datetime.datetime.utcnow(),
+    'now': datetime.datetime.now(datetime.UTC),
 }
 
-from datetime import datetime
-NOW = datetime.now()
+NOW = datetime.datetime.now()

@@ -24,15 +24,15 @@ Before we start, some general tips:
 
     <img src="/images/cottage/1_1_door_fold.jpg" alt="The Cottage Part"/>
 
-2. Fold the cottage around into a 4 sided structure.  The 2 right panels of the cottage will wrap around the outside, so the door sits over the front wall
+2. Fold the cottage around into a 4 sided structure.  The 2 right panels of the cottage will wrap around the outside, so the door sits over the front wall.
 
-3. Tuck the tab on the right of the door into the vertical slot on the corner of the cottage
+3. Tuck the tab on the right of the door into the vertical slot on the corner of the cottage.
 
     <img src="/images/cottage/1_3_wrapped_around.jpg" alt="The Cottage Part"/>
 
 4. Above the door, fold the side flaps in, and the front flap down.  Push the front flap's tab into the horizontal slot in the front wall of the cottage.  Once done, you can reach inside the cottage and fold the flap to provide more strength.
 
-5. Fold the roof flaps back along their creases
+5. Fold the roof flaps back along their creases.
 
     <img src="/images/cottage/1_5_roof_tabs.jpg" alt="The Cottage Part"/>
 
@@ -40,19 +40,19 @@ Before we start, some general tips:
 
 <img src="/images/cottage/2_0_roof.jpg" alt="The Cottage Part"/>
 
-1. Fold the roof in half along the centre crease
+1. Fold the roof in half along the centre crease.
 
-2. Fold both end sections inward, and press the structure flat to create sharp folds
+2. Fold both end sections inward, and press the structure flat to create sharp folds.
 
     <img src="/images/cottage/2_2_roof_folds.jpg" alt="The Cottage Part"/>
 
 3. Find the slots near the apex of the roof, these are where the chimney will go.  Position the roof over the house such that these chimney slots are at the rear of the house.
 
-4. Insert one of the tabs sticking up from the cottage into one of the large slots on the underside of the roof
+4. Insert one of the tabs sticking up from the cottage into one of the large slots on the underside of the roof.
 
     <img src="/images/cottage/2_4_one_side.jpg" alt="The Cottage Part"/>
 
-5. Fold the roof over the peak of the cottage and insert the tab on the other side
+5. Fold the roof over the peak of the cottage and insert the tab on the other side.
 
     <img src="/images/cottage/2_5_roof_on.jpg" alt="The Cottage Part"/>
 
@@ -72,21 +72,21 @@ Before we start, some general tips:
 
 <img src="/images/cottage/4_0_garden.jpg" alt="The Cottage Part"/>
 
-1. Turn the garden so the printed side is face down
+1. Turn the garden so the printed side is face down.
 
-2. Fold the long sides up, and the tabs at each end of the long side in
+2. Fold the long sides up, and the tabs at each end of the long side in.
 
     <img src="/images/cottage/4_2_long_sides.jpg" alt="The Cottage Part"/>
 
-3. Fold the shorter end sides up, and then over the tabs, and press the flaps into place
+3. Fold the shorter end sides up, and then over the tabs, and press the flaps into place.
 
-4. Fold the long sides over and press their flaps into place too
+4. Fold the long sides over and press their flaps into place too.
 
     <img src="/images/cottage/4_4_base.jpg" alt="The Cottage Part"/>
 
-5. Turn the garden so the print side faces up
+5. Turn the garden so the print side faces up.
 
-6. Position the cottage over the garden so the door faces the path, and press the tabs on the bottom of the cottage into the slits in the garden
+6. Position the cottage over the garden so the door faces the path, and press the tabs on the bottom of the cottage into the slits in the garden.
 
     <img src="/images/cottage/4_6_finished.jpg" alt="The Cottage Part"/>
 

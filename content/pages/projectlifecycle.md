@@ -1,6 +1,9 @@
+---
 Title: Project Lifecycle
 Template: lifecycle
 Image: ProjectLifecycle.svg
+Image_alt: Project Lifecycle graph
+---
 
 # PROJECT LIFECYCLE
 
