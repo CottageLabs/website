@@ -171,6 +171,12 @@ a.disabled {
   box-shadow: 10px 0 10px -10px #940101;
   /* Adjust the shadow properties as needed */ }
 
+.dynamic-breadcrumb {
+  margin-bottom: 1rem; }
+  .dynamic-breadcrumb a {
+    text-transform: capitalize;
+    color: #333333; }
+
 nav {
   position: fixed !important;
   top: 0;
@@ -744,10 +750,5 @@ a.section-link:hover > div#dv-logo {
   top: 10rem;
   z-index: -1;
   opacity: 0.5; }
-
-#project_lifestyle--graphic {
-  height: 100%;
-  width: 100%;
-  object-fit: contain; }
 
 /*# sourceMappingURL=main.css.map */

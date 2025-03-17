@@ -22,4 +22,4 @@ success:
   screenshot: "pstf3.png"
 ---
 
-**cOAlition S**, a consortium of 25+ funders, as put together an ambitious plan to improve the state of Open Access and encourage more and more publishers to support that route.  Cottage Labs provides several services to the consortium, including this tool to allow institutions to explore publisher cost models.
+**cOAlition S**, a consortium of 25+ funders, has put together an ambitious plan to improve the state of Open Access and encourage more and more publishers to support that route.  Cottage Labs provides several services to the consortium, including this tool to allow institutions to explore publisher cost models.
