@@ -5,7 +5,7 @@ SITENAME = 'Cottage Labs'
 SITEURL = ''
 
 PATH = 'content'
-TIMEZONE = 'GB'
+TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
