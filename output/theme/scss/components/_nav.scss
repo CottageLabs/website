@@ -65,6 +65,7 @@ nav {
   }
 
   a.dropdown-item {
+    width: unset;
     @include underline_on_hover;
   }
 

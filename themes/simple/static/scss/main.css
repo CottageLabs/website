@@ -230,6 +230,7 @@ nav {
       nav .nav-link img:focus, nav .nav-link img:hover {
         filter: invert(7%) sepia(100%) saturate(5458%) hue-rotate(360deg) brightness(91%) contrast(107%); }
   nav a.dropdown-item {
+    width: unset;
     position: relative;
     text-decoration: none;
     background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
