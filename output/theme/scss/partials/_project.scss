@@ -26,6 +26,7 @@
 
       &:has(.project-thumbnail--NIMS-MDR),
       &:has(.project-thumbnail--oaworks) {
+        clip-path: inset(20% 0 20% 0);
         background-color: $black !important;
       }
 

@@ -172,6 +172,7 @@ a.disabled {
   /* Adjust the shadow properties as needed */ }
 
 .dynamic-breadcrumb {
+  cursor: pointer;
   margin-bottom: 1rem; }
   .dynamic-breadcrumb a {
     text-transform: capitalize;
@@ -709,6 +710,7 @@ a.section-link:hover > div#dv-logo {
       height: unset;
       aspect-ratio: 1 / 1; }
       .project-page--section .thumbnail:has(.project-thumbnail--NIMS-MDR), .project-page--section .thumbnail:has(.project-thumbnail--oaworks) {
+        clip-path: inset(20% 0 20% 0);
         background-color: #333333 !important; }
     .project-page--section .icon {
       padding-right: 0.75rem; }
