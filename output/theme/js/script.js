@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const referrer = document.referrer;
+    // normalise URL - remove trailing backslash
+    const referrer = document.referrer.replace(/\/$/, '');
     const prevPageContainer = document.getElementById('prev-page-link');
     const prevLinkText = referrer.split('/').pop().replaceAll('-', ' ');
 
