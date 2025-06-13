@@ -1,0 +1,26 @@
+.or25-content {
+  .or25-background {
+    display: flex; // this lets the image fill the div
+    align-items: stretch;
+
+    img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+    @media (max-width: $breakpoint-lg) {
+      display: none !important;
+    }
+  }
+
+  ul {
+    padding-left: 0.85rem;
+
+    li {
+      margin-bottom: 1.5rem;
+      //list-style: none;
+    }
+  }
+}

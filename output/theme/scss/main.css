@@ -404,6 +404,23 @@ a.tag {
   .or24-content ul li {
     margin-bottom: 1.5rem; }
 
+.or25-content .or25-background {
+  display: flex;
+  align-items: stretch; }
+  .or25-content .or25-background img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block; }
+  @media (max-width: 992px) {
+    .or25-content .or25-background {
+      display: none !important; } }
+.or25-content ul {
+  padding-left: 0.85rem; }
+  .or25-content ul li {
+    margin-bottom: 1.5rem; }
+
 .homepage .section-links {
   background-color: #ffffff;
   z-index: 5;
