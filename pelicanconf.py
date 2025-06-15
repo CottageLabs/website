@@ -46,6 +46,8 @@ TAGS_SAVE_AS = 'projects/index.html'
 TAG_SAVE_AS = 'projects/{slug}/index.html'
 TAG_URL = 'projects/{slug}'
 
+DIRECT_TEMPLATES = ['index', 'tags', 'categories']
+
 PLUGINS = [
     'yaml_metadata',
     'css_cache_bust'
