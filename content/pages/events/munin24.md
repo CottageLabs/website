@@ -2,7 +2,7 @@
 Title: Munin24
 Template: event
 background: munin.png
-conferencetitle: "Munin Conference on Scholarly Publishing"
+conferencetitle: "Munin Conference on Scholarly Publishing 2024"
 conferencelink: https://site.uit.no/muninconf/
 ---
 
