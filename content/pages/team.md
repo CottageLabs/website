@@ -22,9 +22,9 @@ Intro: Our dedicated and high-skill team brings full-stack expertise to your pro
 
 <!-- -->
 
- - ## Kushagra
-   ## Varade
- - UI, JavaScript and Ruby Developer
+  - ## Kushagra
+    ## Varade
+  - UI, JavaScript and Ruby Developer
 
 <!-- -->
 
@@ -34,6 +34,6 @@ Intro: Our dedicated and high-skill team brings full-stack expertise to your pro
 
 <!-- -->
 
- - ## Ramakrishna
-   ## Sakhamaru
- - Python Developer, Operations Team
+  - ## Ramakrishna
+    ## Sakhamaru
+  - Python Developer, Operations Team
