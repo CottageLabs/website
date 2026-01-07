@@ -19,12 +19,12 @@ Intro: Our dedicated and high-skill team brings full-stack expertise to your pro
   - ## Hrafn
     ## Malmquist
   - DSpace Committer, Python, PHP and Java Developer
-  - 
+
 <!-- -->
 
  - ## Kushagra
-    ## Varade
-  - UI, JavaScript and Ruby Developer
+   ## Varade
+ - UI, JavaScript and Ruby Developer
 
 <!-- -->
 
@@ -34,12 +34,6 @@ Intro: Our dedicated and high-skill team brings full-stack expertise to your pro
 
 <!-- -->
 
-  - ## Philip
-    ## Kwok
-  - Python and Ruby Developer, Operations Team
-
-<!-- -->
-
  - ## Ramakrishna
-    ## Sakhamaru
-  - Python Developer, Operations Team
+   ## Sakhamaru
+ - Python Developer, Operations Team
