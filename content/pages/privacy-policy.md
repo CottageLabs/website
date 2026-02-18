@@ -26,6 +26,8 @@ We use the information we collect to analyse website traffic and user behavior t
 
 We will not share your information with third parties for marketing or any other purposes.
 
+If you choose to provide us with personal information (e.g., by contacting us), we will only use that information to respond to your inquiry and will not share it with any third parties, or add you to any mailing lists.
+
 ## Opting Out of Analytics Cookies
 
 You will be prompted to opt-in to analytics cookies when you first visit our website. If you choose to opt-out, we will not collect any information about your visit. You can also manage your cookie preferences through your browser settings.

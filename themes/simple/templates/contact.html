@@ -1,0 +1,73 @@
+{% extends "base_without_footer.html" %}
+{% block content %}
+    <div class="row justify-content-between homepage">
+        <section id="section-links" class="section-links col col-lg-4 col-md-12">
+            <div class="section-links--content">
+                <img id="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/logo.svg" alt="Cottage Labs Logo">
+                <h1>MAKE THE MOST OF YOUR DATA</h1>
+                <div class="line"></div>
+                <div class="links-container">
+                    <a href="{{ SITEURL }}/open-access-infrastructure" class="section-link">
+                        <div id="oa-logo" class="section-link--icon" alt="open access icon"></div>
+                        <span class="section-link--text section-link--text_green-on-hover">Establish Open access infrastructure</span></a>
+                    <a href="{{ SITEURL }}/data-visualisation" class="section-link">
+                        <div id="dv-logo" class="section-link--icon" alt="data visualisation icon"></div>
+                        <span class="section-link--text section-link--text_red-on-hover">Fashion Data Visualisations</span></a>
+                    <a href="{{ SITEURL }}/data-repositories" class="section-link">
+                        <div id="dr-logo" class="section-link--icon" alt="data repositories icon"></div>
+                        <span class="section-link--text section-link--text_green-on-hover">Build Your Data repositories</span></a>
+                    <a href="{{ SITEURL }}/bespoke-development" class="section-link">
+                        <div id="bd-logo" class="section-link--icon" alt="bespoke developement icon"></div>
+                        <span class="section-link--text section-link--text_red-on-hover">Craft your Bespoke development</span></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact-info" class="contact-info col-lg-7 col-md-12" style="padding-bottom: 200px">
+            {{ page.content }}
+
+            <p>
+                <a class="tag tag--green" href="mailto:us@cottagelabs.com" title="email us">
+                    <i class="fa fa-envelope" style="margin-right: 10px;"></i><strong>Talk to the team</strong>
+                </a>
+            </p>
+            <p>
+                <span style="margin-right: 10px">Follow us: </span>
+            </p>
+
+            <p>
+                <a href="https://github.com/CottageLabs/" title="Follow us on Github">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/company/cottagelabs/" title="Follow us on LinkedIn">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <a href="https://x.com/cottagelabs" title="Follow us on Twitter / X" style="margin-right: 1rem;">
+                    <strong>𝕏</strong>/<i class="fa fa-twitter"></i> X / Twitter
+                </a>
+            </p>
+
+            <p>
+                Registered Company Address:<br>
+                <strong>Cottage Labs LLP</strong><br>
+                272 Bath Street<br>
+                Glasgow<br>
+                G2 4JR<br>
+                United Kingdom
+            </p>
+
+            <p>We only use your personal information to respond to your enquiry. We will not share your information with
+                any third parties, or put you on a mailing list. For more information, please see our <a href="/privacy-policy">Privacy Policy</a>.</p>
+        </section>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer role="contentinfo" style="margin-top: -5rem">
+        {% include 'footer.html' %}
+    </footer>
+{%  endblock %}
