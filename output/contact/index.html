@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Google Analytics will be loaded only when the user has given consent. See the consent script below. -->
-
     <meta charset="UTF-8">
     <title>Cottage Labs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -159,10 +157,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../theme/scss/main.css?ee0332" />
     <link rel="icon" type="image/png" href="../theme/favicon/dark/favicon.png">
-    <script src="../theme/js/script.js" defer></script>
 
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
@@ -240,8 +236,7 @@
             <div class="col col-sm-auto"></div>
         </div>
     </div>
-</nav>
-<!-- Cookie consent banner: shown only when there is no consent or decline cookie -->
+</nav><!-- Cookie consent banner: shown only when there is no consent or decline cookie -->
 <div id="cookie-consent-banner" style="display:none;" aria-live="polite" role="dialog">
     <div style="flex:1; min-width:200px;">
         <strong>We'd like to use analytics cookies</strong>
@@ -256,35 +251,74 @@
 </div>
 <main>
     <div class="container">
-    <div class="event-page content or24-content row align-items-stretch">
-        <div class="col-md">
-            <div class="event-header">
-                <h1>Open Repositories Conference 2024 <a class="icon-link" href="https://or2024.openrepositories.org/" target="_blank"><i class="fas fa-link fa-xs"></i></a></h1>
+    <div class="row justify-content-between homepage">
+        <section id="section-links" class="section-links col col-lg-4 col-md-12">
+            <div class="section-links--content">
+                <img id="logo" src="../theme/images/logo.svg" alt="Cottage Labs Logo">
+                <h1>MAKE THE MOST OF YOUR DATA</h1>
+                <div class="line"></div>
+                <div class="links-container">
+                    <a href="../open-access-infrastructure" class="section-link">
+                        <div id="oa-logo" class="section-link--icon" alt="open access icon"></div>
+                        <span class="section-link--text section-link--text_green-on-hover">Establish Open access infrastructure</span></a>
+                    <a href="../data-visualisation" class="section-link">
+                        <div id="dv-logo" class="section-link--icon" alt="data visualisation icon"></div>
+                        <span class="section-link--text section-link--text_red-on-hover">Fashion Data Visualisations</span></a>
+                    <a href="../data-repositories" class="section-link">
+                        <div id="dr-logo" class="section-link--icon" alt="data repositories icon"></div>
+                        <span class="section-link--text section-link--text_green-on-hover">Build Your Data repositories</span></a>
+                    <a href="../bespoke-development" class="section-link">
+                        <div id="bd-logo" class="section-link--icon" alt="bespoke developement icon"></div>
+                        <span class="section-link--text section-link--text_red-on-hover">Craft your Bespoke development</span></a>
+                </div>
             </div>
-            <p>We proudly sponsored the Open Repositories Conference 2024.</p>
-<h2>Our presentations:</h2>
-<ul>
-<li><strong>Comparing some basic features of three institutional software repository platforms</strong><br>
-<em>Anusha Ranganathan, Steven Eardley, Hrafn Malmquist</em><br>
-  <a href="../assets/repositories.pdf" class="tag tag--green" title="Slides for 'Comparing some basic features...' presentation">SLIDES</a></li>
-<li><strong>The Distribution of DSpace</strong>   <br>
-<em>Hrafn Malmquist</em><br>
-  <a href="../assets/DSpace.pdf" class="tag tag--green" title="Slides for 'Distribution of D Space' presentation">SLIDES</a></li>
-<li><strong>Persisting complex, hierarchical repository content in an S3 object store</strong>   <br>
-<em>Anusha Ranganathan</em><br>
-  <a href="../assets/S3ObjectStore.pdf" class="tag tag--green" title="Slides for 'Presisting complex, hierarchical repository content...' presentation">SLIDES</a></li>
-<li><strong>Looking up from the Weeds</strong>    <br>
-<em>Richard Jones</em><br>
-  <a href="../assets/Weeds.pdf" class="tag tag--green" title="Slides for 'Looking up from the Weeds' presentation">SLIDES</a></li>
-</ul>
-        </div>
-        <div class="col-md-6 or24-background">
-            <img src="../theme/images/events/or24-screenshot.png" alt=""/>
-        </div>
+        </section>
+        <section id="contact-info" class="contact-info col-lg-7 col-md-12" style="padding-bottom: 200px">
+            <h1>Contact Us</h1>
+<p>Whether you're planning a new project, exploring options, or just want to ask a question, we’d love to hear from you. We work with research organisations, funders, and Open Access groups from all around the world, and we’re always happy to have an initial conversation. </p>
+
+            <p>
+                <a class="tag tag--green" href="mailto:us@cottagelabs.com" title="email us">
+                    <i class="fa fa-envelope" style="margin-right: 10px;"></i><strong>Talk to the team</strong>
+                </a>
+            </p>
+            <p>
+                <span style="margin-right: 10px">Follow us: </span>
+            </p>
+
+            <p>
+                <a href="https://github.com/CottageLabs/" title="Follow us on Github">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/company/cottagelabs/" title="Follow us on LinkedIn">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <a href="https://x.com/cottagelabs" title="Follow us on Twitter / X" style="margin-right: 1rem;">
+                    <strong>𝕏</strong>/<i class="fa fa-twitter"></i> X / Twitter
+                </a>
+            </p>
+
+            <p>
+                Registered Company Address:<br>
+                <strong>Cottage Labs LLP</strong><br>
+                272 Bath Street<br>
+                Glasgow<br>
+                G2 4JR<br>
+                United Kingdom
+            </p>
+
+            <p>We only use your personal information to respond to your enquiry. We will not share your information with
+                any third parties, or put you on a mailing list. For more information, please see our <a href="/privacy-policy">Privacy Policy</a>.</p>
+        </section>
     </div>
     </div>
 </main>
-<footer role="contentinfo">
+    <footer role="contentinfo" style="margin-top: -5rem">
 <div class="container">
     <img id="cottage-shape" src="../theme/images/cottage.svg" alt=""/>
     <div class="row">
@@ -316,6 +350,6 @@
 <p>DUNS: 21-736-0418</p>
         </div>
     </div>
-</div></footer>
+</div>    </footer>
 </body>
 </html>
