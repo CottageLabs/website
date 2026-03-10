@@ -110,7 +110,7 @@ h2 {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 0.225rem;
+  letter-spacing: 0.1rem;
   text-transform: capitalize; }
 
 h3 {
@@ -136,7 +136,9 @@ a {
   background: linear-gradient(to right, #005500 0%, #005500 75%, #940101 75%, #940101) no-repeat 0 100%;
   background-size: 100% 2px;
   transition: background-size 400ms;
-  background-size: 0 2px; }
+  background-size: 0 2px;
+  text-transform: none;
+  color: #333333; }
   a:hover {
     background-size: 100% 2px; }
 
@@ -479,6 +481,15 @@ a.tag {
 .homepage .section-clients {
   padding-bottom: 6rem;
   padding-top: 1rem; }
+  .homepage .section-clients .value-statement {
+    margin-bottom: 50px; }
+    .homepage .section-clients .value-statement p {
+      font-size: 2rem;
+      text-align: center;
+      line-height: 2.5rem; }
+  .homepage .section-clients .explore-or-contact {
+    text-align: center;
+    margin-bottom: 80px; }
   .homepage .section-clients h2 {
     text-align: center;
     margin-bottom: 3rem; }

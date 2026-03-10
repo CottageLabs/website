@@ -129,6 +129,8 @@ strong {
 
 a {
   @include link;
+  text-transform: none;
+  color: $black;
 }
 
 a.disabled {

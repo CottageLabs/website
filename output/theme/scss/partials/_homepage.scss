@@ -1,6 +1,5 @@
 .homepage {
 
-
   .section-links {
     background-color: $white;
     z-index: 5;
@@ -73,6 +72,21 @@
   .section-clients {
     padding-bottom: 6rem;
     padding-top: 1rem;
+
+
+    .value-statement {
+      p {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+      }
+      margin-bottom: 50px;
+    }
+
+    .explore-or-contact {
+      text-align: center;
+      margin-bottom: 80px;
+    }
 
     h2 {
       text-align: center;
