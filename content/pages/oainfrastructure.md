@@ -11,6 +11,9 @@ Projects:
   - SWORDv3
 ---
 
+**We build and support the systems that make research openly available online.** That includes creating and maintaining platforms that store, manage and share journals, articles and data. We work with organisations that want sustainable, open solutions without being tied to proprietary systems - and we handle the technical side for you.
+
+---
 
 For over a decade we've been a key player in a number of popular large-scale and multi-organisational Open Access infrastructure projects - 
 

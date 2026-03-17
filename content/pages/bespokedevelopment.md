@@ -13,6 +13,9 @@ Projects:
   - DeepGreen
 ---
 
+**When existing tools don’t fit your needs, we build software that does.** We work with you to understand the problem you’re trying to solve, then design and build a tailored solution that fits your work and users. We focus on practical, useful features and support the software once it’s live so it keeps working well.
+
+---
 
 Embark on a tailored digital journey with Cottage Labs' bespoke development services. Our team crafts solutions that align seamlessly with your organization's goals:
 

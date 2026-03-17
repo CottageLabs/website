@@ -3,7 +3,10 @@
     <div class="row justify-content-between lifecycle">
         <div class="content col-md">
             {{ page.content }}
-            <a class="tag tag--see-in-projects tag--green" href="{{ SITEURL }}/projects/">Our projects</a>
+            <p style="margin-top: 3em">
+                <a href="/contact" class="tag tag--green">Talk to us</a>
+                <a class="tag tag--green" href="{{ SITEURL }}/projects/">Explore our case studies</a>
+            </p>
         </div>
         <div class="col-md-6">
             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ page.image }}" alt="{{ page.image_alt }}">

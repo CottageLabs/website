@@ -9,6 +9,9 @@ Projects:
   - Ruhr-University Bochum Hyrax
 ---
 
+**We create secure online spaces where research and data can be stored, organised and shared.** Think of it as building a trusted digital home for your content that’s easy for people to find and use, and that keeps your data safe and preserved for the long term. This is useful for universities, funders and research groups who need a reliable way to manage their research outputs.
+
+---
 
 Cottage Labs has worked with institutional libraries, museums and knowledge organisations for over 10 years, building repositories to house their intellectual property like student thesis, publications, grey literature, and small to medium size research data (upto a few 100 GB in size).
 

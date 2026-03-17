@@ -8,6 +8,9 @@ Image_alt: Data Lifecycle graph
 
 # Your data lifecycle
 
+**We work with you to make sure your data is collected in the right way, organised so it’s easy to use, and kept safe and useful over time.** The goal is to make data easier to work with so you can make better decisions.
+
+---
 
 The data lifecycle refers to the stages that data goes through from its creation or capture to its eventual destination with users and archives.
 

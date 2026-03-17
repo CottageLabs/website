@@ -9,6 +9,9 @@ Projects:
   - WNA ReactorDB
 ---
 
+**We help organisations store, manage, publish, and share research data safely.** Our work makes it easier for researchers to deposit data, for organisations to meet funder requirements, and for the public to find and reuse research outputs.
+
+---
 
 Unlock your data's potential with versatile data analytics and visualisation services:
 
