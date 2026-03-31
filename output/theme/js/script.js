@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded', function() {
     if (prevPageContainer) {
         prevPageContainer.innerHTML = link;
     }
-    
+
 });
