@@ -58,7 +58,7 @@
 
                 // Determine whether to add the Secure flag. Prefer SITEURL (from template config);
                 // fall back to current page protocol if SITEURL is empty/unspecified.
-                const siteUrl = "../..";
+                const siteUrl = "..";
                 let secureFlag = '';
                 try {
                     if (siteUrl && siteUrl.indexOf('https://') === 0) {
@@ -157,9 +157,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../theme/scss/main.css?dd5ea0" />
-    <link rel="icon" type="image/png" href="../../theme/favicon/dark/favicon.png">
-    <script src="../../theme/js/script.js" defer></script>
+    <link rel="stylesheet" href="../theme/scss/main.css?dd5ea0" />
+    <link rel="icon" type="image/png" href="../theme/favicon/dark/favicon.png">
+    <script src="../theme/js/script.js" defer></script>
 
 </head>
 
@@ -169,7 +169,7 @@
         <div class="row justify-content-between with-gap-1">
             <section class="section-left col col-lg-4">
                 <a class="navbar-brand" href="/">
-                    <img id="logo" src="../../theme/images/logo.svg" alt="Cottage Labs Logo">
+                    <img id="logo" src="../theme/images/logo.svg" alt="Cottage Labs Logo">
                 </a>
             </section>
             <section class="section-right col col-lg-7">
@@ -266,78 +266,67 @@
 </div>
 <main>
     <div class="container">
-    <div id="prev-page-link" class="dynamic-breadcrumb"></div>
-    <div class="project-page">
-        <div class="project-page--section project-page--intro row">
-            <div class="col-md-2">
-                <a class="thumbnail" href="https://journalcheckertool.org/" title="Journal Checker Tool" target="_blank">
-                    <div class="project-thumbnail--Journal Checker Tool">
-                            <img class="project-logo"
-                                 src="../../theme/images/projects/jct.svg"
-                                 alt="Journal Checker Tool">                    </div>
-                </a>
-            </div>
-            <div class="col-md-9">
-                <!-- negative margin to overwrite usual 3rem margin under the article.content par -->
-                <p>cOAlition S, a consortium of 25+ funders, has put together an ambitious plan to improve the state of Open Access and
-encourage more and more publishers to support that route. Cottage Labs provides several services to the consortium,
-including <strong>Journal Checker Tool</strong> that allows authors to verify the compliance of their preferred publishing routes.</p>
-            </div>
-        </div>
-        <div class="project-page--section project-page--challenge">
-            <div class="project-page--section--text brown">
-                <h2><img class="icon" src="../../theme/images/icons/challenge.svg"
-                         aria-hidden="true">Challenge</h2>
-                cOAlition S's Plan S requires funded authors to publish under certain conditions for their grant funding to be valid.  To enable authors to check that their preferred publishing route is compliant, or to support them in finding alternative routes, the coalition wanted a tool which would survey the known information about journals in multiple sources and deliver advice on the publishing options available.
-            </div>
-                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                     alt="screenshot from Journal Checker Tool project"
-                     src="../../theme/screenshots/jct1.png"
-                     id="project-screenshot--Journal Checker Tool--1"/>
-        </div>
-
-        <div class=" project-page--section project-page--solution">
-                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                     alt="screenshot from Journal Checker Tool project"
-                     src="../../theme/screenshots/jct2.png"
-                     id="project-screenshot--Journal Checker Tool--2"/>
-            <div class="project-page--section--text green">
-                <h2><img class="icon" src="../../theme/images/icons/solution.svg"
-                         aria-hidden="true">Solution</h2>
-                We developed several new data sources which we maintain (and especially for Transformative Agreements), and we built a comprehensive data gathering and caching system which pulls information from definitive scholarly information sources such as Crossref, DOAJ, ROR, and OA.Works.  Then in close collaboration with our colleagues at the coalition, we developed a layered query algorithm that allows us to answer compliance questions with nuanced responses, references to additional information, and detailed information about how the result was deteremined.  This system is then kept up-to-date with the current state of the data in those external systems, so the results are as timely and accurate as possible in the changing publishing landscape.
-            </div>
-        </div>
-
-        <div class="project-page--section project-page--success">
-            <div class="project-page--section--text red">
-                <h2><img class="icon" src="../../theme/images/icons/success.svg"
-                         aria-hidden="true">Success</h2>
-                The Journal Checker Tool is widely used, and has visitors from all over the globe.  It has served over 1m compliance checks.  It has been customised to deliver funder-specific advice as new funders have joined the coalition, and has even driven publishers to be interested in how well represented their Open Access policies are.
-            </div>
-                <img class="project-page--section--screenshot screenshot" aria-hidden="true"
-                     alt="screenshot from Journal Checker Tool project"
-                     src="../../theme/screenshots/jct3.png"
-                     id="project-screenshot--Journal Checker Tool--3"/>
-        </div>
-
+<div class="row justify-content-between">
+    <div class="content col-lg-8">
+        <h1>Open by design: building sustainable research infrastructure</h1>
+<p>At Cottage Labs, we don’t just use open source, we produce it. The software, tools, and libraries we build are released openly, so clients and the wider community can use, adapt, and build on them. Open Source and Open Access aren’t add-ons for us; they shape how we design, build, and maintain research infrastructure, and how we work with organisations long term. Our focus is on creating systems that are transparent, sustainable, and able to evolve.</p>
+<h3>Why Open Source?</h3>
+<p>Open source is central to our approach. By working in the open, organisations can understand how their systems function, retain control over their platforms and data, and avoid reliance on proprietary suppliers. Open technologies make it easier to connect systems, align with shared standards, and grow over time. They reduce technical risk and support long-term sustainability.</p>
+<p>We also contribute back to the projects we rely on, because research infrastructure is shared, and it only stays strong through active maintenance and improvement.</p>
+<h3>Why Open Access?</h3>
+<p>Open Access complements this approach. The organisations we work with exist to create and share knowledge, and Open Access ensures research remains discoverable, reusable, and accessible over time. It increases visibility and impact, supports funder requirements, and protects scholarly work for future audiences.</p>
+<h3>What This Means for Our Clients?</h3>
+<p>Working with Cottage Labs means investing in infrastructure designed for longevity. Our approach helps organisations:</p>
+<ul>
+<li>Retain control over platforms and data</li>
+<li>Reduce reliance on proprietary systems</li>
+<li>Adapt and extend systems as needs change</li>
+<li>Support openness, trust, and transparency</li>
+<li>Ensure long-term access to research outputs</li>
+</ul>
+<p>This allows us to act as long-term partners, not just delivery vendors.</p>
+<h3>Building for the Long Term</h3>
+<p>Research infrastructure needs to last for decades, not just project cycles. By combining open-source software with Open Access principles, we help organisations build systems that remain maintainable, resilient, and aligned with their values.</p>
+<h3>A Practical Example: From Publications Router to DeepGreen</h3>
+<p>When we developed the Publications Router for Jisc, it was released as open source. A university consortium in Germany, KOBV, used that code to build DeepGreen, a national service supporting universities across Germany.</p>
+<p>Later, they returned to us as the original authors to help improve and maintain the platform, and we’ve worked with DeepGreen since June 2021. In contrast, when the Publications Router moved to a closed-source model, further development was no longer shared, highlighting how quickly progress can be lost when openness is removed.</p>
+<p><strong><a href="/projects/deepgreen">Learn more about DeepGreen</a></strong></p>
     </div>
+    <div class="col-lg-3">
+        <section class="explore-more explore-more--content">
+            <h2>Discover more about our open values</h2>
 
-<div class="related_technologies">
-        <a href="../../projects/oai" class="tag tag--green">
-Open Access Infrastructure</a>
-        <a href="../../projects/search" class="tag tag--brown">
-Search Technologies</a>
-        <a href="../../projects/api" class="tag tag--blue">
-API</a>
-        <a href="../../projects/python" class="tag tag--green">
-Python</a>
-        <a href="../../projects/js" class="tag tag--brown">
-JavaScript</a>
-</div>    </div>
+            <h3>Infrastructure and sustainability</h3>
+            <p class="explore-more--section">
+                We have been building open source infrastructure for open access for many years.<br>
+                <a href="/open-access-infrastructure" class="tag tag--read-more tag--green">Read more</a>
+            </p>
+
+            <h3>Our Case Studies</h3>
+            <p class="explore-more--section">
+                Gain a deeper understanding of how our projects relate to our values<br>
+                <a href="/projects" class="tag tag--read-more tag--green">Read our case studies</a>
+            </p>
+
+            <h3>Like what you see?</h3>
+            <p class="explore-more--section">
+                Do you want to know more about our values and how they align with yours?<br>
+                <a href="/contact" class="tag tag--read-more tag--green">Talk to us</a>
+            </p>
+            <p class="explore-more--section">
+                Or maybe you want to get stuck into the code straight away<br>
+                <a href="https://github.com/CottageLabs/" class="tag tag--read-more tag--green">Find us on GitHub</a>
+            </p>
+
+
+        </section>
+    </div>
+</div>
+    </div>
 </main>
 <footer role="contentinfo">
 <div class="container">
-    <img id="cottage-shape" src="../../theme/images/cottage.svg" alt=""/>
+    <img id="cottage-shape" src="../theme/images/cottage.svg" alt=""/>
     <div class="row">
         <div class="contact col-7">
             <p>

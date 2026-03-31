@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-between">
+    <div class="content col-lg-8">
+        {{ page.content }}
+    </div>
+    <div class="col-lg-3">
+        <section class="explore-more explore-more--content">
+            <h2>Discover more about our open values</h2>
+
+            <h3>Infrastructure and sustainability</h3>
+            <p class="explore-more--section">
+                We have been building open source infrastructure for open access for many years.<br>
+                <a href="/open-access-infrastructure" class="tag tag--read-more tag--green">Read more</a>
+            </p>
+
+            <h3>Our Case Studies</h3>
+            <p class="explore-more--section">
+                Gain a deeper understanding of how our projects relate to our values<br>
+                <a href="/projects" class="tag tag--read-more tag--green">Read our case studies</a>
+            </p>
+
+            <h3>Like what you see?</h3>
+            <p class="explore-more--section">
+                Do you want to know more about our values and how they align with yours?<br>
+                <a href="/contact" class="tag tag--read-more tag--green">Talk to us</a>
+            </p>
+            <p class="explore-more--section">
+                Or maybe you want to get stuck into the code straight away<br>
+                <a href="https://github.com/CottageLabs/" class="tag tag--read-more tag--green">Find us on GitHub</a>
+            </p>
+
+
+        </section>
+    </div>
+</div>
+{% endblock %}

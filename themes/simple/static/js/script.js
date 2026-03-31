@@ -13,5 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     link += `<a href="/projects">all our projects</a>`;
 
-    prevPageContainer.innerHTML = link;
+    if (prevPageContainer) {
+        prevPageContainer.innerHTML = link;
+    }
+
 });
