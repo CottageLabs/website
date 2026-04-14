@@ -13,8 +13,7 @@ We will be sharing insights from our work with cOAlition S, focusing on the chal
 
 **Where?** University of Regensburg
 
-## Our presentation:
+## Our presentation
  
-**Tracking institution and journal relationships in TAs: the devil in the details**
+* <a href="https://indico.desy.de/event/45166/contributions/175266/" target="_blank" title="Read details about our presentation on the openCost Conference">**Tracking institution and journal relationships in TAs: the devil in the details**</a>
 _Richard Jones, 9th October, 12:00, H25 (2nd floor)_
-<a href="https://indico.desy.de/event/45166/contributions/175266/" target="_blank" class="tag tag--green" title="Read details about our presentation on the openCost Conference">DETAILS</a>

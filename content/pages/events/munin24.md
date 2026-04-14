@@ -15,9 +15,7 @@ advancing equitable publishing models such as Diamond and Overlay Journals.
 
 **Where?** Tromsø, Norway and streamed worldwide
 
-## Our presentation:
+## Our presentation
 
-**Tales from the Engine Room: what's ahead for OA and what’s behind us**
+* <a href="https://septentrio.uit.no/index.php/SCS/article/view/7792" target="_blank" title="Read details about our presentation on the Munin Conference">**Tales from the Engine Room: what's ahead for OA and what’s behind us**</a>
 _Steven Eardley, Richard Jones, 26th November, 14:50, Auditorium 1_
-<a href="https://septentrio.uit.no/index.php/SCS/article/view/7792" target="_blank" class="tag tag--green" title="Read details about our presentation on the Munin Conference">
-DETAILS</a>

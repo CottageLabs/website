@@ -17,6 +17,11 @@ to choose the solution that works for you.
 
 **Where?** Tromsø, Norway and streamed worldwide
 
-## Our presentation:
+## Our presentations
 
-TBA
+* <a href="https://septentrio.uit.no/index.php/SCS/article/view/8363" target="_blank" title="Read details about our presentation on the Munin Conference">**Ask a robot - adding AI search to a repository**</a>
+_Steven Eardley, 18th November, 12:55, Auditorium 2_
+
+* <a href="https://septentrio.uit.no/index.php/SCS/article/view/8172" target="_blank" title="Read details about our presentation on the Munin Conference">**Current state of open source research data management systems**</a>
+_Steven Eardley, Richard Jones, 18th November, 14:20, Workshop Room D_
+
