@@ -9,12 +9,37 @@
 
         <div class="col-lg-7">
             <div class="partners">
-                {% include "partners.html" %}
-            </div>
+                <h1>Managing Partners</h1>
+                <div class="partners-profiles">
+                {% for p in pages|selectattr("title", "eq", "Team") %}
+
+                    {% for partner in p.partners %}
+                    <ul>
+                        <li><img alt="{{ partner.name }}" src="/images/profiles/{{ partner.image }}"></li>
+                        <li><h2>{{ partner.name }}</h2></li>
+                        <li><strong>{{partner.role}}</strong></li>
+                        <li>{{partner.bio}}</li>
+                    </ul>
+                    {% endfor %}
+
+                {% endfor %}
+                </div>
             <div class="team">
-                {% include "team.html" %}
+                <h1>Meet the team</h1>
+                {% for p in pages|selectattr("title", "eq", "Team") %}
+                    <p>{{ p.content }}</p>
+                    <div class="team-profiles">
+                    {% for member in p.team %}
+                        <ul>
+                            <li><img alt="{{ member.name }}" src="/images/profiles/{{ member.image }}"></li>
+                            <li><h2>{{ member.name }}</h2></li>
+                            <li><strong>{{member.role}}</strong></li>
+                            <li>{{member.bio}}</li>
+                        </ul>
+                    {% endfor %}
+                    </div>
+                {% endfor %}
             </div>
         </div>
-
     </div>
 {% endblock %}
