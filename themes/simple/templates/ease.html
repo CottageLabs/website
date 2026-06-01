@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Analytics will be loaded only when the user has given consent. See the consent script below. -->
+
+    <meta charset="UTF-8">
+    <title>EASE (Cottage Labs)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4051ee286d.js" crossorigin="anonymous"></script>
+
+    {% include 'partials/_analytics_js.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/scss/ease.css" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/favicon/dark/favicon.png">
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/script.js" defer></script>
+
+</head>
+
+<body>
+{% include 'nav.html' %}
+
+{% include 'partials/_analytics_banner.html' %}
+
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main id="main-content" class="page container">
+    <section id="download" class="downloadWrapper">
+        <a class="tag" href="./theme/documents/ease.odt"><img src="./theme/images/icons/download-cloud.svg" aria-role="presentation" />Download as text document (odt)</a>
+    </section>
+    <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">Reduce cognitive load in data-rich repositories with <span class="title">EASE</span></h1>
+        <h2>A practical checklist for data repositories</h2>
+        <p>This checklist is a practical design and review aid. It contains a set of questions to keep in mind while designing or reviewing a page, feature, or workflow.</p>
+        <p>It is not a full accessibility audit.</p>
+        <p>For more detail, see the COGA guidance and the GOV.UK cognitive accessibility guidelines in the resources below.</p>
+
+        <div class="principles" aria-label="EASE principles">
+            <div class="principle"><strong>Explain</strong>Help users understand what things are and how to use them.</div>
+            <div class="principle"><strong>Arrange</strong>Help users find what they need and follow a clear structure.</div>
+            <div class="principle"><strong>Simplify</strong>Use clear content and remove unnecessary complexity.</div>
+            <div class="principle"><strong>Enable</strong>Support users with errors, memory, help, and personalisation.</div>
+        </div>
+
+        <div class="panel-grid">
+            <section aria-labelledby="how-to-title">
+                <h3 id="how-to-title">How to use this checklist</h3>
+                <p>Use it as a quality standard: ask these questions during design, and ask them again when reviewing the page. Tick the checkbox next to each statement if it is true for your website or service. If you are not sure, treat it as something to investigate.</p>
+                <p>Done is better than perfect: even a few improvements can make a real difference to users.</p>
+            </section>
+            <section class="card" aria-labelledby="guidelines-title">
+                <h3 id="guidelines-title">COGA guideline areas</h3>
+                <ol class="guidelines">
+                    <li>Help users understand what things are and how to use them.</li>
+                    <li>Help users find what they need.</li>
+                    <li>Use clear and understandable content.</li>
+                    <li>Help users avoid mistakes and know how to correct them.</li>
+                    <li>Help users focus.</li>
+                    <li>Ensure processes do not rely on memory.</li>
+                    <li>Provide help and support.</li>
+                    <li>Support adaptation and personalisation.</li>
+                </ol>
+            </section>
+        </div>
+    </section>
+
+    <section aria-labelledby="checklist-title">
+        <div class="section-intro">
+            <h2 id="checklist-title">Checklist by page or component</h2>
+            <p>Open a section to review the questions for that page or part of the service. Each question includes its related guideline references in brackets.</p>
+        </div>
+
+        <div class="accordion">
+            <details>
+                <summary>1. Home / entry page</summary>
+                <div class="details-body">
+                    <div class="checklist">
+                        <div class="check-item"><input id="home-1" type="checkbox"><label for="home-1">Is the main purpose of the repository clear within the first screen?<span class="guideline-code">G2, G5</span></label></div>
+                        <div class="check-item"><input id="home-2" type="checkbox"><label for="home-2">Is the main search entry point easy to find?<span class="guideline-code">G2</span></label></div>
+                        <div class="check-item"><input id="home-3" type="checkbox"><label for="home-3">Are the main routes for key users easy to spot, for example search, browse, deposit, or get help?<span class="guideline-code">G2, G5</span></label></div>
+                        <div class="check-item"><input id="home-4" type="checkbox"><label for="home-4">Are buttons and links labelled clearly, so users know what will happen next?<span class="guideline-code">G1</span></label></div>
+                        <div class="check-item"><input id="home-5" type="checkbox"><label for="home-5">Are promotional blocks, news, or alerts kept secondary to the main tasks?<span class="guideline-code">G5</span></label></div>
+                        <div class="check-item"><input id="home-6" type="checkbox"><label for="home-6">Is introductory text short, plain, and free from unnecessary jargon?<span class="guideline-code">G3</span></label></div>
+                        <div class="check-item"><input id="home-7" type="checkbox"><label for="home-7">Does the page have a clear visual hierarchy, with meaningful headings and logical sections?<span class="guideline-code">G2, G5</span></label></div>
+                        <div class="check-item"><input id="home-8" type="checkbox"><label for="home-8">Can users tell where to start if they want to find a record?<span class="guideline-code">G1, G2</span></label></div>
+                        <div class="check-item"><input id="home-9" type="checkbox"><label for="home-9">Can users tell where to start if they want to upload or manage records?<span class="guideline-code">G1, G2</span></label></div>
+                        <div class="check-item"><input id="home-10" type="checkbox"><label for="home-10">Does the page avoid visual clutter?<span class="guideline-code">G5</span></label></div>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>2. Global header and navigation</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="nav-1" type="checkbox"><label for="nav-1">Is the global navigation in a consistent place on every page?<span class="guideline-code">G1, G2</span></label></div>
+                    <div class="check-item"><input id="nav-2" type="checkbox"><label for="nav-2">Is the site search in a consistent and expected location?<span class="guideline-code">G2</span></label></div>
+                    <div class="check-item"><input id="nav-3" type="checkbox"><label for="nav-3">Are navigation labels clear and meaningful?<span class="guideline-code">G1, G2</span></label></div>
+                    <div class="check-item"><input id="nav-4" type="checkbox"><label for="nav-4">Are navigation items grouped in a way that matches user tasks?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="nav-5" type="checkbox"><label for="nav-5">Is the user’s signed-in state clear, for example through account name, profile menu, or sign-in and sign-out options?<span class="guideline-code">G1, G6</span></label></div>
+                    <div class="check-item"><input id="nav-6" type="checkbox"><label for="nav-6">Is the current location in the site clear from the navigation?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="nav-7" type="checkbox"><label for="nav-7">Are menus kept short enough to scan easily?<span class="guideline-code">G5</span></label></div>
+                    <div class="check-item"><input id="nav-8" type="checkbox"><label for="nav-8">Are icons in the header clear and supported by text where needed?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="nav-9" type="checkbox"><label for="nav-9">Is help or support easy to reach from the global navigation?<span class="guideline-code">G7</span></label></div>
+                    <div class="check-item"><input id="nav-10" type="checkbox"><label for="nav-10">Does the header still work well when users zoom in or change text size?<span class="guideline-code">G8</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>3. Search page - General</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="search-1" type="checkbox"><label for="search-1">Is the search input easy to find and easy to recognise?<span class="guideline-code">G2</span></label></div>
+                    <div class="check-item"><input id="search-2" type="checkbox"><label for="search-2">Does the page make it clear what content is being searched, for example articles, journals, datasets, or all records?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="search-3" type="checkbox"><label for="search-3">Does the page show only the search options most users need first, with advanced search easy to find when needed?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="search-4" type="checkbox"><label for="search-4">Are search tips or examples available close to the search box when needed?<span class="guideline-code">G6, G7</span></label></div>
+                    <div class="check-item"><input id="search-5" type="checkbox"><label for="search-5">Can users tell how to start a basic search without reading long instructions?<span class="guideline-code">G1, G5</span></label></div>
+                    <div class="check-item"><input id="search-6" type="checkbox"><label for="search-6">Can users keep or share the current search, for example through a stable URL or a saved query?<span class="guideline-code">G6, G7</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>3.1 Search page - Facets and filters</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="facets-1" type="checkbox"><label for="facets-1">Are filters grouped logically under clear headings?<span class="guideline-code">G2</span></label></div>
+                    <div class="check-item"><input id="facets-2" type="checkbox"><label for="facets-2">Are filter labels written in plain language rather than internal metadata terms?<span class="guideline-code">G3</span></label></div>
+                    <div class="check-item"><input id="facets-3" type="checkbox"><label for="facets-3">Are the available filters relevant to the records being searched?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="facets-4" type="checkbox"><label for="facets-4">Is it clear which filters are currently applied?<span class="guideline-code">G1, G6</span></label></div>
+                    <div class="check-item"><input id="facets-5" type="checkbox"><label for="facets-5">Can users remove a single filter easily?<span class="guideline-code">G4, G6</span></label></div>
+                    <div class="check-item"><input id="facets-6" type="checkbox"><label for="facets-6">Can users clear all filters easily?<span class="guideline-code">G4</span></label></div>
+                    <div class="check-item"><input id="facets-7" type="checkbox"><label for="facets-7">Do filters update results in a predictable way?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="facets-8" type="checkbox"><label for="facets-8">Is it clear whether selecting a filter adds to the search or replaces it?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="facets-9" type="checkbox"><label for="facets-9">Are long filter lists collapsed or structured so they are easy to scan?<span class="guideline-code">G5</span></label></div>
+                    <div class="check-item"><input id="facets-10" type="checkbox"><label for="facets-10">Do filter controls avoid relying on colour alone to show state?<span class="guideline-code">G1, G3</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>3.2 Search page - Search results list</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="results-1" type="checkbox"><label for="results-1">Is the number of results easy to find and understand?<span class="guideline-code">G2, G3</span></label></div>
+                    <div class="check-item"><input id="results-2" type="checkbox"><label for="results-2">Are results presented in a consistent format?<span class="guideline-code">G1, G2</span></label></div>
+                    <div class="check-item"><input id="results-3" type="checkbox"><label for="results-3">Is the most important information visible in each result item, such as title, type, date, or source?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="results-4" type="checkbox"><label for="results-4">Are result titles clear and meaningful out of context?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="results-5" type="checkbox"><label for="results-5">Is it easy to scan and compare results quickly?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="results-6" type="checkbox"><label for="results-6">Can users tell what type of record each result is?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="results-7" type="checkbox"><label for="results-7">Are sorting options easy to find and understand?<span class="guideline-code">G2, G3</span></label></div>
+                    <div class="check-item"><input id="results-8" type="checkbox"><label for="results-8">Can users tell why a result might be relevant, for example through snippets or matched metadata?<span class="guideline-code">G1, G6</span></label></div>
+                    <div class="check-item"><input id="results-9" type="checkbox"><label for="results-9">Is pagination or load more behaviour easy to understand?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="results-10" type="checkbox"><label for="results-10">Does the no-results state explain what happened and suggest what to do next?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="results-11" type="checkbox"><label for="results-11">Can users open a result without losing the search context, for example the current query and the record’s place in the list?<span class="guideline-code">G6</span></label></div>
+                    <div class="check-item"><input id="results-12" type="checkbox"><label for="results-12">Are repeated actions on each result, such as preview, save, or open, clearly distinguished?<span class="guideline-code">G1</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>4. Record landing page</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="record-1" type="checkbox"><label for="record-1">Is the record title prominent and easy to identify?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="record-2" type="checkbox"><label for="record-2">Is the core summary or description easy to find near the top of the page?<span class="guideline-code">G2, G3</span></label></div>
+                    <div class="check-item"><input id="record-3" type="checkbox"><label for="record-3">Is metadata grouped into clear, scannable sections with meaningful headings?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="record-4" type="checkbox"><label for="record-4">Are key fields, such as DOI, creators, licence, and access conditions, easy to find?<span class="guideline-code">G2</span></label></div>
+                    <div class="check-item"><input id="record-5" type="checkbox"><label for="record-5">Are technical or domain-specific metadata labels explained where needed?<span class="guideline-code">G3, G7</span></label></div>
+                    <div class="check-item"><input id="record-6" type="checkbox"><label for="record-6">Can users tell what they can do next, for example download, cite, preview, request access, or view related records?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="record-7" type="checkbox"><label for="record-7">Are download and external-link actions clearly distinguished?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="record-8" type="checkbox"><label for="record-8">Is the relationship between files, versions, and metadata clear?<span class="guideline-code">G1, G6</span></label></div>
+                    <div class="check-item"><input id="record-9" type="checkbox"><label for="record-9">Can users tell whether the record is public, restricted, embargoed, or deleted?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="record-10" type="checkbox"><label for="record-10">Is supporting information visible on the page instead of hidden in hover-only tooltips?<span class="guideline-code">G6</span></label></div>
+                    <div class="check-item"><input id="record-11" type="checkbox"><label for="record-11">Can users move to related items, creators, collections, or versions without losing context?<span class="guideline-code">G2, G6</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>5. Metadata form</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="form-1" type="checkbox"><label for="form-1">Does every input have a visible label, with placeholder text used only as a hint and not as a label?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="form-2" type="checkbox"><label for="form-2">Do labels and help text use plain language rather than schema terms?<span class="guideline-code">G3</span></label></div>
+                    <div class="check-item"><input id="form-3" type="checkbox"><label for="form-3">Are required and optional fields marked clearly in a way users can understand, rather than relying on a star alone?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="form-4" type="checkbox"><label for="form-4">Do users get examples for fields that may be hard to complete?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="form-5" type="checkbox"><label for="form-5">Are related fields grouped into clear sections?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="form-6" type="checkbox"><label for="form-6">Is the order of fields logical from the user’s point of view?<span class="guideline-code">G1, G2</span></label></div>
+                    <div class="check-item"><input id="form-7" type="checkbox"><label for="form-7">Does validation happen in a clear and predictable way?<span class="guideline-code">G4</span></label></div>
+                    <div class="check-item"><input id="form-8" type="checkbox"><label for="form-8">Are error messages placed close to the field?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="form-9" type="checkbox"><label for="form-9">Are error messages specific, understandable, and clear about how to fix the problem?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="form-10" type="checkbox"><label for="form-10">Is there an error summary at the top of the page, with links to the fields that have errors?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="form-11" type="checkbox"><label for="form-11">Can users save a draft and come back later?<span class="guideline-code">G4, G6</span></label></div>
+                    <div class="check-item"><input id="form-12" type="checkbox"><label for="form-12">Does the form preserve entered data if an error occurs?<span class="guideline-code">G4, G6</span></label></div>
+                    <div class="check-item"><input id="form-13" type="checkbox"><label for="form-13">Are upload controls easy to recognise and use?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="form-14" type="checkbox"><label for="form-14">Can users tell what file restrictions or file visibility settings mean?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="form-15" type="checkbox"><label for="form-15">Are autocomplete, paste, and browser tools allowed where useful?<span class="guideline-code">G6, G8</span></label></div>
+                    <div class="check-item"><input id="form-16" type="checkbox"><label for="form-16">Are timeouts avoided, or extendable if unavoidable?<span class="guideline-code">G4</span></label></div>
+                    <div class="check-item"><input id="form-17" type="checkbox"><label for="form-17">Can users review all the information before submitting it?<span class="guideline-code">G4</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>6. Review and publish step</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="publish-1" type="checkbox"><label for="publish-1">Can users review all information before publishing?<span class="guideline-code">G4</span></label></div>
+                    <div class="check-item"><input id="publish-2" type="checkbox"><label for="publish-2">Are users asked to confirm publication before the record goes live? The final publish action should not happen by accident.<span class="guideline-code">G4</span></label></div>
+                    <div class="check-item"><input id="publish-3" type="checkbox"><label for="publish-3">Is the publish action reversible, or are users clearly told it cannot be undone? If users cannot unpublish, they need to know that before they confirm.<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="publish-4" type="checkbox"><label for="publish-4">Is the review screen organised into clear sections?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="publish-5" type="checkbox"><label for="publish-5">Are missing fields or problems clearly highlighted and explained?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="publish-6" type="checkbox"><label for="publish-6">Can users return easily to the right part of the form to fix an issue?<span class="guideline-code">G4, G6</span></label></div>
+                    <div class="check-item"><input id="publish-7" type="checkbox"><label for="publish-7">Is the final action clearly labelled, for example Publish, Submit, or Confirm?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="publish-8" type="checkbox"><label for="publish-8">Is it clear what will happen after submission?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="publish-9" type="checkbox"><label for="publish-9">Are visibility, access, or licence choices summarised clearly before publish?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="publish-10" type="checkbox"><label for="publish-10">Are consequences of publishing, editing, versioning, or deleting explained in plain language?<span class="guideline-code">G3, G7</span></label></div>
+                    <div class="check-item"><input id="publish-11" type="checkbox"><label for="publish-11">Is the final confirmation step free from unnecessary distractions?<span class="guideline-code">G5</span></label></div>
+                    <div class="check-item"><input id="publish-12" type="checkbox"><label for="publish-12">Can users complete this step without having to remember details from earlier screens?<span class="guideline-code">G6</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>7. Account dashboard</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="dash-1" type="checkbox"><label for="dash-1">Are dashboard sections, such as drafts, published records, and requests, clearly separated?<span class="guideline-code">G2</span></label></div>
+                    <div class="check-item"><input id="dash-2" type="checkbox"><label for="dash-2">Are destructive actions clearly distinguished from edit or manage actions, and do they require confirmation?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="dash-3" type="checkbox"><label for="dash-3">Can users reverse a destructive action, or is it clearly stated that the action cannot be undone?<span class="guideline-code">G4, G7</span></label></div>
+                    <div class="check-item"><input id="dash-4" type="checkbox"><label for="dash-4">Are status labels, such as draft, published, or under review, clear and easy to understand?<span class="guideline-code">G1, G3</span></label></div>
+                    <div class="check-item"><input id="dash-5" type="checkbox"><label for="dash-5">Can users tell what actions are available for each item?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="dash-6" type="checkbox"><label for="dash-6">Are destructive actions, such as delete, clearly distinguished from edit or manage?<span class="guideline-code">G1, G4</span></label></div>
+                    <div class="check-item"><input id="dash-7" type="checkbox"><label for="dash-7">Can users find a specific draft or record quickly?<span class="guideline-code">G2, G6</span></label></div>
+                    <div class="check-item"><input id="dash-8" type="checkbox"><label for="dash-8">Is the item list easy to scan and compare?<span class="guideline-code">G2, G5</span></label></div>
+                    <div class="check-item"><input id="dash-9" type="checkbox"><label for="dash-9">Are standard notifications visible but not distracting?<span class="guideline-code">G5, G7</span></label></div>
+                    <div class="check-item"><input id="dash-10" type="checkbox"><label for="dash-10">Are critical notifications or warnings very clear and hard to miss?<span class="guideline-code">G5, G7</span></label></div>
+                    <div class="check-item"><input id="dash-11" type="checkbox"><label for="dash-11">Are instructions available for uncommon or risky actions?<span class="guideline-code">G7</span></label></div>
+                    <div class="check-item"><input id="dash-12" type="checkbox"><label for="dash-12">Are support options easy to find?<span class="guideline-code">G7</span></label></div>
+                    <div class="check-item"><input id="dash-13" type="checkbox"><label for="dash-13">Can users manage records without having to remember hidden states or steps?<span class="guideline-code">G6</span></label></div>
+                </div></div>
+            </details>
+
+            <details>
+                <summary>8. Information pages</summary>
+                <div class="details-body"><div class="checklist">
+                    <div class="check-item"><input id="info-1" type="checkbox"><label for="info-1">Is the page purpose clear from the title and heading?<span class="guideline-code">G2, G3</span></label></div>
+                    <div class="check-item"><input id="info-2" type="checkbox"><label for="info-2">Is the content written in plain language and does it avoid unnecessary jargon?<span class="guideline-code">G3</span></label></div>
+                    <div class="check-item"><input id="info-3" type="checkbox"><label for="info-3">Is long text broken into short sections with headings?<span class="guideline-code">G2, G3</span></label></div>
+                    <div class="check-item"><input id="info-4" type="checkbox"><label for="info-4">Are instructions written as clear steps where needed?<span class="guideline-code">G3, G7</span></label></div>
+                    <div class="check-item"><input id="info-5" type="checkbox"><label for="info-5">Are links descriptive and meaningful out of context?<span class="guideline-code">G1</span></label></div>
+                    <div class="check-item"><input id="info-6" type="checkbox"><label for="info-6">Is supporting documentation linked from the point where users need it?<span class="guideline-code">G7</span></label></div>
+                    <div class="check-item"><input id="info-7" type="checkbox"><label for="info-7">Are contact routes or support options easy to find?<span class="guideline-code">G7</span></label></div>
+                    <div class="check-item"><input id="info-8" type="checkbox"><label for="info-8">Are important dates, policies, and requirements explained in an unambiguous format?<span class="guideline-code">G3</span></label></div>
+                </div></div>
+            </details>
+        </div>
+    </section>
+
+    <aside class="footer-note" aria-label="Resources note">
+        Created by Aga Domanska, aga@cottagelabs.com
+    </aside>
+</main>
+</body>
+<footer role="contentinfo">
+    {% include 'footer.html' %}
+</footer>
+</body>
+</html>

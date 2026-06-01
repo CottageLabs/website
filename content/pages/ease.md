@@ -1,0 +1,4 @@
+---
+Title: Ease
+Template: ease
+---

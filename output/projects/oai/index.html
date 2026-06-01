@@ -157,9 +157,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../theme/scss/main.css?dd5ea0" />
+    <link rel="stylesheet" href="../../theme/scss/main.css?0eb796" />
     <link rel="icon" type="image/png" href="../../theme/favicon/dark/favicon.png">
     <script src="../../theme/js/script.js" defer></script>
+
+    <style>
+    </style>
 
 </head>
 
@@ -167,12 +170,12 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <div class="row justify-content-between with-gap-1">
-            <section class="section-left col col-lg-4">
+            <section class="section-left col col-lg-4 col-md-12 col-sm-12">
                 <a class="navbar-brand" href="/">
                     <img id="logo" src="../../theme/images/logo.svg" alt="Cottage Labs Logo">
                 </a>
             </section>
-            <section class="section-right col col-lg-7">
+            <section class="section-right col col-lg-7 col-md-12 col-sm-12">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -187,7 +190,7 @@
                             </li>
 
                             <div class="dropdown nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="eventsDropdown"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Events
                                 </a>
@@ -213,7 +216,7 @@
 <!--                                -->
 <!--                            </li>-->
                             <div class="dropdown nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="aboutDropdown"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     About Us
                                 </a>
@@ -223,7 +226,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="servicesDropdown"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Explore Our Services
                                 </a>
@@ -238,10 +241,18 @@
                                     <a class="dropdown-item" href="/data-lifecycle">Your data lifecycle</a>
                                 </div>
                             </div>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/projects">Our projects</a>
                             </li>
+                            <div class="dropdown nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="documentsDropdown"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Knowledge
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/ease">EASE checklist</a>
+                                </div>
+                            </div>
                         </div>
                     </ul>
 
@@ -290,15 +301,15 @@
 </ul>
     <h2>Featured projects with <span class="featured_projects--tag-name">Open Access Infrastructure</span> tag</h2>
     <ul class="featured_projects">
-            <li><a class="thumbnail" href="../../projects/journal-checker-tool/" title="Journal Checker Tool">
-    <div class="project-thumbnail project-thumbnail--Journal Checker Tool">
-            <img class="project-logo" src="../../theme/images/projects/jct.svg"
-                 alt="Journal Checker Tool">    </div>
-</a></li>
             <li><a class="thumbnail" href="../../projects/journal-comparison-service/" title="Journal Comparison Service">
     <div class="project-thumbnail project-thumbnail--Journal Comparison Service">
             <img class="project-logo" src="../../theme/images/projects/jcs.svg"
                  alt="Journal Comparison Service">    </div>
+</a></li>
+            <li><a class="thumbnail" href="../../projects/journal-checker-tool/" title="Journal Checker Tool">
+    <div class="project-thumbnail project-thumbnail--Journal Checker Tool">
+            <img class="project-logo" src="../../theme/images/projects/jct.svg"
+                 alt="Journal Checker Tool">    </div>
 </a></li>
             <li><a class="thumbnail" href="../../projects/doaj/" title="DOAJ">
     <div class="project-thumbnail project-thumbnail--DOAJ">
