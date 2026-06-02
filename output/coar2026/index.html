@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google Analytics will be loaded only when the user has given consent. See the consent script below. -->
+
+    <meta charset="UTF-8">
+    <title>Cottage Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4051ee286d.js" crossorigin="anonymous"></script>
+
+<style>
+        /* Simple banner styles */
+        #cookie-consent-banner {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.85);
+            color: #fff;
+            padding: 1rem;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        #cookie-consent-banner .cc-actions { display:flex; gap:0.5rem; }
+        #cookie-consent-banner button { min-width: 96px; }
+        #cookie-consent-banner a { color: #fff; text-decoration: underline; }
+        @media (max-width:600px){ #cookie-consent-banner{ font-size:0.9rem; } }
+    </style>
+
+    <script>
+    (function(){
+        const GA_ID = 'G-VRW1PJ2G2T';
+        const CONSENT_COOKIE = 'cottage_labs_consent';
+        const CONSENT_VALUE = 'You have consented to analytics cookies; delete this cookie to revoke consent.';
+        const DECLINE_COOKIE = 'cottage_labs_decline';
+        const DECLINE_VALUE = 'You have declined analytics cookies; delete this cookie to be given the opportunity to consent on your next visit to the site.';
+        const COOKIE_DAYS = 365; // 1 year
+
+        function setCookie(name, value, days){
+            try{
+                let expires = '';
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days*24*60*60*1000));
+                    expires = '; expires=' + date.toUTCString();
+                }
+
+                // Determine whether to add the Secure flag. Prefer SITEURL (from template config);
+                // fall back to current page protocol if SITEURL is empty/unspecified.
+                const siteUrl = "..";
+                let secureFlag = '';
+                try {
+                    if (siteUrl && siteUrl.indexOf('https://') === 0) {
+                        secureFlag = '; Secure';
+                    }
+                } catch(e) { /* ignore */ }
+                // fallback if SITEURL not set in template but page is served over https
+                if (!secureFlag && typeof location !== 'undefined' && location.protocol === 'https:') {
+                    secureFlag = '; Secure';
+                }
+
+                document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/; SameSite=Lax' + secureFlag;
+            }catch(e){ /* ignore */ }
+        }
+        function getCookie(name){
+            let match = document.cookie.match(new RegExp('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)'));
+            return match ? decodeURIComponent(match.pop()) : null;
+        }
+
+        function injectGtag(){
+            if (!GA_ID) return;
+            // avoid double-injection
+            if (window.__ga_injected) return;
+            window.__ga_injected = true;
+
+            const s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+            document.head.appendChild(s);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+
+            s.onload = function(){
+                gtag('js', new Date());
+                gtag('config', GA_ID);
+            };
+        }
+
+        function hideBanner(){
+            const el = document.getElementById('cookie-consent-banner');
+            if(el) el.style.display = 'none';
+        }
+        function showBanner(){
+            const el = document.getElementById('cookie-consent-banner');
+            if(el) el.style.display = 'flex';
+        }
+
+        // Wire up the banner buttons (if banner exists in DOM)
+        function bindBannerButtons(){
+            const accept = document.getElementById('cookie-consent-accept');
+            const decline = document.getElementById('cookie-consent-decline');
+            if(accept) accept.addEventListener('click', function(){
+                setCookie(CONSENT_COOKIE, CONSENT_VALUE, COOKIE_DAYS);
+                hideBanner();
+                injectGtag();
+            });
+            if(decline) decline.addEventListener('click', function(){
+                setCookie(DECLINE_COOKIE, DECLINE_VALUE, COOKIE_DAYS);
+                hideBanner();
+            });
+        }
+
+        // Initialization: decide whether to load GA or show banner
+        function initConsent(){
+            const consent = getCookie(CONSENT_COOKIE);
+            const decline = getCookie(DECLINE_COOKIE);
+            if (consent){
+                // user previously consented
+                try{ injectGtag(); }catch(e){}
+            } else if (!consent && !decline){
+                // neither consent nor decline -> show banner
+                // Wait for DOM ready to show and bind
+                if (document.readyState === 'loading'){
+                    document.addEventListener('DOMContentLoaded', function(){ showBanner(); bindBannerButtons(); });
+                } else {
+                    showBanner(); bindBannerButtons();
+                }
+            } else {
+                // decline exists -> do nothing (GA disabled)
+            }
+        }
+
+        // Run init as soon as possible
+        initConsent();
+
+        // expose helpers for debugging if needed
+        window.__gaConsent = {
+            setConsent: function(){ setCookie(CONSENT_COOKIE,'1',COOKIE_DAYS); injectGtag(); },
+            setDecline: function(){ setCookie(DECLINE_COOKIE,'1',COOKIE_DAYS); hideBanner(); }
+        };
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../theme/scss/main.css?0eb796" />
+    <link rel="icon" type="image/png" href="../theme/favicon/dark/favicon.png">
+    <script src="../theme/js/script.js" defer></script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <div class="row justify-content-between with-gap-1">
+            <section class="section-left col col-lg-4 col-md-12 col-sm-12">
+                <a class="navbar-brand" href="/">
+                    <img id="logo" src="../theme/images/logo.svg" alt="Cottage Labs Logo">
+                </a>
+            </section>
+            <section class="section-right col col-lg-7 col-md-12 col-sm-12">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-links collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <div class="wrapper">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+
+                            <div class="dropdown nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="eventsDropdown"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Events
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <div class="dropdown-section">
+                                        <span class="dropdown-section--header">future</span>
+                                        <a class="dropdown-item" href="/or26">Open Repositories Conference 2026</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-section">
+                                        <span class="dropdown-section--header">past</span>
+                                        <a class="dropdown-item" href="/coar2026">COAR 2026</a>
+                                        <a class="dropdown-item" href="/munin25">Munin 2025</a>
+                                        <a class="dropdown-item" href="/or25">Open Repositories Conference 2025</a>
+                                        <a class="dropdown-item" href="/munin24">Munin 2024</a>
+                                        <a class="dropdown-item" href="/opencost24">OpenCost 2024</a>
+                                        <a class="dropdown-item" href="/or24">Open Repositories Conference 2024</a>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/about">About us</a>-->
+<!--                                -->
+<!--                            </li>-->
+                            <div class="dropdown nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="aboutDropdown"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/about">Meet the team</a>
+                                    <a class="dropdown-item" href="/open-values">Our Values</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="servicesDropdown"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Tools &amp; Services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/open-access-infrastructure">Open Access
+                                        infrastructure</a>
+                                    <a class="dropdown-item" href="/data-visualisation">Data visualisations</a>
+                                    <a class="dropdown-item" href="/data-repositories">Data repositories</a>
+                                    <a class="dropdown-item" href="/bespoke-development" id="">Bespoke development</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/project-lifecycle">Project lifecycle</a>
+                                    <a class="dropdown-item" href="/data-lifecycle">Your data lifecycle</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/ease">EASE checklist</a>
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/projects">Our projects</a>
+                            </li>
+                        </div>
+                    </ul>
+
+                </div>
+            </section>
+            <div class="col col-sm-auto"></div>
+        </div>
+    </div>
+</nav>
+<!-- Cookie consent banner: shown only when there is no consent or decline cookie -->
+<div id="cookie-consent-banner" style="display:none;" aria-live="polite" role="dialog">
+    <div style="flex:1; min-width:200px;">
+        <strong>We'd like to use analytics cookies</strong>
+        <div style="margin-top:4px;">We'd like to collect anonymous analytics to improve our website. We're just interested in
+        how you use the site and what content interests you, which will help us decide what else we should publish here.
+        We won't share your data in any way.  See our <a href="/privacy-policy">privacy policy</a> for more information.</div>
+    </div>
+    <div class="cc-actions">
+        <button id="cookie-consent-accept" class="btn btn-primary">Accept</button>
+        <button id="cookie-consent-decline" class="btn btn-secondary">Decline</button>
+    </div>
+</div>
+<main>
+    <div class="container">
+    <div class="event-page content COAR2026-content row align-items-stretch">
+        <div class="col-md">
+            <div class="event-header">
+                <h1>COAR Annual Conference 2026 <a class="icon-link" href="https://coar-repositories.org/news-updates/maintaining-openness-and-collaboration-in-times-of-uncertainty-coar-annual-meeting-2026/" target="_blank"><i class="fas fa-link fa-xs"></i></a></h1>
+            </div>
+            <p>We were pleased to be invited to update the COAR community on our work to support the development of the COAR Notify protocol, and to share our experience of building tools to support its adoption.  We have been working with the COAR Notify team, the InvenioRDM team, as well as Peer-Community-In and Episciences to enable InvenioRDM and Zenodo to support the protocol.</p>
+<p><strong>When?</strong> 1 - 3 June 2026</p>
+<p><strong>Where?</strong> Braga, Portugal and streamed worldwide</p>
+<h2>Our presentation</h2>
+<ul>
+<li><a href="/assets/coar2026-notify.pdf" target="_blank" title="Our presntation at the COAR Annual Conference 2026"><strong>Invenio Notify</strong></a>
+<em>Richard Jones, 1st June</em></li>
+</ul>
+        </div>
+        <div class="col-md-6 COAR2026-background">
+            <img src="../theme/images/events/coar2026.png" alt=""/>
+        </div>
+    </div>
+    </div>
+</main>
+<footer role="contentinfo">
+<div class="container">
+    <img id="cottage-shape" src="../theme/images/cottage.svg" alt=""/>
+    <div class="row">
+        <div class="contact col-7">
+            <p>
+                <span style="margin-right: 10px">Follow us: </span>
+                <a href="https://github.com/CottageLabs/" title="Follow us on Github" style="margin-right: 1rem;">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/company/cottagelabs/" title="Follow us on LinkedIn" style="margin-right: 1rem;">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </a>
+
+                <a href="https://x.com/cottagelabs" title="Follow us on Twitter / X" style="margin-right: 1rem;">
+                    <strong>𝕏</strong>/<i class="fa fa-twitter"></i> X / Twitter
+                </a>
+
+                <a href="https://bsky.app/profile/cottage-labs.bsky.social" title="Follow us on BlueSky" style="margin-right: 1rem;">
+
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="16" height="16"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"/></svg>
+                     BlueSky
+                </a>
+            </p>
+            <p>
+                <span style="margin-right: 10px">Download: </span>
+                <a href="/assets/CottageLabsBrochure.pdf" title="Brochure Download: About Cottage Labs" style="margin-right: 1rem;" target="_blank">About Cottage Labs</a>
+                <a href="/assets/InvenioRDMBrochure.pdf" title="Brochure Download: InvenioRDM Services" style="margin-right: 1rem;" target="_blank">InvenioRDM Services</a>
+                <a href="/assets/SamveraHyraxBrochure.pdf" title="Brochure Download: Samvera Hyrax Services" style="margin-right: 1rem;" target="_blank">Samvera Hyrax Services</a>
+
+            </p>
+            <p><span>&copy; Cottage Labs LLP 2011-2026. All site content CC-BY</span></p>
+            <p>
+                <a href="/contact" title="Contact Us" style="margin-right: 1rem;">Contact Us</a>
+                <a href="/privacy-policy" title="Privacy Policy" style="margin-right: 1rem;">Privacy Policy</a>
+            </p>
+        </div>
+        <div class="registration col">
+    <p>Cottage Labs LLP is a partnership registered in Scotland</p>
+<p>Company Number:&nbsp;SO303454; VAT&nbsp;Registration:&nbsp;127710036; DUNS:&nbsp;21-736-0418</p>
+            <img src="/images/CE-Logo.png" style="width: 100px;">
+        </div>
+    </div>
+</div></footer>
+</body>
+</html>

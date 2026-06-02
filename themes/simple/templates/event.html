@@ -9,6 +9,19 @@
         </div>
         <div class="col-md-6 {{ page.title }}-background">
             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/events/{{ page.background }}" alt=""/>
+            {% if page.brochures %}
+            <div class="brochures" style="margin-top: 2rem;">
+                <h2>Downloads</h2>
+                <p>To read more about our services for members of the Open Repositories community, download our
+                brochures below.</p>
+
+                <ul>
+                    <li><strong><a href="/assets/CottageLabsBrochure.pdf" title="Brochure Download: About Cottage Labs"  target="_blank">About Cottage Labs</a></strong></li>
+                    <li><strong><a href="/assets/InvenioRDMBrochure.pdf" title="Brochure Download: InvenioRDM Services"  target="_blank">InvenioRDM Services</a></strong></li>
+                    <li><strong><a href="/assets/SamveraHyraxBrochure.pdf" title="Brochure Download: Samvera Hyrax Services" target="_blank">Samvera Hyrax Services</a></strong></li>
+                </ul>
+            </div>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

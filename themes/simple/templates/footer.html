@@ -3,9 +3,6 @@
     <div class="row">
         <div class="contact col-7">
             <p>
-                <a href="/contact">Contact Us</a><br>
-            </p>
-            <p>
                 <span style="margin-right: 10px">Follow us: </span>
                 <a href="https://github.com/CottageLabs/" title="Follow us on Github" style="margin-right: 1rem;">
                     <i class="fa fa-github"></i> GitHub
@@ -25,8 +22,18 @@
                      BlueSky
                 </a>
             </p>
+            <p>
+                <span style="margin-right: 10px">Download: </span>
+                <a href="/assets/CottageLabsBrochure.pdf" title="Brochure Download: About Cottage Labs" style="margin-right: 1rem;" target="_blank">About Cottage Labs</a>
+                <a href="/assets/InvenioRDMBrochure.pdf" title="Brochure Download: InvenioRDM Services" style="margin-right: 1rem;" target="_blank">InvenioRDM Services</a>
+                <a href="/assets/SamveraHyraxBrochure.pdf" title="Brochure Download: Samvera Hyrax Services" style="margin-right: 1rem;" target="_blank">Samvera Hyrax Services</a>
+
+            </p>
             <p><span>&copy; Cottage Labs LLP 2011-{{ NOW | strftime('%Y') }}. All site content CC-BY</span></p>
-            <p><a href="/privacy-policy">Privacy Policy</a></p>
+            <p>
+                <a href="/contact" title="Contact Us" style="margin-right: 1rem;">Contact Us</a>
+                <a href="/privacy-policy" title="Privacy Policy" style="margin-right: 1rem;">Privacy Policy</a>
+            </p>
         </div>
         <div class="registration col">
             {% include "registration.html" %}
