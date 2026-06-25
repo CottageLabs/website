@@ -15,8 +15,8 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
-* {
-  box-sizing: unset; }
+*, *::before, *::after {
+  box-sizing: border-box; }
 
 main {
   min-height: calc(100vh - $footer-height - $nav-height);
@@ -102,7 +102,7 @@ h1 {
   font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 500;
-  text-transform: uppercase; }
+  /*text-transform: uppercase;*/ }
 
 h2 {
   font-size: 1.602em;
@@ -329,7 +329,7 @@ a.tag {
   font-style: normal;
   font-weight: 400;
   letter-spacing: .015rem;
-  display: inline;
+  display: inline-flex;
   padding: 0.375rem 0.75rem;
   align-items: flex-start;
   gap: 0.75rem;
@@ -339,6 +339,8 @@ a.tag {
   margin: 0.375rem 0; }
   a.tag:hover {
     color: #FFFCF8; }
+  a.tag--large {
+    padding: 0.75rem 1.5rem; }
   a.tag--red {
     background: #940101; }
     a.tag--red:hover {
@@ -347,6 +349,13 @@ a.tag {
     background: #005500; }
     a.tag--green:hover {
       background: #a5ae9d; }
+  a.tag--inverted-green {
+    background: #FFFCF8;
+    color: #005500;
+    border: 1px solid #005500; }
+    a.tag--inverted-green:hover {
+      background: #a5ae9d;
+      border: 1px solid #a5ae9d; }
   a.tag--brown {
     background: #5A3F40; }
     a.tag--brown:hover {
@@ -455,7 +464,7 @@ a.tag {
         font-family: 'Manrope', sans-serif;
         font-style: normal;
         font-weight: 500;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         font-size: 1.424em;
         line-height: 100%;
         color: #333333;
@@ -481,11 +490,11 @@ a.tag {
   .homepage .section-clients .value-statement {
     margin-bottom: 50px; }
     .homepage .section-clients .value-statement p {
-      font-size: 2rem;
-      text-align: center;
-      line-height: 2.5rem; }
+      font-size: 2.5rem;
+      text-align: left;
+      line-height: 3rem; }
   .homepage .section-clients .explore-or-contact {
-    text-align: center;
+    text-align: left;
     margin-bottom: 80px; }
   .homepage .section-clients h2 {
     text-align: center;

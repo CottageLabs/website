@@ -53,8 +53,12 @@ PLUGINS = [
     'css_cache_bust'
 ]
 
+# Keep this empty to avoid a Pelican/watchfiles filter bug that can suppress
+# all filesystem events, which breaks --autoreload.
+IGNORE_FILES = []
+
 JINJA_CONTEXTS = {
-    'now': datetime.datetime.now(datetime.UTC),
+    'now': datetime.datetime.now(datetime.timezone.utc),
 }
 
 NOW = datetime.datetime.now()
