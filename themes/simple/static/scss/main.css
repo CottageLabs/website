@@ -276,15 +276,17 @@ nav {
     height: 80vh;
     width: 98vw;
     background-color: #333333;
-    padding: 0.75rem; }
+    padding: 0.75rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
     .navbar-nav * {
       background-color: #333333;
       color: white; }
     .navbar-nav .wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      padding: 3rem; }
+      justify-content: flex-start;
+      padding: 1rem; }
       .navbar-nav .wrapper .nav-link {
         font-size: 1em;
         font-family: 'Montserrat', sans-serif;
@@ -292,7 +294,7 @@ nav {
         font-weight: 400;
         letter-spacing: .015rem;
         font-size: 1.424em;
-        padding: 3rem;
+        padding: 1rem;
         color: white;
         text-align: right; }
 

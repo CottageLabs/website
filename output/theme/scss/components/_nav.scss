@@ -108,6 +108,8 @@ nav {
     width: 98vw;
     background-color: $black;
     padding: $spacing-03;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     * {
       background-color: $black;
       color: white;
@@ -115,12 +117,12 @@ nav {
     .wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      padding: 3rem;
+      justify-content: flex-start;
+      padding: 1rem;
       .nav-link {
         @include label;
         @include typescale-03;
-        padding: 3rem;
+        padding: 1rem;
         color: white;
         text-align: right;
       }
