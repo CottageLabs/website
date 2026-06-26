@@ -15,6 +15,14 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+@media (max-width: 992px) {
+  html {
+    font-size: 25px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 100%; } }
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -518,13 +526,13 @@ a.tag {
   .homepage {
     position: relative;
     background-color: #ffffff;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column; }
     .homepage .section-links {
       position: relative;
       background-color: #ffffff;
-      padding: 2rem;
+      padding: 1rem;
       width: 100%;
       height: auto;
       margin-top: 0;
@@ -534,7 +542,7 @@ a.tag {
     .homepage .section-clients {
       position: relative;
       left: unset;
-      padding: 2rem; } }
+      padding: 1rem; } }
 #oa-logo {
   background-image: url("../images/icons/icon-OA.svg"); }
 

@@ -10,6 +10,22 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: $breakpoint-lg) {
+  // Increase rem-based text sizes slightly for mobile/tablet readability.
+  html {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: 991px) {
+  // Let containers breathe more on portrait tablets instead of capping at 720px.
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 100%;
+  }
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
