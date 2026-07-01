@@ -10,10 +10,31 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-xs) {
   // Scale the root font size by percentage so rem-based sizing grows uniformly.
   html {
-    font-size: 112.5%;
+    font-size: 140%;
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+  // Scale the root font size by percentage so rem-based sizing grows uniformly.
+  html {
+    font-size: 140%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  // Scale the root font size by percentage so rem-based sizing grows uniformly.
+  html {
+    font-size: 140%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  // Scale the root font size by percentage so rem-based sizing grows uniformly.
+  html {
+    font-size: 100%;
   }
 }
 

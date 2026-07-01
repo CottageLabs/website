@@ -15,9 +15,18 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
-@media (max-width: 992px) {
+@media (min-width: 0) {
   html {
-    font-size: 112.5%; } }
+    font-size: 140%; } }
+@media (min-width: 576px) {
+  html {
+    font-size: 140%; } }
+@media (min-width: 768px) {
+  html {
+    font-size: 140%; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 100%; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .container,
   .container-sm,
@@ -325,7 +334,7 @@ footer {
       height: 100px; }
       @media (max-width: 992px) {
         footer .container #cottage-shape {
-          bottom: calc(100% + 0.12*1rem); } }
+          bottom: calc(100% + 0.4*1rem); } }
     footer .container .contact {
       padding-left: 1.75rem; }
       footer .container .contact a {

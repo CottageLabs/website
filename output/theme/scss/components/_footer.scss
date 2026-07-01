@@ -28,7 +28,7 @@ footer {
       height: 100px;
 
       @media (max-width: $breakpoint-lg) {
-        bottom: calc(100% + 0.12*1rem);
+        bottom: calc(100% + 0.4*1rem);
       }
     }
 
