@@ -14,9 +14,14 @@
                     future.
                 </p>
                 <p style="font-size: 1.2rem; line-height: 2rem;">
-                    We use open source to keep research infrastructure transparent, sustainable,
-                    and built to last, giving our clients real control over their systems and data, without vendor lock-in.
+                Our software is open source and built to last, with options for hosting, maintenance, and long-term
+                    service management, giving clients complete control over their systems and data.
                 </p>
+
+{#                <p style="font-size: 1.2rem; line-height: 2rem;">#}
+{#                    We use open source to keep research infrastructure transparent, sustainable,#}
+{#                    and built to last, giving our clients real control over their systems and data, without vendor lock-in.#}
+{#                </p>#}
             </section>
 
             <section id="explore-or-contact" class="explore-or-contact">
@@ -93,6 +98,17 @@
 
 
     <div class="container homepage" style="margin-top: 3rem;">
+        <div class="row" style="padding-bottom: 3rem; text-align: center;">
+            <div class="col-lg-12">
+                <video controls width="100%"
+                       preload="metadata"
+                       poster="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/documents/img.png">
+                    <source src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/documents/CottageLabs.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="/theme/documents/CottageLabsBrochure.pdf" class="tag tag--green tag--large" target="_blank" style="margin-top: 2rem;">Download our brochure</a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-8 offset-lg-2 section-clients" style="text-align: center; padding-bottom: 2rem;">
                 {% include "partials/_clients_logos.html" %}

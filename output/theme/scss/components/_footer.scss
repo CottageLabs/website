@@ -20,10 +20,16 @@ footer {
 
     #cottage-shape {
       position: absolute;
-      top: -97px;
+      top: auto;
+      bottom: 100%;
       right: 0;
+      display: block;
       width: 100px;
       height: 100px;
+
+      @media (max-width: $breakpoint-lg) {
+        bottom: calc(100% + 0.12*1rem);
+      }
     }
 
     .contact {

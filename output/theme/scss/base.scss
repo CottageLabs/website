@@ -11,9 +11,9 @@ body {
 }
 
 @media (max-width: $breakpoint-lg) {
-  // Increase rem-based text sizes slightly for mobile/tablet readability.
+  // Scale the root font size by percentage so rem-based sizing grows uniformly.
   html {
-    font-size: 25px;
+    font-size: 112.5%;
   }
 }
 
