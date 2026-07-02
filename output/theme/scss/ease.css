@@ -265,7 +265,7 @@ input {
     top: 1rem; }
 
 .page {
-  padding-top: 8rem;
+  padding-top: 9rem;
   padding-bottom: 2rem; }
 
 .hero {
@@ -413,10 +413,6 @@ summary {
   color: #67655f; }
 
 @media (max-width: 800px) {
-  .page {
-    width: min(100% - 1rem, 72rem);
-    padding-top: 1rem; }
-
   .hero {
     padding: 1.5rem; }
 

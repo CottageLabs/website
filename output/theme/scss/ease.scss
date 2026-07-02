@@ -142,7 +142,7 @@ input {
 // =====================
 
 .page {
-    padding-top: 8rem;
+    padding-top: 9rem;
     padding-bottom: 2rem;
 }
 
@@ -353,10 +353,6 @@ summary {
 // =====================
 
 @media (max-width: 800px) {
-    .page {
-        width: min(100% - 1rem, 72rem);
-        padding-top: $space-4;
-    }
 
     .hero {
         padding: $space-6;
