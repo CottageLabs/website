@@ -1,0 +1,26 @@
+.error-404 {
+  padding: $spacing-05 0;
+
+  &--code {
+    font-size: unquote("clamp(4rem, 3rem + 6vw, 8rem)");
+    line-height: 1;
+    margin-bottom: $spacing-04;
+    background: linear-gradient(to right, $green 0%, $green 50%, $red 50%, $red 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .line {
+    margin: 0 auto $spacing-05;
+    width: 6rem;
+  }
+
+  &--actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-03;
+    margin-top: $spacing-05;
+  }
+}

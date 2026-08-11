@@ -810,4 +810,24 @@ a.section-link:hover > div#dv-logo {
   z-index: -1;
   opacity: 0.5; }
 
+.error-404 {
+  padding: 3rem 0; }
+  .error-404--code {
+    font-size: clamp(4rem, 3rem + 6vw, 8rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #005500 0%, #005500 50%, #940101 50%, #940101 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .error-404 .line {
+    margin: 0 auto 3rem;
+    width: 6rem; }
+  .error-404--actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 3rem; }
+
 /*# sourceMappingURL=main.css.map */

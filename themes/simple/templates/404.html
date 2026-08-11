@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center text-center error-404">
+    <div class="col-lg-7">
+        <h1 class="error-404--code">404</h1>
+        <div class="line"></div>
+        <h2>Not Found</h2>
+        <p>The page you're looking for may have moved, changed its name, or never existed. If you followed a link to a project subdomain (e.g. <code>project.cottagelabs.com</code>), that service may no longer be active.</p>
+        <div class="error-404--actions">
+            <a href="{{ SITEURL }}/" class="tag tag--green tag--large">Back to homepage</a>
+            <a href="{{ SITEURL }}/projects" class="tag tag--inverted-green tag--large">Browse our projects</a>
+            <a href="{{ SITEURL }}/contact" class="tag tag--inverted-green tag--large">Get in touch</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

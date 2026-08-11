@@ -20,6 +20,8 @@ server {
         try_files $uri $uri/ /src/$uri /src/$uri/ =404;
     }
 
+    error_page 404 /404.html;
+
     access_log /var/log/nginx/next.access.log;
     error_log /var/log/nginx/next.error.log;
 
