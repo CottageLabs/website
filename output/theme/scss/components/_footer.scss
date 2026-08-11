@@ -50,6 +50,16 @@ footer {
 
     .registration {
       text-align: right;
+
+      a {
+        background: none;
+        text-decoration: none;
+
+        &:hover {
+          background: none;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

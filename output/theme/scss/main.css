@@ -346,6 +346,12 @@ footer {
           text-decoration: underline; }
     footer .container .registration {
       text-align: right; }
+      footer .container .registration a {
+        background: none;
+        text-decoration: none; }
+        footer .container .registration a:hover {
+          background: none;
+          text-decoration: none; }
 
 a.tag {
   font-size: 1em;
